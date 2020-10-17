@@ -20,11 +20,11 @@ public class Math {
 				return calcAnswer;
 			default:
 				return calcAnswer;	
-		}
+		} // end switch
 
 
 	}
-
+    // this method does calculations based on user input
 	public static double calculateIt(double arg1, OPERATOR mathOp, double arg2) {
 		
 		double calcAnswer;		
@@ -45,7 +45,7 @@ public class Math {
 	        case NOOP:
 	        default:	
 	            calcAnswer = arg1;
-	    }
+	    } // end switch
 		return calcAnswer;
 	}
 }
