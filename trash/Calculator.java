@@ -7,8 +7,8 @@ import java.awt.event.*;
 public class Calculator{
 
     private JFrame frame;
-    private int butRow = 6;
-    private int butColumn = 4;
+    //private int butRow = 0;
+    private int butColumn = 6;
 
     public Calculator()
     {
@@ -33,10 +33,10 @@ public class Calculator{
 
         public NumPanel() {
             //*Numbers 1 - 9
-            GridLayout butGrid = new GridLayout(butRow, butColumn, 2, 2);
+            GridLayout butGrid = new GridLayout(0, butColumn);
             setLayout(butGrid);
-            for(int row = 2; row < butRow - 1; row++) {
-                for(int column = 0; column < butColumn - 1; column++){
+            for(int row = 2; row < 5; row++) {
+                for(int column = 0; column < butColumn -1; column++){
                     numbers++;
                     JButton tempBut = new JButton(Integer.toString(numbers));
                     add(tempBut).setLocation(row, column);
