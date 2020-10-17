@@ -3,6 +3,7 @@ package util;
 public class Math {
 	
 	public static enum OPERATOR { NOOP, PLUS, MINUS, DIVIDE, MULTIPLY, HEX };
+	// This method translates the decimal to hexidecimal
 	public static String translateIt(double arg1, OPERATOR mathOp) {
 
 		int newarg = (int) arg1;
