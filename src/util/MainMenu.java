@@ -14,9 +14,12 @@ import javax.swing.JMenuItem;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import ui.CalculatorUI;
+import ui.Thai21;
 
 
 public class MainMenu extends JFrame {
+    // This class is the first screen that is comes up with the Menus.
+
 
     /**
      *
@@ -67,11 +70,21 @@ public class MainMenu extends JFrame {
         JMenuItem mntmPreferences = new JMenuItem("Preferences");
         mnHone.add(mntmPreferences);
 
+        JMenuItem mPreferences2 = new JMenuItem("Preferences 2");
+        mnHone.add(mPreferences2);
+
         JMenu mnApTest = new JMenu("AP Test");
         menuBar.add(mnApTest);
 
         JMenu mnJig = new JMenu("Labs");
         menuBar.add(mnJig);
+
+        JMenuItem mThai21 = new JMenuItem("Thai 21");
+        mThai21.addActionListener(e -> {
+            Thai21 frame = new Thai21();
+            frame.setVisible(true);
+        });
+        mnJig.add(mThai21);
 
         JMenuItem mntmCalculator = new JMenuItem("Calculator");
         mntmCalculator.addActionListener(e -> {
