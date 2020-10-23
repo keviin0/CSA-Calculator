@@ -9,8 +9,18 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 public class Thai21 extends JFrame {
-    private final JLabel TestLabel = new JLabel("");
+    private final JLabel Thai21Background = new JLabel("");
 
+    // Game Variables
+    private boolean playerTurn = true;
+    private boolean computerTurn = false;
+    private int totalFlags = 21;
+
+    // Player Variables
+    private int userChoice;
+
+    // Computer Variables
+    private int computerChoice;
     /**
      * Launch the application.
      */
@@ -30,10 +40,10 @@ public class Thai21 extends JFrame {
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setBounds(100, 100, 418, 315);
         getContentPane().setLayout(null);
-        TestLabel.setForeground(Color.WHITE);
-        TestLabel.setFont(new Font("Lucida Grande", Font.PLAIN, 72));
-        TestLabel.setHorizontalAlignment(SwingConstants.RIGHT);
-        TestLabel.setBounds(18, 6, 377, 67);
-        getContentPane().add(TestLabel);
+        Thai21Background.setForeground(Color.WHITE);
+        Thai21Background.setFont(new Font("Lucida Grande", Font.PLAIN, 72));
+        Thai21Background.setHorizontalAlignment(SwingConstants.RIGHT);
+        Thai21Background.setBounds(18, 6, 377, 67);
+        getContentPane().add(Thai21Background);
     }
 }
