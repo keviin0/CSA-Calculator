@@ -6,6 +6,10 @@ A Calculator for CSA
 --------Student Self Evaluations and Reflections:
 
 - Kevin
+This week I focused one building a skeleton of MVC which was a big learning target for this week. This can be seen in how I structure my contributions which distinctly separated functional code from any code dealing with UI. This will help me in the long term when working between the UI and functional code.
+Contributions:
+Anime.java
+APIRequest.java
 
 - Sean
 
@@ -53,4 +57,7 @@ So, after this, the controller would:
 - Pass Clicks to View
 - Return Button ID to Model
 - Get the display value from Model to pass to View
+
+MVC BlueJ Model (as of 10/23/2020):
+![](images/MVC.png)
 >>>>>>> origin/main
