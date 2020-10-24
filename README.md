@@ -49,7 +49,7 @@ There will be a Button interface, where the Button instance includes:
 
 The Controller class would build a collection of Buttons, while the View class, as well as the Model class would use the buttons.
 
-So,after this, the controller would:
+So, after this, the controller would:
 - Pass Clicks to View
 - Return Button ID to Model
 - Get the display value from Model to pass to View
