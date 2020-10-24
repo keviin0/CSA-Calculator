@@ -15,6 +15,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import ui.CalculatorUI;
 import ui.Thai21;
+import ui.Anime;
 
 
 public class MainMenu extends JFrame {
@@ -93,7 +94,12 @@ public class MainMenu extends JFrame {
         });
         mnJig.add(mntmCalculator);
 
-
+        JMenuItem mntmAnime = new JMenuItem("Anime Retriever");
+        mntmCalculator.addActionListener(e -> {
+            Anime frame = new Anime();
+            frame.setVisible(true);
+        });
+        mnJig.add(mntmAnime);
     }
 
 }
