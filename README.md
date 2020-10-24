@@ -1,6 +1,7 @@
 # CSA-Calculator
 A Calculator for CSA
 
+TO ACCESS MINI GAMES: SRC --> UI
 
 <<<<<<< HEAD
 --------Student Self Evaluations and Reflections:
