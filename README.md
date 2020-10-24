@@ -36,6 +36,9 @@ This UI TicTacToe game simulates an actual game of TicTacToe. The game requires 
 - WarCardGame
 The UI WarCardGame code is the beginning of a code that is meant to simulate a game of the card game war. So far, a potential card deck has been created to store a typical set of cards. Later on, the order of the cards will be randomized and half the cards will be dealt to the player and the other half to the computer. When prompted, the player will draw a random card, which will signal to the computer to draw a random card. There will then be a set of conditions stating that if the player has a higher card than the computer, the player will get a certain number of points. This works the same way if the computer has the higher card. This process will continue until the both the player and the computer have run of cards. At this point, the program will print the final scores of the player and the computer. It will then read the final scores of the player and the computer, do a comparison to decide which score is higher, and then declare the winner.
 
+MVC BlueJ Model (as of 10/23/2020):
+![](images/MVC.png)
+
 --------MVC CALCULATOR DESIGN FOR PAIR/TRIO OF ADITYA, JACOB
 
 Three Classes
@@ -59,6 +62,5 @@ So, after this, the controller would:
 - Return Button ID to Model
 - Get the display value from Model to pass to View
 
-MVC BlueJ Model (as of 10/23/2020):
-![](images/MVC.png)
+
 >>>>>>> origin/main
