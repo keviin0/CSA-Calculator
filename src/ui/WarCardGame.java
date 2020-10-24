@@ -46,7 +46,7 @@ public class WarCardGame extends JFrame {
     public void setVisible(boolean b) {
     }
 }
-/*Note: I have a lot of comments right now because I did not have enough time to add this to a new file and I am using
+/* Note: I have a lot of comments right now because I did not have enough time to add this to a new file and I am using
 comments for this code because my errors will create "rubber chickens" in the entire project for my group.
 public class Cards{
     public Cards(){
