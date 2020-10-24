@@ -28,6 +28,8 @@ My Contributions: TicTacToe.java, MVC Calculator 2 Design
 
 - Calculator UI
 
+Calculator UI is an advanced version of the sample calculator. The Calculator includes the standard adding, subtracting, multiply, and divide. The calculator also has a unique a hexadecimal converter. 
+
 - Thai21
 
 Thai21 is a mathematical game of strategy in which two players take turns removing flags from a pile. On each turn, a player must remove one, two, or three flags. They must remove at least one flag. The winner of the game is the one who takes the last flag(s) on their turn. The user always goes first in the game. The user always goes first because this is a discrete math game in which a single strategy can win the game everytime and can give the computer an unfair advantage.
