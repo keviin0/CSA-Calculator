@@ -1,5 +1,7 @@
 # CSA-Calculator
 
+**Standard SDK:** adopt-openj9-15
+
 --------Student Self Evaluations and Reflections:
 
 - Kevin
