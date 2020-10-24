@@ -29,6 +29,26 @@ This UI TicTacToe game simulates an actual game of TicTacToe. The game requires 
 
 - WarCardGame
 
+--------MVC CALCULATOR DESIGN FOR PAIR/TRIO OF ADITYA, JACOB
+
+Three Classes
+- Model
+- View
+- Controller
+
+The Model class is responsible for the calculations.
+The View class draws the calculator, as well as the display.
+The Controller class has two functions. One function is to pass the button clicks to the View class. The second function is to get the display value from the Model class so that it can be passed to the View class.
+
+There will be a Button interface, where the Button instance includes:
+- ID Numbers
+- A Name
+- Function
+
+The Controller class would build a collection of Buttons, while the View class, as well as the Model class would use the buttons.
+
+So,after this, the controller would:
+- Pass Clicks to View
+- Return Button ID to Model
+- Get the display value from Model to pass to View
 >>>>>>> origin/main
-
-
