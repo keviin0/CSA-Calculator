@@ -1,8 +1,5 @@
 # CSA-Calculator
-A Calculator for CSA
 
-
-<<<<<<< HEAD
 --------Student Self Evaluations and Reflections:
 
 - Kevin
@@ -13,6 +10,9 @@ Anime.java
 APIRequest.java
 
 - Sean
+
+ This week I focused on establishing a strong UI foundation for myself. In the beginning of the week, my team was not able to run code from the main branch. I researched offline and used help from Mr. Mortensen to fix this problem. We were able to come up with a resolution by establishing a standard IDE and a standard SDK. It was a challenge understanding how to add, modify, and learn how to use swingx and using the designer. I started by watching a youtube video on SwingX. I researched topics online including oracle docs and stackoverflow. I created Thai 21 game because I worked on it over the summer in Python but it was for applying discrete math to solve for the winning strategy. It was not interactive. I thought it would be a fun idea to create an actual app in which a user can play the game. I learned how to work with the UI more in-depth. This includes how to add a menu item, how to add UI elements in the designer. Learning how to user the designer was challenging. It was different than tools I am used to. Also the UI elements did not always update correctly. The way they looked in the designer was different than how they actually look when the game is running. I also learned some advanced UI components including different notifications such as a popup and messagebox. I then how to access and use those in the class and how to access and change properties of UI elements. I also learned how to add action handling such as a button click. This seems simple now but it was very challenging at the time to initially learn. Some advanced Java components I learned included creating and using a timer. I also practiced with Thread.sleep() but it did not work out and my app froze but it was an interesting exercise. Overall, this week very challenging but productive. It was rewarding to have a real game. I beleive I deserve a 5/5 because I went above and beyond the group goal for the game as well as my comfort zone. 
+
 
 - Siddhant
 
@@ -29,6 +29,11 @@ My Contributions: TicTacToe.java, MVC Calculator 2 Design
 - Calculator UI
 
 - Thai21
+
+Thai21 is a mathematical game of strategy in which two players take turns removing flags from a pile. On each turn, a player must remove one, two, or three flags. They must remove at least one flag. The winner of the game is the one who takes the last flag(s) on their turn. The user always goes first in the game. The user always goes first because this is a discrete math game in which a single strategy can win the game everytime and can give the computer an unfair advantage.
+
+The game is run by pressing the start button. After the game has started, the user and computer takes turns. The user may select one, two, or three by pressing the corresponding flag buttons. The corresponding buttons are only enabled if there are enough remaining flags. For example, if there are only 2 flags left then the button for 3 flags is disabled. After the user's turn, it is the computer's turn. The computer will take at random, one, two, or three flags if there are more than three flags left. If there are less than three flags left on the computer turn, it will win. The computer's pick is displayed in a pop-up on the top left corner. When the last flag has been picked, a notification for the winner of the game is displayed.
+The game can restart by pressing the start button again.
 
 - TicTacToe
 
@@ -65,4 +70,3 @@ So, after this, the controller would:
 - Get the display value from Model to pass to View
 
 
->>>>>>> origin/main

@@ -11,8 +11,6 @@ import javax.swing.JMenuBar;
 import javax.swing.JMenu;
 import javax.swing.JMenuItem;
 
-import java.awt.event.ActionListener;
-import java.awt.event.ActionEvent;
 import ui.CalculatorUI;
 import ui.Thai21;
 import ui.Anime;
@@ -80,13 +78,6 @@ public class MainMenu extends JFrame {
         JMenu mnJig = new JMenu("Labs");
         menuBar.add(mnJig);
 
-        JMenuItem mThai21 = new JMenuItem("Thai 21");
-        mThai21.addActionListener(e -> {
-            Thai21 frame = new Thai21();
-            frame.setVisible(true);
-        });
-        mnJig.add(mThai21);
-
         JMenuItem mntmCalculator = new JMenuItem("Calculator");
         mntmCalculator.addActionListener(e -> {
             CalculatorUI frame = new CalculatorUI();
@@ -94,12 +85,21 @@ public class MainMenu extends JFrame {
         });
         mnJig.add(mntmCalculator);
 
+
         JMenuItem mntmAnime = new JMenuItem("Anime Retriever");
         mntmCalculator.addActionListener(e -> {
             Anime frame = new Anime();
             frame.setVisible(true);
         });
         mnJig.add(mntmAnime);
+
+        JMenuItem thai21 = new JMenuItem("Thai 21");
+        thai21.addActionListener(e -> {
+            Thai21 frame = new Thai21();
+            frame.setVisible(true);
+        });
+        mnJig.add(thai21);
+
     }
 
 }
