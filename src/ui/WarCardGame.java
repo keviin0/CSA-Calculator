@@ -31,6 +31,16 @@ public class WarCardGame extends JFrame {
     public void Player(){
         //myCards = new ArrayList<Cards>(52);
         //Need to create new file called cards
+        /*int y = 52;
+        String[]Deck = new String[y]
+            for(int i = 0; i < ranks.length; i++){
+                for(int j = 0; j < types.length; j++){
+                    deck[types.length*i + j] = Ranks[i] + types[j]
+                }
+            }
+
+
+         */
 
     }
     public void setVisible(boolean b) {
