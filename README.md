@@ -1,12 +1,12 @@
-# CSA-Calculator
-A Calculator for CSA
+# CSA PORTFOLIO FOR GROCERYSTORESIM (Name probably to be changed in the future)
+A CSA Portfolio
 
 
-<<<<<<< HEAD
 --------Student Self Evaluations and Reflections:
 
 - Kevin
-This week I focused one building a skeleton of MVC which was a big learning target for this week. This can be seen in how I structure my contributions which distinctly separated functional code from any code dealing with UI. This will help me in the long term when working between the UI and functional code.
+
+In terms of ah-ha I had to set some standards throughout our group to make sure that code that worked on my end was also functional for my teammates as well. I also spent a considerable amount of time learning IntelliJ which was pretty new to me having only ever worked with VSCode. This week I focused one building a skeleton of MVC which was a big learning target for this week. This can be seen in how I structure my contributions which distinctly separated functional code from any code dealing with UI. This will help me in the long term when working between the UI and functional code.
 Contributions:
 Anime.java
 APIRequest.java
