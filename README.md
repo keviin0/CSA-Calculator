@@ -31,9 +31,9 @@ APIRequest.java
 
 - Sean
 
-This week I worked on mainly Thai 21 and logistics. I made sure our group was using a standard IDE and a standard SDK (adopt-openj9-15). My Contribution includes adding Thai21 into MainMenu, added Thai21.java and Thai21.form. My Thai21 game is functional and can be played. My major merge onto the main branch is from this check-in SHA1 ID: commit 09ccf44345e91fe7351903ca5733577aed5905c6
+This week I my goal was to mainly work on Thai 21 and logistics. I was able to accomplish to goal. I made sure our group was using a standard IDE and a standard SDK (adopt-openj9-15). My Contribution includes adding Thai21 into MainMenu, added Thai21.java and Thai21.form. My Thai21 game is functional and can be played. My major merge onto the main branch is from this check-in SHA1 ID: commit 09ccf44345e91fe7351903ca5733577aed5905c6
  
- I believe I deserve a 5/5 because I went above and beyond the group goal for the game as well as my personal goal. 
+ Self Grade: 5/5 
 
 
 - Siddhant
