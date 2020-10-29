@@ -1,0 +1,35 @@
+Index: src/util/MainMenu.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package util;\r\n\r\nimport java.awt.Color;\r\nimport java.awt.Container;\r\nimport java.awt.EventQueue;\r\n\r\nimport javax.swing.ImageIcon;\r\nimport javax.swing.JFrame;\r\nimport javax.swing.JLabel;\r\nimport javax.swing.JMenuBar;\r\nimport javax.swing.JMenu;\r\nimport javax.swing.JMenuItem;\r\n\r\nimport java.awt.event.ActionListener;\r\nimport java.awt.event.ActionEvent;\r\nimport ui.CalculatorUI;\r\nimport ui.Thai21;\r\n\r\n\r\npublic class MainMenu extends JFrame {\r\n    // This class is the first screen that is comes up with the Menus.\r\n\r\n\r\n    /**\r\n     *\r\n     */\r\n    private static final long serialVersionUID = 1L;\r\n\r\n\r\n    /**\r\n     * Launch the application.\r\n     */\r\n    public static void main(String[] args) {\r\n        EventQueue.invokeLater(() -> {\r\n            try {\r\n                MainMenu frame = new MainMenu();\r\n                frame.setVisible(true);\r\n            } catch (Exception e) {\r\n                e.printStackTrace();\r\n            }\r\n        });\r\n    }\r\n\r\n    /**\r\n     * Create the frame.\r\n     */\r\n    public MainMenu() {\r\n        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);\r\n        setBounds(100, 100, 450, 300);\r\n\r\n        // JLabel with image\r\n        JLabel pic = new JLabel(\"\");\r\n        java.awt.Image image = new ImageIcon(\"APCompSci.jpeg\").getImage();\r\n        pic.setIcon(new ImageIcon(image));\r\n        pic.setBounds(377, 111, 128, 128);\r\n\r\n        // Content Panel to add Label and Image\r\n        //https://docs.oracle.com/javase/tutorial/uiswing/components/rootpane.html\r\n        Container content = getContentPane();\r\n        content.setBackground(new Color(100,100,255));\r\n        content.add(pic);\r\n\r\n        // Menu Objects\r\n        JMenuBar menuBar = new JMenuBar();\r\n        setJMenuBar(menuBar);\r\n\r\n        JMenu mnHone = new JMenu(\"Home\");\r\n        menuBar.add(mnHone);\r\n\r\n        JMenuItem mntmPreferences = new JMenuItem(\"Preferences\");\r\n        mnHone.add(mntmPreferences);\r\n\r\n        JMenuItem mPreferences2 = new JMenuItem(\"Preferences 2\");\r\n        mnHone.add(mPreferences2);\r\n\r\n        JMenu mnApTest = new JMenu(\"AP Test\");\r\n        menuBar.add(mnApTest);\r\n\r\n        JMenu mnJig = new JMenu(\"Labs\");\r\n        menuBar.add(mnJig);\r\n\r\n        JMenuItem mThai21 = new JMenuItem(\"Thai 21\");\r\n        mThai21.addActionListener(e -> {\r\n            Thai21 frame = new Thai21();\r\n            frame.setVisible(true);\r\n        });\r\n        mnJig.add(mThai21);\r\n\r\n        JMenuItem mntmCalculator = new JMenuItem(\"Calculator\");\r\n        mntmCalculator.addActionListener(e -> {\r\n            CalculatorUI frame = new CalculatorUI();\r\n            frame.setVisible(true);\r\n        });\r\n        mnJig.add(mntmCalculator);\r\n\r\n\r\n    }\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/util/MainMenu.java	(revision e06fd6bf1bbd674c9f2cd7d713e2a57bd90d6672)
++++ src/util/MainMenu.java	(date 1603468461723)
+@@ -93,7 +93,6 @@
+         });
+         mnJig.add(mntmCalculator);
+ 
+-
+     }
+ 
+ }
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ProjectRootManager\" version=\"2\" languageLevel=\"JDK_15\" project-jdk-name=\"15\" project-jdk-type=\"JavaSDK\">\r\n    <output url=\"file://$PROJECT_DIR$/out\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/misc.xml	(revision e06fd6bf1bbd674c9f2cd7d713e2a57bd90d6672)
++++ .idea/misc.xml	(date 1603379437357)
+@@ -1,6 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+-  <component name="ProjectRootManager" version="2" languageLevel="JDK_15" project-jdk-name="15" project-jdk-type="JavaSDK">
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_14" default="false" project-jdk-name="15" project-jdk-type="JavaSDK">
+     <output url="file://$PROJECT_DIR$/out" />
+   </component>
+ </project>
+\ No newline at end of file
