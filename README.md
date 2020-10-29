@@ -2,7 +2,21 @@
 
 **Standard SDK:** adopt-openj9-15
 
---------Student Self Evaluations and Reflections:
+**Team Goals Week 8:**
+
+fix our Readme to be more concise; reference actual code; add TODO:
+establish an overall theme for the project; minilab; we are thinking about a game for each decade
+make sure we have no rubber chickens
+
+**Individual Assignments Week 8:**
+
+Sean: Fix Readme; work on the view of UNO game
+Kevin: Fix Readme; work on control of UNO game
+Siddhant: Fix Readme; work on view/model of UNO game
+Jacob: Fix Readme; work on control of MineSweeper
+Aditya: Fix Readme; work on view/model of MineSweeper
+
+**Week 7 Progress Check**
 
 - Kevin
 
