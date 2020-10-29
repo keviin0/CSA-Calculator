@@ -43,7 +43,7 @@ public class Anime extends JFrame {
                 String response = APIRequest.get(year, season); //Send to model code
                 System.out.println(response);
             }catch(Exception f){
-                JOptionPane.showMessageDialog(new JFrame(), "Make sure the year is an int and the season is a valid season", "Dialog",
+                JOptionPane.showMessageDialog(new JFrame(), "Make sure the year is an int and the season is a valid season", "Error",
                         JOptionPane.ERROR_MESSAGE); //Error message popup if exception thronw from try
             }
         });
