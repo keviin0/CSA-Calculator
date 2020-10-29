@@ -27,6 +27,8 @@ public class UnoUI extends JFrame{
     /**
      * Launch the application.
      */
+
+    /*
     public static void main(String[] args) {
         EventQueue.invokeLater(() -> {
             try {
@@ -37,6 +39,7 @@ public class UnoUI extends JFrame{
             }
         });
     }
+    */
 
     // constructor
     public UnoUI(){
@@ -82,14 +85,18 @@ public class UnoUI extends JFrame{
             }
         });
 
-    }
-    public void updateTopCard(){
-        mTopDeckCard.setText("Red 1:"); //TODO: Put current top card here
 
     }
+
+    public void updateTopCard(Card c){
+        mTopDeckCard.setText(c.cardColor + " " + c.cardNum + ":"); //TODO: Put current top card here
+
+    }
+
     public void action(Player p, Card t){
         while(true){
             actionSuccess = true;
+            updateTopCard(t);
 
             //TODO: Display active player(p)'s hand and show card on top of deck(t). Add button on a deck to draw a card or press a card to place a card. Have callback call either mDrawCard or playCard in Playfield.
             if(actionSuccess = false){ //Invalid move check

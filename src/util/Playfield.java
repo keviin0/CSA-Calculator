@@ -3,6 +3,7 @@ package util;
 import ui.UnoUI;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Playfield {
     Card topCard;
@@ -11,7 +12,7 @@ public class Playfield {
     ArrayList<Player> players = new ArrayList<Player>();
     boolean actionSuccess;
 
-    public Playfield(int playerNum, String[] names, UnoUI gameView){ //Initialize playfield
+    public Playfield(int playerNum, List<String> names, UnoUI gameView){ //Initialize playfield
 
         Deck test = new Deck();
         //System.out.println(test.cardDeck);
@@ -61,9 +62,9 @@ public class Playfield {
         p.hand.remove(selected);
     }
 
-    public void addPlayers(int numPlayers, String[] args) {
+    public void addPlayers(int numPlayers, List<String> args) {
         for(int i = 0; i < numPlayers; i++){
-            players.add(new Player(args[i]));
+            players.add(new Player(args.get(i)));
         }
     }
 

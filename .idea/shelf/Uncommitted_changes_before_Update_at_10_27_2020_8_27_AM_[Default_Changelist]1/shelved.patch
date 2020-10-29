@@ -1,0 +1,36 @@
+Index: src/ui/Anime.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package ui;\r\nimport javax.swing.*;\r\nimport java.awt.*;\r\nimport util.APIRequest;\r\n\r\npublic class Anime extends JFrame {\r\n\r\n    private final JLabel animeArea = new JLabel(\"Seasonal anime retriever\");\r\n    private JTextArea yearArea; //Text input for year\r\n    private JTextArea seasonArea; //Text input for season\r\n    private static String ENTER = \"Enter\"; //Submit button\r\n\r\n    public static void main(String[] args) {\r\n        EventQueue.invokeLater(() -> {\r\n            try {\r\n                Anime frame = new Anime();\r\n                frame.setSize(300,300);\r\n                frame.setVisible(true);\r\n            } catch (Exception e) {\r\n                e.printStackTrace();\r\n            }\r\n        });\r\n    }\r\n\r\n    public Anime(){\r\n        Container c = getContentPane();\r\n        JPanel p = new JPanel();\r\n        JButton b = new JButton(\"Submit\"); //Submit button\r\n\r\n        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);\r\n        c.add(animeArea); //Add label to container\r\n        yearArea = new JTextArea(\"Year\",1, 10);\r\n        p.add(yearArea); //Add text area for year to panel\r\n        seasonArea = new JTextArea(\"Season\",1, 10);\r\n        p.add(seasonArea); //Add text area for season to panel\r\n        p.add(b); //Add button to panel\r\n        c.add(p); //add panel to container\r\n\r\n        b.addActionListener(e -> {\r\n            try {\r\n                int year = Integer.parseInt(yearArea.getText()); //Retrieve text from yearArea and store in variable typecasted to int\r\n                String season = seasonArea.getText();  //Retrieve text from season Area\r\n                String response = APIRequest.get(year, season); //Send to model code\r\n                System.out.println(response);\r\n            }catch(Exception f){\r\n                JOptionPane.showMessageDialog(new JFrame(), \"Make sure the year is an int and the season is a valid season\", \"Dialog\",\r\n                        JOptionPane.ERROR_MESSAGE); //Error message popup if exception thronw from try\r\n            }\r\n        });\r\n        //TODO: Throw custom exception if not a valid season or year.\r\n\r\n    }\r\n\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/ui/Anime.java	(revision d0679f41c1dee91b6dc50f115d908159283f8ad6)
++++ src/ui/Anime.java	(date 1603567771940)
+@@ -43,7 +43,7 @@
+                 String response = APIRequest.get(year, season); //Send to model code
+                 System.out.println(response);
+             }catch(Exception f){
+-                JOptionPane.showMessageDialog(new JFrame(), "Make sure the year is an int and the season is a valid season", "Dialog",
++                JOptionPane.showMessageDialog(new JFrame(), "Make sure the year is an int and the season is a valid season", "Error",
+                         JOptionPane.ERROR_MESSAGE); //Error message popup if exception thronw from try
+             }
+         });
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ProjectRootManager\" version=\"2\" languageLevel=\"JDK_14\" default=\"false\" project-jdk-name=\"15\" project-jdk-type=\"JavaSDK\">\r\n    <output url=\"file://$PROJECT_DIR$/out\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/misc.xml	(revision d0679f41c1dee91b6dc50f115d908159283f8ad6)
++++ .idea/misc.xml	(date 1603567753679)
+@@ -1,6 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+-  <component name="ProjectRootManager" version="2" languageLevel="JDK_14" default="false" project-jdk-name="15" project-jdk-type="JavaSDK">
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_14" default="false" project-jdk-name="adopt-openj9-15" project-jdk-type="JavaSDK">
+     <output url="file://$PROJECT_DIR$/out" />
+   </component>
+ </project>
+\ No newline at end of file

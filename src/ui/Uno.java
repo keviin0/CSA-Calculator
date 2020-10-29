@@ -5,6 +5,11 @@ import util.Playfield;
 
 import javax.swing.*;
 import java.awt.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 
 public class Uno extends JFrame {
 
@@ -28,6 +33,8 @@ public class Uno extends JFrame {
         Container c = getContentPane();
         JPanel p = new JPanel();
         JButton b = new JButton("Submit"); //Submit button
+        List<String> allMatches = new ArrayList<String>();
+
 
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         numPlayers = new JTextArea("# of players",1, 10);
@@ -39,12 +46,15 @@ public class Uno extends JFrame {
 
         b.addActionListener(e -> {
             int tempNum = Integer.parseInt(numPlayers.getText());
-            String[] names = new String[0];
-            names[0] = playerNames.getText();
+            Matcher m = Pattern.compile("[^,]+")
+                    .matcher(playerNames.getText());
+            while (m.find()) {
+                allMatches.add(m.group());
+            }
             UnoUI gameWindow = new UnoUI();
-            new Playfield(tempNum, names, gameWindow);
+            gameWindow.setVisible(true);
+           //new Playfield(tempNum, allMatches, gameWindow);
         });
-        //TODO: Throw custom exception if not a valid season or year.
 
     }
 }
