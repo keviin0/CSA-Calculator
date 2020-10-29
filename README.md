@@ -11,9 +11,13 @@ make sure we have no rubber chickens
 **Individual Assignments Week 8:**
 
 Sean: Fix Readme; work on the view of UNO game
+
 Kevin: Fix Readme; work on control of UNO game
+
 Siddhant: Fix Readme; work on view/model of UNO game
+
 Jacob: Fix Readme; work on control of MineSweeper
+
 Aditya: Fix Readme; work on view/model of MineSweeper
 
 **Week 7 Progress Check**
