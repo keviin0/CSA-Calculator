@@ -85,6 +85,7 @@ public class Playfield {
         }
 
         push(actPlayer, c);
+        return true;
 
 
     }

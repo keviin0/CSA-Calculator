@@ -34,7 +34,7 @@ public class Thai21 extends JFrame{
     public static void main(String[] args) {
         EventQueue.invokeLater(() -> {
             try {
-                CalculatorUI frame = new CalculatorUI();
+                Thai21 frame = new Thai21();
                 frame.setVisible(true);
             } catch (Exception e) {
                 e.printStackTrace();
