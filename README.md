@@ -21,6 +21,17 @@ Jacob: Fix Readme; work on control of MineSweeper
 Aditya: Fix Readme; work on view/model of MineSweeper
 
 **Week 8 Progress Check**
+|Name| Self-grade score| Reflection|
+----- ----------------- -----------
+|Siddhant|             |           |
+---------- ------------
+|
+|           |
+|    |
+|
+|
+|
+|
 
 
 
