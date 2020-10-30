@@ -11,10 +11,7 @@ import javax.swing.JMenuBar;
 import javax.swing.JMenu;
 import javax.swing.JMenuItem;
 
-import ui.CalculatorUI;
-import ui.Thai21;
-import ui.Anime;
-import ui.UnoUI;
+import ui.*;
 
 
 public class MainMenu extends JFrame {
@@ -107,6 +104,13 @@ public class MainMenu extends JFrame {
             frame.setVisible(true);
         });
         mnJig.add(uno);
+
+        JMenuItem mineSweeper = new JMenuItem("Mine Sweeper");
+        mineSweeper.addActionListener(e -> {
+            MineSweeperGame frame = new MineSweeperGame();
+            frame.setVisible(true);
+        });
+        mnJig.add(mineSweeper);
 
     }
 

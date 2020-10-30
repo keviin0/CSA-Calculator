@@ -20,17 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2958585-0d52-4512-a6cb-dda4b85f8127" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_23_2020_10_02_PM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_23_2020_10_02_PM__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_23_2020_10_15_PM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_23_2020_10_15_PM__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_23_2020_10_15_PM__Default_Changelist_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_23_2020_10_15_PM__Default_Changelist_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_23_2020_7_40_PM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_23_2020_7_40_PM__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_27_2020_8_27_AM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_27_2020_8_27_AM__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_27_2020_8_27_AM__Default_Changelist_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_27_2020_8_27_AM__Default_Changelist_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_29_2020_7_57_AM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_29_2020_7_57_AM__Default_Changelist_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/CalculatorUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/CalculatorUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/util/Grid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/Grid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/util/Math.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/Calculations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/MainMenu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +63,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="Application.MineSweeperGame">
+  <component name="RunManager" selected="Application.MainMenu">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -151,10 +142,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.MainMenu" />
+      <item itemvalue="Application.Deck" />
+      <item itemvalue="Application.MineSweeperGame" />
+      <item itemvalue="Application.Uno" />
+      <item itemvalue="Application.UnoUI" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MineSweeperGame" />
         <item itemvalue="Application.MainMenu" />
+        <item itemvalue="Application.MineSweeperGame" />
         <item itemvalue="Application.UnoUI" />
         <item itemvalue="Application.Uno" />
         <item itemvalue="Application.Deck" />
@@ -260,28 +258,28 @@
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="471" y="114" key="#Project_Structure/62.0.1858.1080/-1920.0.1920.1040@62.0.1858.1080" timestamp="1603256908851" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1604032680921">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1604091620071">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.-169.1920.1040@0.0.1536.824" timestamp="1604032680921" />
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.-169.1920.1040@0.0.1536.824" timestamp="1604091620071" />
     <state width="1159" height="164" key="GridCell.Tab.0.bottom/0.23.1440.821@0.23.1440.821" timestamp="1603988273534" />
     <state width="1815" height="280" key="GridCell.Tab.0.bottom/62.0.1858.1080/-1920.0.1920.1040@62.0.1858.1080" timestamp="1603986622106" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1604032680920">
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1604091620071">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824/-1920.-169.1920.1040@0.0.1536.824" timestamp="1604032680920" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824/-1920.-169.1920.1040@0.0.1536.824" timestamp="1604091620071" />
     <state width="1159" height="164" key="GridCell.Tab.0.center/0.23.1440.821@0.23.1440.821" timestamp="1603988273534" />
     <state width="1815" height="280" key="GridCell.Tab.0.center/62.0.1858.1080/-1920.0.1920.1040@62.0.1858.1080" timestamp="1603986622105" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1604032680920">
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1604091620071">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824/-1920.-169.1920.1040@0.0.1536.824" timestamp="1604032680920" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824/-1920.-169.1920.1040@0.0.1536.824" timestamp="1604091620071" />
     <state width="1159" height="164" key="GridCell.Tab.0.left/0.23.1440.821@0.23.1440.821" timestamp="1603988273533" />
     <state width="1815" height="280" key="GridCell.Tab.0.left/62.0.1858.1080/-1920.0.1920.1040@62.0.1858.1080" timestamp="1603986622105" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1604032680920">
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1604091620071">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824/-1920.-169.1920.1040@0.0.1536.824" timestamp="1604032680920" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824/-1920.-169.1920.1040@0.0.1536.824" timestamp="1604091620071" />
     <state width="1159" height="164" key="GridCell.Tab.0.right/0.23.1440.821@0.23.1440.821" timestamp="1603988273534" />
     <state width="1815" height="280" key="GridCell.Tab.0.right/62.0.1858.1080/-1920.0.1920.1040@62.0.1858.1080" timestamp="1603986622105" />
     <state width="1815" height="364" key="GridCell.Tab.1.bottom" timestamp="1603940833461">
