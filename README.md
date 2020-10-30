@@ -21,12 +21,13 @@ Jacob: Fix Readme; work on control of MineSweeper
 Aditya: Fix Readme; work on view/model of MineSweeper
 
 **Week 8 Progress Check**
-Name   |  Project | Goals   Grade   Reflection
-                  |   
-                  |
-                  |
-                |
-       |
+Name    |Project | Goals |  Grade |  Reflection
+--------------------------------------------
+Siddhant 
+Ranka.  |
+--------------------------------------------
+                
+       
    
 
 
