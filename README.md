@@ -5,8 +5,8 @@
 **Team Goals Week 8:**
 
 Fix our README to be more consice; reference actual code; add TODO:
-establish an overall theme for the project; minilab; we are thinking about a game for each decade
-make sure we have no rubber chickens
+establish an overall theme for the project; minilab; we are thinking about a game from each decade
+make sure we have no rubber chickens. Siddhant, Sean, and Kevin are working on UNO, Jacob and Aditya on Minesweeper.
 
 **Individual Assignments Week 8:**
 
@@ -19,6 +19,18 @@ Siddhant: Fix Readme; work on view/model of UNO game
 Jacob: Fix Readme; work on control of MineSweeper
 
 Aditya: Fix Readme; work on view/model of MineSweeper
+
+**Week 8 Progress Check**
+
+
+
+**How to run our code:**
+- Our Project Standard SDK is adopt-openj9-15
+- We have sent the link to our Github project
+- When pulling our code, we have a number of games. The two games from this week are UNO and Minesweeper
+- Each of these should run individually and the main code should run.
+
+
 
 **Week 7 Progress Check**
 
@@ -96,8 +108,4 @@ So, after this, the controller would:
 - Get the display value from Model to pass to View
 
 
-How to run our code:
-- Our Project Standard SDK is adopt-openj9-15
-- We have sent the link to our Github project
-- When pulling our code, we have a number of games. The two games from this week are Uno and Minesweeper
-- Siddhant, Kevin, and Sean worked on Uno while Jacob and Aditya worked on Minesweeper.
+
