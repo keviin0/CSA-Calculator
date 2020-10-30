@@ -1,5 +1,7 @@
 package ui;
 
+import util.MGame;
+
 import javax.swing.JFrame;
 import java.awt.Component;
 
