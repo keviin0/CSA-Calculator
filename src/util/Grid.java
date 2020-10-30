@@ -9,7 +9,7 @@ public class Grid
         grid = new boolean[rows][cols];
         for (int r = 0; r < rows; r++)
         {
-            for (int c =  (int)Math.ceil(Math.random()*5); c < cols; c+= (int)Math.ceil(Math.random()*10))
+            for (int c = (int) Math.ceil(Math.random()*5); c < cols; c+= (int) Math.ceil(Math.random()*10))
             {
                 grid[r][c] = true;
             }
