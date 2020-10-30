@@ -6,34 +6,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a7763e00-23d5-405e-96cd-4c33927d58a8" name="Default Changelist" comment="Add UNO MVC framework with model and controller code excluding playCard in Playfield.java.">
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_23_2020_10_02_PM_[Default_Changelist]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_23_2020_10_02_PM__Default_Changelist_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_23_2020_10_15_PM_[Default_Changelist]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_23_2020_10_15_PM_[Default_Changelist]1/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_23_2020_10_15_PM__Default_Changelist_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_23_2020_10_15_PM__Default_Changelist_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_23_2020_7_40_PM_[Default_Changelist]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_23_2020_7_40_PM__Default_Changelist_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_27_2020_8_27_AM_[Default_Changelist]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_27_2020_8_27_AM_[Default_Changelist]1/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_27_2020_8_27_AM__Default_Changelist_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_27_2020_8_27_AM__Default_Changelist_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_29_2020_7_57_AM_[Default_Changelist]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_29_2020_7_57_AM__Default_Changelist_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/Uno.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/Uno.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/UnoUI$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/UnoUI$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/UnoUI$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/UnoUI$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/UnoUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/UnoUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CSA-Calculator/util/Playfield.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSA-Calculator/util/Playfield.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/Uno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/Uno.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/UnoUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/UnoUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/util/Playfield.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/Playfield.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/WarCardGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/WarCardGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/Deck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/Deck.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -44,6 +27,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1j82LwZnu2RuYkzfO4oG5diEU6h" />
   <component name="ProjectLevelVcsManager">
@@ -57,6 +43,8 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -127,6 +115,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Uno" />
@@ -145,6 +146,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1603171346378</updated>
+      <workItem from="1603987133507" duration="270000" />
+      <workItem from="1604025998802" duration="313000" />
     </task>
     <task id="LOCAL-00001" summary="get rid of trash">
       <created>1603171904833</created>
@@ -176,6 +179,9 @@
     </task>
     <option name="localTasksCounter" value="5" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -231,21 +237,25 @@
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="471" y="114" key="#Project_Structure/62.0.1858.1080/-1920.0.1920.1040@62.0.1858.1080" timestamp="1603256908851" />
-    <state width="1815" height="280" key="GridCell.Tab.0.bottom" timestamp="1603986622106">
-      <screen x="62" y="0" width="1858" height="1080" />
+    <state width="1159" height="164" key="GridCell.Tab.0.bottom" timestamp="1603988273534">
+      <screen x="0" y="23" width="1440" height="821" />
     </state>
+    <state width="1159" height="164" key="GridCell.Tab.0.bottom/0.23.1440.821@0.23.1440.821" timestamp="1603988273534" />
     <state width="1815" height="280" key="GridCell.Tab.0.bottom/62.0.1858.1080/-1920.0.1920.1040@62.0.1858.1080" timestamp="1603986622106" />
-    <state width="1815" height="280" key="GridCell.Tab.0.center" timestamp="1603986622105">
-      <screen x="62" y="0" width="1858" height="1080" />
+    <state width="1159" height="164" key="GridCell.Tab.0.center" timestamp="1603988273534">
+      <screen x="0" y="23" width="1440" height="821" />
     </state>
+    <state width="1159" height="164" key="GridCell.Tab.0.center/0.23.1440.821@0.23.1440.821" timestamp="1603988273534" />
     <state width="1815" height="280" key="GridCell.Tab.0.center/62.0.1858.1080/-1920.0.1920.1040@62.0.1858.1080" timestamp="1603986622105" />
-    <state width="1815" height="280" key="GridCell.Tab.0.left" timestamp="1603986622105">
-      <screen x="62" y="0" width="1858" height="1080" />
+    <state width="1159" height="164" key="GridCell.Tab.0.left" timestamp="1603988273533">
+      <screen x="0" y="23" width="1440" height="821" />
     </state>
+    <state width="1159" height="164" key="GridCell.Tab.0.left/0.23.1440.821@0.23.1440.821" timestamp="1603988273533" />
     <state width="1815" height="280" key="GridCell.Tab.0.left/62.0.1858.1080/-1920.0.1920.1040@62.0.1858.1080" timestamp="1603986622105" />
-    <state width="1815" height="280" key="GridCell.Tab.0.right" timestamp="1603986622105">
-      <screen x="62" y="0" width="1858" height="1080" />
+    <state width="1159" height="164" key="GridCell.Tab.0.right" timestamp="1603988273534">
+      <screen x="0" y="23" width="1440" height="821" />
     </state>
+    <state width="1159" height="164" key="GridCell.Tab.0.right/0.23.1440.821@0.23.1440.821" timestamp="1603988273534" />
     <state width="1815" height="280" key="GridCell.Tab.0.right/62.0.1858.1080/-1920.0.1920.1040@62.0.1858.1080" timestamp="1603986622105" />
     <state width="1815" height="364" key="GridCell.Tab.1.bottom" timestamp="1603940833461">
       <screen x="62" y="0" width="1858" height="1080" />
