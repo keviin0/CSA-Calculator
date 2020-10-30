@@ -4,7 +4,7 @@
 
 **Team Goals Week 8:**
 
-fix our Readme to be more concise; reference actual code; add TODO:
+Fix our README to be more consice; reference actual code; add TODO:
 establish an overall theme for the project; minilab; we are thinking about a game for each decade
 make sure we have no rubber chickens
 
@@ -96,3 +96,8 @@ So, after this, the controller would:
 - Get the display value from Model to pass to View
 
 
+How to run our code:
+- Our Project Standard SDK is adopt-openj9-15
+- We have sent the link to our Github project
+- When pulling our code, we have a number of games. The two games from this week are Uno and Minesweeper
+- Siddhant, Kevin, and Sean worked on Uno while Jacob and Aditya worked on Minesweeper.
