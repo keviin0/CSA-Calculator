@@ -32,8 +32,11 @@ Sean
 Tran        
             
 -------------------------------------------------
-Siddhant  
-Ranka     
+Siddhant Ranka  - This week, I did meet my goal of
+fixing the README. Github shouws I have made a large
+number of significant commits to this README to make
+it more concise and organized.
+    
           
 -------------------------------------------------
 Aditya Surapaneni
