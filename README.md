@@ -24,15 +24,15 @@ Aditya: Fix Readme; work on view/model of MineSweeper
 
 Name    |Project | Goals |  Grade |  Reflection
 -------------------------------------------
-Kevin
+Kevin   |        |       |        |
 Hu
                           
 --------------------------------------------
-Sean
+Sean    |        |       |        |
 Tran
         
 ---------------------------------------------
-Siddhant
+Siddhant|        |       |        |
 Ranka
 
 ---------------------------------------------
