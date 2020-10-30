@@ -4,9 +4,9 @@
 
 **Team Goals Week 8:**
 
-fix our Readme to be more concise; reference actual code; add TODO:
-establish an overall theme for the project; minilab; we are thinking about a game for each decade
-make sure we have no rubber chickens
+Fix our README to be more consice; reference actual code; add TODO:
+establish an overall theme for the project; minilab; we are thinking about a game from each decade
+make sure we have no rubber chickens. Siddhant, Sean, and Kevin are working on UNO, Jacob and Aditya on Minesweeper.
 
 **Individual Assignments Week 8:**
 
@@ -20,7 +20,41 @@ Jacob: Fix Readme; work on control of MineSweeper
 
 Aditya: Fix Readme; work on view/model of MineSweeper
 
-**Week 7 Self Grades**
+**Week 8 Progress Check**
+
+
+Name    |Project | Goals |  Grade |  Reflection
+-------------------------------------------
+Kevin
+Hu
+                          
+--------------------------------------------
+Sean
+Tran
+        
+---------------------------------------------
+Siddhant
+Ranka
+
+---------------------------------------------
+
+
+----------------------------------------------
+
+
+-----------------------------------------------
+                
+       
+
+**How to run our code:**
+- Our Project Standard SDK is adopt-openj9-15
+- We have sent the link to our Github project
+- When pulling our code, we have a number of games. The two games from this week are UNO and Minesweeper
+- Each of these should run individually and the main code should run.
+
+
+
+**Week 7 Progress Check**
 
 - Kevin
 
@@ -31,9 +65,11 @@ APIRequest.java
 
 - Sean
 
-This week I my goal was to mainly work on Thai 21 and logistics. I was able to accomplish to goal. I made sure our group was using a standard IDE and a standard SDK (adopt-openj9-15). My Contribution includes adding Thai21 into MainMenu, added Thai21.java and Thai21.form. My Thai21 game is functional and can be played. My major merge onto the main branch is from this check-in SHA1 ID: commit 09ccf44345e91fe7351903ca5733577aed5905c6
+ This week, my goal was to establish a strong UI foundation. In the beginning of the week, my team was not able to run code from the main branch. I researched offline and used help from Mr. Mortensen to fix this problem. We were able to come up with a resolution by establishing a standard IDE and a standard SDK. It was a challenge understanding how to add, modify, and learn how to use swingx and using the designer. I started by watching a youtube video on SwingX. I researched topics online including oracle docs and stackoverflow. I created Thai 21 game because I worked on it over the summer in Python but it was for applying discrete math to solve for the winning strategy. It was not interactive. I thought it would be a fun idea to create an actual app in which a user can play the game. I learned how to work with the UI more in-depth. This includes how to add a menu item, how to add UI elements in the designer. Learning how to user the designer was challenging. It was different than tools I am used to. Also the UI elements did not always update correctly. The way they looked in the designer was different than how they actually look when the game is running. I also learned some advanced UI components including different notifications such as a popup and messagebox. I then how to access and use those in the class and how to access and change properties of UI elements. I also learned how to add action handling such as a button click. This seems simple now but it was very challenging at the time to initially learn. Some advanced Java components I learned included creating and using a timer. I also practiced with Thread.sleep() but it did not work out and my app froze but it was an interesting exercise. Overall, this week very challenging but productive. It was rewarding to have a real game. 
  
- Self Grade: 5/5 
+ My Contribution include: adding Thai21 into MainMenu, added Thai21.java and Thai21.form. My Thai21 game is functional and can be played. My major merge onto the main branch is from this check-in SHA1 ID: commit 09ccf44345e91fe7351903ca5733577aed5905c6
+ 
+ I believe I deserve a 5/5 because I went above and beyond the group goal for the game as well as my personal goal. 
 
 
 - Siddhant
@@ -92,5 +128,6 @@ So, after this, the controller would:
 - Pass Clicks to View
 - Return Button ID to Model
 - Get the display value from Model to pass to View
+
 
 
