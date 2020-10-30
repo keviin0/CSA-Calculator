@@ -22,7 +22,7 @@ Aditya: Fix Readme; work on view/model of MineSweeper
 
 **Week 8 Progress Check**
 
-Name                Grade             Reflection
+Name                                            Grade                                           Reflection
 ------------------------------------------------
 Kevin       
 Hu          
