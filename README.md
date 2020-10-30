@@ -25,7 +25,8 @@ Aditya: Fix Readme; work on view/model of MineSweeper
 
 Name    |Project | Goals |  Grade |  Reflection
 --------------------------------------------
-                           
+Siddhant
+Ranka
                           
 --------------------------------------------
                            
