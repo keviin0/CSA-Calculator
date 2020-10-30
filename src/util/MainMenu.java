@@ -85,7 +85,7 @@ public class MainMenu extends JFrame {
 
 
         JMenuItem mntmAnime = new JMenuItem("Anime Retriever");
-        mntmCalculator.addActionListener(e -> {
+        mntmAnime.addActionListener(e -> {
             Anime frame = new Anime();
             frame.setVisible(true);
         });
@@ -111,6 +111,7 @@ public class MainMenu extends JFrame {
             frame.setVisible(true);
         });
         mnJig.add(mineSweeper);
+
 
     }
 
