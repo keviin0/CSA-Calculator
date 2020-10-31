@@ -84,13 +84,6 @@ public class MainMenu extends JFrame {
         mnJig.add(mntmCalculator);
 
 
-        JMenuItem mntmAnime = new JMenuItem("Anime Retriever");
-        mntmAnime.addActionListener(e -> {
-            Anime frame = new Anime();
-            frame.setVisible(true);
-        });
-        mnJig.add(mntmAnime);
-
         JMenuItem thai21 = new JMenuItem("Thai 21");
         thai21.addActionListener(e -> {
             Thai21 frame = new Thai21();

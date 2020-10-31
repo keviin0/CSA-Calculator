@@ -39,18 +39,22 @@ public class UnoUI extends JFrame{
 
 
     // constructor
-    private void performAction(){
+    private void performAction(){ //method to perform action
+        System.out.println(round + "\n" + activePlayer.name);
         Actions.doAction(action, activePlayer, num, activeDeck, c);
         if(activePlayer.hand.isEmpty()) {
             //UnoUI.win(actPlayer); //TODO: Create winner prompt in UnoUI
         }
+        if(activeDeck.cardDeck.isEmpty()){
+            activeDeck = Actions.newDeck();
+        }
         round++;
-        activePlayer = players.get(round % (players.size() - 1));
+        activePlayer = players.get(round % players.size());
         updateActivePlayer(activePlayer);
 
     }
 
-    private void updateActivePlayer(Player p){
+    private void updateActivePlayer(Player p){ //method to update current active player's hand
 
     }
 
@@ -61,9 +65,9 @@ public class UnoUI extends JFrame{
         setBounds(100, 100, 418, 315);
         setContentPane(mainPanel);
 
-        activePlayer = p;
         activeDeck = d;
         players =  z;
+        activePlayer = p;
 
         mDrawCard.addActionListener(new ActionListener() {
             @Override
@@ -72,7 +76,7 @@ public class UnoUI extends JFrame{
                 num = 1;
                 c = useless;
                 performAction();
-                JOptionPane.showMessageDialog(null, "Player has drawn card");
+                JOptionPane.showMessageDialog(null, activePlayer.name + "has drawn card");
 
             }
         });
@@ -80,6 +84,8 @@ public class UnoUI extends JFrame{
         mPlaceCard.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                action = ACTIONS.PLACE;
+
                 JOptionPane.showMessageDialog(null, "Player has place card");
 
             }
