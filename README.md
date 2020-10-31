@@ -61,8 +61,11 @@ Aditya: Fix Readme; work on view/model of MineSweeper
 
 Calculator UI is an advanced version of the sample calculator. The Calculator includes the standard adding, subtracting, multiply, and divide. The calculator also has a unique a hexadecimal converter. 
 - UNO
-A computer simulation of the Card Game UNo
+
+A computer simulation of the Card Game UNO
+
 -Minsweeper
+
 A Java simulation of the 1989 video game Minesweeeper.
 
 
