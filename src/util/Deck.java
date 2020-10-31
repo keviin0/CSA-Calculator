@@ -1,9 +1,9 @@
 package util;
 
+import java.awt.*;
 import java.util.ArrayList;
 import java.util.Collections;
 
-import util.Card.COLOR;
 
 public class Deck {
 
@@ -11,20 +11,21 @@ public class Deck {
 
     public Deck(){ //initialize the deck
 
-        COLOR colors[] = COLOR.values();
-        for(COLOR c: colors) {
-            if (c == COLOR.SPECIAL) { //Special cards that don't use 0-12
-                for (int i = 0; i < 2; i++) { // 4 of each
-                    cardDeck.add(new Card(c, i));
-                    cardDeck.add(new Card(c, i));
-                    cardDeck.add(new Card(c, i));
-                    cardDeck.add(new Card(c, i));
+        for(Color c: Card.Colors) {
+            if (c == Card.SPECIAL_COLOR ) { //non-numerical cards
+                for (int i = 0; i < 2; i++) { // 2 of each
+                    cardDeck.add(new Card(c, Card.REVERSE_CARD));
+                    cardDeck.add(new Card(c, Card.SKIP_CARD));
+                    cardDeck.add(new Card(c, Card.WILD_CARD));
+                    cardDeck.add(new Card(c, Card.DRAW_TWO_CARD));
                 }
             } else {
-                cardDeck.add(new Card(c, 0)); //Only one 0 of each color
-                for (int j = 0; j < 2; j++) { //Two of every other card for a color
-                    for (int i = 1; i < 13; i++) {
-                        cardDeck.add(new Card(c, i));
+                // Numerical colors card
+                // 1 zero card, 2 of each cards for 1-9
+                cardDeck.add(new Card(c, 0));
+                for (int i = 0; i < 2; i++){
+                    for (int j = 1; j < 10; j++){
+                        cardDeck.add(new Card(c, j));
                     }
                 }
             }

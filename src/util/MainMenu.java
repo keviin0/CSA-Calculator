@@ -109,7 +109,7 @@ public class MainMenu extends JFrame {
         ticTacToe.addActionListener(e -> {
 
            TicTacToe panel = new TicTacToe();
-            panel.getFrame().setVisible(true);
+           panel.getFrame().setVisible(true);
         });
         mnJig.add(ticTacToe);
 

@@ -16,8 +16,8 @@ public class Actions {
     public static void push(Player p, Card selected){
         int index = 0;
         for(int i = 0; i < p.hand.size(); i++){
-            if (p.hand.get(i).cardColor == selected.cardColor){
-                if (p.hand.get(i).cardNum == selected.cardNum){
+            if (p.hand.get(i).getColor() == selected.getColor()){
+                if (p.hand.get(i).getCardNum() == selected.getCardNum()){
                     index = i;
                     break;
                 }
@@ -37,6 +37,7 @@ public class Actions {
 
     public static Card getTopCard(){
         return topCard;
+
     }
 
     public static boolean doAction(ACTIONS choice, Player p, int num, Deck d, Card c){
@@ -47,11 +48,11 @@ public class Actions {
                 }
                 return true;
             case PLACE:
-                if(c.cardColor == Card.COLOR.SPECIAL){
+                if(c.getColor() == Card.SPECIAL_COLOR){
                     //
                 }
-                if(topCard.cardColor != c.cardColor){ //Check if card is unable to be played
-                    if(topCard.cardNum == c.cardNum){
+                if(topCard.getColor() != c.getColor()){ //Check if card is unable to be played
+                    if(topCard.getCardNum() == c.getCardNum()){
                         return false;
                     }
                 }
