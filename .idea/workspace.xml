@@ -318,13 +318,19 @@
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state width="1815" height="364" key="GridCell.Tab.1.right/62.0.1858.1080/-1920.0.1920.1040@62.0.1858.1080" timestamp="1603940833461" />
-    <state x="240" y="90" key="MergeDialog" timestamp="1603814468473">
-      <screen x="62" y="0" width="1858" height="1080" />
+    <state x="123" y="57" key="MergeDialog" timestamp="1604115826021">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
+    <state x="123" y="57" key="MergeDialog/0.0.1280.680@0.0.1280.680" timestamp="1604115826021" />
     <state x="240" y="90" key="MergeDialog/62.0.1858.1080/-1920.0.1920.1040@62.0.1858.1080" timestamp="1603814468473" />
-    <state x="583" y="273" key="Vcs.Push.Dialog.v2" timestamp="1603948378855">
-      <screen x="62" y="0" width="1858" height="1080" />
+    <state x="278" y="101" key="MultipleFileMergeDialog" timestamp="1604115828932">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
+    <state x="278" y="101" key="MultipleFileMergeDialog/0.0.1280.680@0.0.1280.680" timestamp="1604115828932" />
+    <state x="359" y="146" key="Vcs.Push.Dialog.v2" timestamp="1604116005351">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="359" y="146" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1604116005351" />
     <state x="583" y="273" key="Vcs.Push.Dialog.v2/62.0.1858.1080/-1920.0.1920.1040@62.0.1858.1080" timestamp="1603948378855" />
     <state x="808" y="454" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603517248211">
       <screen x="62" y="0" width="1858" height="1080" />
