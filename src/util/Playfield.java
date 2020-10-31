@@ -15,10 +15,7 @@ public class Playfield {
 
     public Playfield(int playerNum, List<String> names){ //Initialize playfield
 
-        Deck test = new Deck();
-        //System.out.println(test.cardDeck);
-        test.shuffle();
-        //System.out.println(test.cardDeck);
+        Deck test = Actions.newDeck();
         topCard = Actions.pop(test);
         addPlayers(playerNum, names);
 
@@ -28,14 +25,14 @@ public class Playfield {
             }
         }
 
-        actPlayer = players.get(round % (playerNum - 1));
-        topCard = Actions.getTopCard();
-        UnoUI gameWindow = new UnoUI(actPlayer, topCard, test, players);
-        gameWindow.setVisible(true);
+        actPlayer = players.get(round % playerNum); //Set first active player
+        topCard = Actions.getTopCard(); //Set first top card
+        UnoUI gameWindow = new UnoUI(actPlayer, topCard, test, players); //Start game
+        gameWindow.setVisible(true); //Make UnoUI visible
 
     }
 
-    public void addPlayers(int numPlayers, List<String> args) {
+    public void addPlayers(int numPlayers, List<String> args) { //Add players to players arraylist
         for(int i = 0; i < numPlayers; i++){
             players.add(new Player(args.get(i)));
         }

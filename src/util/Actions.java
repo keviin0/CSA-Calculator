@@ -4,7 +4,7 @@ import java.util.List;
 
 public class Actions {
 
-    public static enum ACTIONS {DRAW, PLAY}
+    public static enum ACTIONS {DRAW, PLACE}
     public static Card topCard;
 
     public static Card pop(Deck d){
@@ -27,6 +27,14 @@ public class Actions {
         p.hand.remove(selected);
     }
 
+    public static Deck newDeck(){
+        Deck test = new Deck(); //Create deck
+        //System.out.println(test.cardDeck);
+        test.shuffle();
+        //System.out.println(test.cardDeck);
+        return test;
+    }
+
     public static Card getTopCard(){
         return topCard;
     }
@@ -38,7 +46,7 @@ public class Actions {
                     p.hand.add(pop(d));
                 }
                 return true;
-            case PLAY:
+            case PLACE:
                 if(c.cardColor == Card.COLOR.SPECIAL){
                     //
                 }

@@ -30,24 +30,6 @@ public class Deck {
             }
         }
 
-        //public void Player(){
-        //myCards = new ArrayList<Cards>(52);
-        //Need to create new file called cards
-        /*int y = 52;
-        String[]types = {"Diamond", "Club", "Heart", "Spade"};
-        int[]numbers = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13,};
-        String[]ranks = {"Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King"};
-        String[]Deck = new String[y]
-            for(int i = 0; i < ranks.length; i++){
-                for(int j = 0; j < types.length; j++){
-                    deck[types.length*i + j] = Ranks[i] + types[j]
-
-                }
-            }
-            Note: The commented CardDeck was a CardDeck Siddhant Ranka created. However, Kevin's deck worked better
-
-         */
-
     }
 
     public void shuffle(){

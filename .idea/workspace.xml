@@ -5,18 +5,23 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a7763e00-23d5-405e-96cd-4c33927d58a8" name="Default Changelist" comment="Integrate Uno with UnoUI">
-      <change afterPath="$PROJECT_DIR$/src/util/Actions.java" afterDir="false" />
+    <list default="true" id="a7763e00-23d5-405e-96cd-4c33927d58a8" name="Default Changelist" comment="Fix up MVC with UNO. Added performAction to bridge view with model.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/Uno.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/Uno.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/UnoUI$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/UnoUI$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/UnoUI$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/UnoUI$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/UnoUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/UnoUI.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CSA-Calculator/util/MainMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSA-Calculator/util/MainMenu.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CSA-Calculator/util/Playfield.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSA-Calculator/util/Playfield.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/Anime.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ui/Uno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/Uno.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ui/UnoUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/UnoUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/Actions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/Actions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/Card.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/Deck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/Deck.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/util/MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/MainMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/util/Playfield.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/Playfield.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -170,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603986724273</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Fix up MVC with UNO. Added performAction to bridge view with model.">
+      <created>1604110188755</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1604110188755</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -221,7 +233,8 @@
     <MESSAGE value="Update README and add image" />
     <MESSAGE value="Add UNO MVC framework with model and controller code excluding playCard in Playfield.java." />
     <MESSAGE value="Integrate Uno with UnoUI" />
-    <option name="LAST_COMMIT_MESSAGE" value="Integrate Uno with UnoUI" />
+    <MESSAGE value="Fix up MVC with UNO. Added performAction to bridge view with model." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix up MVC with UNO. Added performAction to bridge view with model." />
   </component>
   <component name="WindowStateProjectService">
     <state x="471" y="114" key="#Project_Structure" timestamp="1603256908851">
@@ -232,22 +245,26 @@
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="774" y="434" width="433" height="217" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/62.0.1858.1080/-1920.0.1920.1040@62.0.1858.1080" timestamp="1604108201792" />
-    <state width="1815" height="280" key="GridCell.Tab.0.bottom" timestamp="1604109664312">
+    <state x="721" y="287" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1604111158651">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="280" key="GridCell.Tab.0.bottom/62.0.1858.1080/-1920.0.1920.1040@62.0.1858.1080" timestamp="1604109664312" />
-    <state width="1815" height="280" key="GridCell.Tab.0.center" timestamp="1604109664312">
+    <state x="721" y="287" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/62.0.1858.1080/-1920.0.1920.1040@62.0.1858.1080" timestamp="1604111158651" />
+    <state width="1815" height="280" key="GridCell.Tab.0.bottom" timestamp="1604111848416">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="280" key="GridCell.Tab.0.center/62.0.1858.1080/-1920.0.1920.1040@62.0.1858.1080" timestamp="1604109664312" />
-    <state width="1815" height="280" key="GridCell.Tab.0.left" timestamp="1604109664311">
+    <state width="1815" height="280" key="GridCell.Tab.0.bottom/62.0.1858.1080/-1920.0.1920.1040@62.0.1858.1080" timestamp="1604111848416" />
+    <state width="1815" height="280" key="GridCell.Tab.0.center" timestamp="1604111848416">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="280" key="GridCell.Tab.0.left/62.0.1858.1080/-1920.0.1920.1040@62.0.1858.1080" timestamp="1604109664311" />
-    <state width="1815" height="280" key="GridCell.Tab.0.right" timestamp="1604109664312">
+    <state width="1815" height="280" key="GridCell.Tab.0.center/62.0.1858.1080/-1920.0.1920.1040@62.0.1858.1080" timestamp="1604111848416" />
+    <state width="1815" height="280" key="GridCell.Tab.0.left" timestamp="1604111848416">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="280" key="GridCell.Tab.0.right/62.0.1858.1080/-1920.0.1920.1040@62.0.1858.1080" timestamp="1604109664312" />
+    <state width="1815" height="280" key="GridCell.Tab.0.left/62.0.1858.1080/-1920.0.1920.1040@62.0.1858.1080" timestamp="1604111848416" />
+    <state width="1815" height="280" key="GridCell.Tab.0.right" timestamp="1604111848416">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1815" height="280" key="GridCell.Tab.0.right/62.0.1858.1080/-1920.0.1920.1040@62.0.1858.1080" timestamp="1604111848416" />
     <state width="1815" height="364" key="GridCell.Tab.1.bottom" timestamp="1603992210269">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
@@ -268,10 +285,14 @@
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="240" y="90" key="MergeDialog/62.0.1858.1080/-1920.0.1920.1040@62.0.1858.1080" timestamp="1603814468473" />
-    <state x="583" y="273" key="Vcs.Push.Dialog.v2" timestamp="1603986725069">
+    <state x="629" y="301" key="MultipleFileMergeDialog" timestamp="1604110208166">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state x="583" y="273" key="Vcs.Push.Dialog.v2/62.0.1858.1080/-1920.0.1920.1040@62.0.1858.1080" timestamp="1603986725069" />
+    <state x="629" y="301" key="MultipleFileMergeDialog/62.0.1858.1080/-1920.0.1920.1040@62.0.1858.1080" timestamp="1604110208166" />
+    <state x="583" y="273" key="Vcs.Push.Dialog.v2" timestamp="1604112194987">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state x="583" y="273" key="Vcs.Push.Dialog.v2/62.0.1858.1080/-1920.0.1920.1040@62.0.1858.1080" timestamp="1604112194987" />
     <state x="808" y="454" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603517248211">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>

@@ -12,7 +12,7 @@ make sure we have no rubber chickens. Siddhant, Sean, and Kevin are working on U
 
 Sean: Fix Readme; work on the view of UNO game
 
-Kevin: Fix Readme; work on control of UNO game
+Kevin: Fix Readme; work on model/control of UNO game
 
 Siddhant: Fix Readme; work on view/model of UNO game
 
@@ -23,28 +23,14 @@ Aditya: Fix Readme; work on view/model of MineSweeper
 **Week 8 Progress Check**
 
 Progress Check/Reflection for Week 8
-------------------------------------------------
-Kevin       
-Hu          
-            
--------------------------------------------------
-Sean        
-Tran        
-            
--------------------------------------------------
-Siddhant Ranka  - This week, I went beyond my planned goal of
-fixing the README. Github shows I have made a large
-number of significant commits to this README by 
-organizing our reflections, helping write the team 
-goal and assignments, getting rid of unneccessary work from last week, and by writing out all the instructions to run the code.
-          
--------------------------------------------------
-Aditya Surapaneni
 
--------------------------------------------------
-Jacob Rozenkrantz
-
--------------------------------------------------
+| *Contributor's <br> Name* | *Self <br> Grade (out <br> of 20)* | Reasoning | Scrum Master <br> Grade (out <br> of 5)
+|---|:---:|---|---|
+|Kevin Hu | 19/20 | Completed model and control segments of Uno with model found in [Actions.java](./util/Actions.java) and control in [Playfield.java](./util/Playfield.java). Created bridge between View and Model/Control with performAction() method in [UnoUI.java](./ui/UnoUI). All other work in helper files: [Card.java](./util/Card.java), [Deck.java](./util/Deck.java), [Player.java](./util/Player.java). Still need to add special card functionality in Actions.java for full game functionality.  | 5/5 Developed entirety of model/control for Uno |
+|Sean Tran   |   |   | |
+|   |   |   |   |
+|   |   |   |   |
+|   |   |   |   |
                 
        
 
