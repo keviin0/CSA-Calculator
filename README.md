@@ -2,11 +2,24 @@
 
 **Standard SDK:** adopt-openj9-15
 
-**Team Goals Week 8:**
+**Project Theme:** Games from the Decades
 
-Fix our README to be more consice; reference actual code; add TODO:
-establish an overall theme for the project; minilab; we are thinking about a game from two different bygone decades, and we need to
-make sure we have no rubber chickens. Siddhant, Sean, and Kevin are working on UNO, Jacob and Aditya on Minesweeper.
+**Team Goals Week 8:**
+* make readme more concise
+
+* reference actual code in progress check
+
+* add TODO: to help keep collaboration organized
+
+* establish overall theme for project 
+
+* try to have no rubber chickens
+
+**Pair / Trio breakdowns:**
+
+Sean / Kevin / Siddhant : UNO game
+ 
+Aditya / Jacob : MineSweeper
 
 **Individual Assignments Week 8:**
 
@@ -22,26 +35,13 @@ Aditya: Fix Readme; work on view/model of MineSweeper
 
 **Week 8 Progress Check**
 
-Progress Check/Reflection for Week 8
-------------------------------------------------
-Kevin       
-Hu          
-            
--------------------------------------------------
-Sean        
-Tran        
-            
--------------------------------------------------
-Siddhant  
-Ranka     
-          
--------------------------------------------------
-Aditya Surapaneni
-
--------------------------------------------------
-Jacob Rozenkrantz
-
--------------------------------------------------
+| *Contributor's <br> Name* | *Self <br> Grade (out <br> of 20)* | Reasoning | Scrum Master <br> Grade (out <br> of 5)
+|---|:---:|---|---|
+|Kevin Hu | 19/20 | Completed model and control segments of Uno with model found in [Actions.java](./util/Actions.java) and control in [Playfield.java](./util/Playfield.java). Created bridge between View and Model/Control with performAction() method in [UnoUI.java](./ui/UnoUI). All other work in helper files: [Card.java](./util/Card.java), [Deck.java](./util/Deck.java), [Player.java](./util/Player.java). Still need to add special card functionality in Actions.java for full game functionality.  | 5/5 Developed entirety of model/control for Uno |
+|Sean Tran   |   |   | |
+|   |   |   |   |
+|   |   |   |   |
+|   |   |   |   |
                 
        
 
@@ -50,6 +50,10 @@ Jacob Rozenkrantz
 - We have sent the link to our [Github project](https://github.com/keviin0/CSA-Portfolio-GroceryStoreSim)
 - When pulling our code, we have a number of games. The two games from this week are UNO and Minesweeper
 - Each of these should run individually and the main code should run.
+- The Home Button and AP Test Button do not work. Only the Labs Button Works. The two games from this weeek are UNO and Minesweep.
+- Siddhant, Kevin, and Sean worked on UNO and Jacob and Aditya worked on Minesweep.
+- The place card button for the UNO game does not work and only 1 card can be drawn for the UNO game.
+Note for the instructions: We added extra instructions so we hopefully will not waste any of your time for you trying to figure out how to run our code.
 
 
 
@@ -59,10 +63,14 @@ Jacob Rozenkrantz
 - Calculator UI
 
 Calculator UI is an advanced version of the sample calculator. The Calculator includes the standard adding, subtracting, multiply, and divide. The calculator also has a unique a hexadecimal converter. 
+- UNO
+A computer simulation of the Card Game UNo
+-Minsweeper
+A Java simulation of the 1989 video game Minesweeeper.
 
 
 
-MVC BlueJ Model (as of 10/23/2020):
+MVC BlueJ Model (as of 10/30/2020) no including Calculator:
 ![](images/MVC.png)
 
 --------MVC CALCULATOR DESIGN FOR PAIR/TRIO OF ADITYA, JACOB

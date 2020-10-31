@@ -30,6 +30,8 @@ public class Uno extends JFrame {
     }
 
     public Uno(){
+        super("Uno");
+        setBounds(100, 100, 418, 315);
         Container c = getContentPane();
         JPanel p = new JPanel();
         JButton b = new JButton("Submit"); //Submit button
@@ -37,9 +39,9 @@ public class Uno extends JFrame {
 
 
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        numPlayers = new JTextArea("# of players",1, 10);
+        numPlayers = new JTextArea("# of players",1, 10); //Initial setting for # of players
         p.add(numPlayers); //Add text area for year to panel
-        playerNames = new JTextArea("Names of each player",1, 10);
+        playerNames = new JTextArea("Names of each player (Separated by comma)",1, 10);//Initial setting for names of players separated by commas
         p.add(playerNames); //Add text area for season to panel
         p.add(b); //Add button to panel
         c.add(p); //add panel to container
@@ -51,9 +53,7 @@ public class Uno extends JFrame {
             while (m.find()) {
                 allMatches.add(m.group());
             }
-            UnoUI gameWindow = new UnoUI();
-            gameWindow.setVisible(true);
-           //new Playfield(tempNum, allMatches, gameWindow);
+           new Playfield(tempNum, allMatches);
         });
 
     }

@@ -2,7 +2,7 @@ package util;
 
 public class Card {
 
-    public enum COLOR{
+    public enum COLOR{ //Color of each card. Special for wildcards
         BLUE, RED, GREEN, YELLOW, SPECIAL
     }
 
