@@ -19,7 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2958585-0d52-4512-a6cb-dda4b85f8127" name="Default Changelist" comment="Added finishing touches.">
+    <list default="true" id="d2958585-0d52-4512-a6cb-dda4b85f8127" name="Default Changelist" comment="Updated README.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
@@ -143,11 +143,11 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Deck" />
       <item itemvalue="Application.MainMenu" />
+      <item itemvalue="Application.Deck" />
       <item itemvalue="Application.MineSweeperGame" />
-      <item itemvalue="Application.UnoUI" />
       <item itemvalue="Application.Uno" />
+      <item itemvalue="Application.UnoUI" />
     </list>
     <recent_temporary>
       <list>
@@ -205,7 +205,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604112880256</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Updated README.">
+      <created>1604115761978</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1604115761978</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -259,7 +266,8 @@
     <MESSAGE value="Update README and add image" />
     <MESSAGE value="Add UNO MVC framework with model and controller code excluding playCard in Playfield.java." />
     <MESSAGE value="Added finishing touches." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added finishing touches." />
+    <MESSAGE value="Updated README." />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated README." />
   </component>
   <component name="WindowStateProjectService">
     <state x="471" y="114" key="#Project_Structure" timestamp="1603256908851">

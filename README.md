@@ -39,10 +39,10 @@ Aditya: Fix Readme; work on view/model of MineSweeper
 |---|:---:|---|---|
 |Kevin Hu | 19/20 | Completed model and control segments of Uno with model found in [Actions.java](./util/Actions.java) and control in [Playfield.java](./util/Playfield.java). Created bridge between View and Model/Control with performAction() method in [UnoUI.java](./ui/UnoUI). All other work in helper files: [Card.java](./util/Card.java), [Deck.java](./util/Deck.java), [Player.java](./util/Player.java). Still need to add special card functionality in Actions.java for full game functionality.  | 5/5 Developed entirety of model/control for Uno |
 |Sean Tran   |   |   | |
-|  Aditya Surapaneni | 19/20  | I achieved my goals for this week. I helped with the creation of the Minesweeper mini game by working on the View and Model of the program, which included the creation of Grid.java, Square.java, and a few portions of MGame.java.
-  Grid.java: https://github.com/keviin0/CSA-Portfolio-GroceryStoreSim/blob/main/src/util/Grid.java
-  Square.java: https://github.com/keviin0/CSA-Portfolio-GroceryStoreSim/blob/main/src/util/Square.java
-  MGame.java: https://github.com/keviin0/CSA-Portfolio-GroceryStoreSim/blob/main/src/util/MGame.java|   |
+|  Aditya Surapaneni | 19/20  | I achieved my goals for this week. I helped with the creation of the Minesweeper mini game by working on the View and Model of the program, which included the creation of Grid.java, Square.java, and a few portions of MGame.java. Grid.java: https://github.com/keviin0/CSA-Portfolio-GroceryStoreSim/blob/main/src/util/Grid.java
+                                                                                                                                                                                                                                                                       Square.java: https://github.com/keviin0/CSA-Portfolio-GroceryStoreSim/blob/main/src/util/Square.java
+                                                                                                                                                                                                                                                                       MGame.java: https://github.com/keviin0/CSA-Portfolio-GroceryStoreSim/blob/main/src/util/MGame.java|   |
+ 
 |   |   |   |   |
 |   |   |   |   |
                 
@@ -54,7 +54,7 @@ Aditya: Fix Readme; work on view/model of MineSweeper
 - When pulling our code, we have a number of games. The two games from this week are UNO and Minesweeper
 - Each of these should run individually and the main code should run.
 - The Home Button and AP Test Button do not work. Only the Labs Button Works. The two games from this weeek are UNO and Minesweep.
-- Siddhant, Kevin, and Sean worked on UNO and Jacob and Aditya worked on Minesweep.
+- Siddhant, Kevin, and Sean worked on UNO and Jacob and Aditya worked on Minesweeper.
 - The place card button for the UNO game does not work and only 1 card can be drawn for the UNO game.
 Note for the instructions: We added extra instructions so we hopefully will not waste any of your time for you trying to figure out how to run our code.
 
