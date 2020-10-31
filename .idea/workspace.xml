@@ -19,12 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2958585-0d52-4512-a6cb-dda4b85f8127" name="Default Changelist" comment="Fixed issue with class, code works now.">
+    <list default="true" id="d2958585-0d52-4512-a6cb-dda4b85f8127" name="Default Changelist" comment="Added finishing touches.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/MineSweeperGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/MineSweeperGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/util/Grid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/Grid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/util/MGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/MGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/util/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/Square.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,11 +143,11 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.MainMenu" />
       <item itemvalue="Application.Deck" />
+      <item itemvalue="Application.MainMenu" />
       <item itemvalue="Application.MineSweeperGame" />
-      <item itemvalue="Application.Uno" />
       <item itemvalue="Application.UnoUI" />
+      <item itemvalue="Application.Uno" />
     </list>
     <recent_temporary>
       <list>
@@ -201,7 +198,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603948377362</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added finishing touches.">
+      <created>1604112880256</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1604112880256</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -254,7 +258,8 @@
     <MESSAGE value="Update README and add MVC for Anime retriever" />
     <MESSAGE value="Update README and add image" />
     <MESSAGE value="Add UNO MVC framework with model and controller code excluding playCard in Playfield.java." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add UNO MVC framework with model and controller code excluding playCard in Playfield.java." />
+    <MESSAGE value="Added finishing touches." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added finishing touches." />
   </component>
   <component name="WindowStateProjectService">
     <state x="471" y="114" key="#Project_Structure" timestamp="1603256908851">
