@@ -1,8 +1,6 @@
 package ui;
 
-import util.Deck;
-import util.Player;
-import util.Card;
+import util.*;
 
 import javax.swing.*;
 import java.awt.*;
@@ -10,16 +8,27 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.util.List;
+import util.Actions.ACTIONS;
+
+import util.Playfield.*;
 
 public class UnoUI extends JFrame{
 
-    boolean actionSuccess;
+    volatile boolean actionSuccess;
     private JPanel mainPanel;
     private JPanel testPanel;
     private JPanel cardsPanel;
     private JButton mDrawCard;
     private JButton mPlaceCard;
     private JLabel mTopDeckCard;
+    private ACTIONS action;
+    private Card c;
+    private Player activePlayer;
+    private Deck activeDeck;
+    private int num = 0;
+    private Card useless = new Card(Card.COLOR.BLUE, 0);
+    public int round = 0;
+    private ArrayList<Player> players = new ArrayList<Player>();
 
     private int testNumberCards = 7;
     private ArrayList<JButton> testButtons = new ArrayList();
@@ -42,37 +51,40 @@ public class UnoUI extends JFrame{
     */
 
     // constructor
-    public UnoUI(){
+    private void performAction(){
+        Actions.doAction(action, activePlayer, num, activeDeck, c);
+        if(activePlayer.hand.isEmpty()) {
+            //UnoUI.win(actPlayer); //TODO: Create winner prompt in UnoUI
+        }
+        round++;
+        activePlayer = players.get(round % (players.size() - 1));
+        updateActivePlayer(activePlayer);
+
+    }
+
+    private void updateActivePlayer(Player p){
+
+    }
+
+    public UnoUI(Player p, Card t, Deck d, ArrayList<Player> z){
 
         getContentPane().setBackground(new Color(250, 200, 250));
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setBounds(100, 100, 418, 315);
         setContentPane(mainPanel);
 
-
-        Deck test = new Deck();
-        //System.out.println(test.cardDeck);
-        test.shuffle();
-        //System.out.println(test.cardDeck);
-        Player testPlayer = new Player("monkaS");
-
+        activePlayer = p;
+        activeDeck = d;
+        players =  z;
 
         mDrawCard.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                action = ACTIONS.DRAW;
+                num = 1;
+                c = useless;
+                performAction();
                 JOptionPane.showMessageDialog(null, "Player has drawn card");
-
-                ++testNumberCards;
-                JButton newButton = new JButton(String.valueOf(testNumberCards));
-
-                newButton.setBounds(50,50,90, 50);
-
-                cardsPanel.add(newButton, new GridBagConstraints());
-                if(testButtons == null) {
-                    testButtons = new ArrayList();
-                }
-                testButtons.add(newButton);
-
 
             }
         });
@@ -84,6 +96,7 @@ public class UnoUI extends JFrame{
 
             }
         });
+        //TODO: Display active player(p)'s hand and show card on top of deck(t). Add button on a deck to draw a card or press a card to place a card. Have callback call either mDrawCard or playCard in Playfield.
 
 
     }
@@ -93,26 +106,11 @@ public class UnoUI extends JFrame{
 
     }
 
-    public void action(Player p, Card t){
-        while(true){
-            actionSuccess = true;
-            updateTopCard(t);
 
-            //TODO: Display active player(p)'s hand and show card on top of deck(t). Add button on a deck to draw a card or press a card to place a card. Have callback call either mDrawCard or playCard in Playfield.
-            if(actionSuccess = false){ //Invalid move check
-                invalid();
-                continue;
-            }
-            break;
-        }
-
-    }
-
-    public boolean invalid(){
+    public void invalid(){
         //TODO: add invalid move prompt
         JOptionPane.showMessageDialog(null, "Invalid move");
 
-        return false;
     }
 
     private void createUIComponents() {

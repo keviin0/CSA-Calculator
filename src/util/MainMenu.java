@@ -11,10 +11,7 @@ import javax.swing.JMenuBar;
 import javax.swing.JMenu;
 import javax.swing.JMenuItem;
 
-import ui.CalculatorUI;
-import ui.Thai21;
-import ui.Anime;
-import ui.UnoUI;
+import ui.*;
 
 
 public class MainMenu extends JFrame {
@@ -103,7 +100,7 @@ public class MainMenu extends JFrame {
 
         JMenuItem uno = new JMenuItem("Uno");
         uno.addActionListener(e -> {
-            UnoUI frame = new UnoUI();
+            Uno frame = new Uno();
             frame.setVisible(true);
         });
         mnJig.add(uno);

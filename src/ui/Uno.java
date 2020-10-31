@@ -51,9 +51,7 @@ public class Uno extends JFrame {
             while (m.find()) {
                 allMatches.add(m.group());
             }
-            UnoUI gameWindow = new UnoUI();
-            gameWindow.setVisible(true);
-           //new Playfield(tempNum, allMatches, gameWindow);
+           new Playfield(tempNum, allMatches);
         });
 
     }
