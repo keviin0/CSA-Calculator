@@ -6,6 +6,7 @@ public class Grid
 
     public Grid(int rows, int cols)
     {
+        // Creating the randomizer for the bombs and safety spots.
         grid = new boolean[rows][cols];
         for (int r = 0; r < rows; r++)
         {
@@ -18,6 +19,7 @@ public class Grid
 
     public int[][] getCountsGrid()
     {
+        // Creating the squares and setting up their colors and dimensions.
         int[][] newGrid = new int[grid.length][grid[0].length];
         for (int r = 0; r < grid.length; r++)
         {
@@ -66,6 +68,7 @@ public class Grid
 
     private boolean inBounds( int r, int c)
     {
+        // Setting up grid.
         if (r == -1)
         {
             return false;
@@ -87,6 +90,7 @@ public class Grid
 
     public String toString()
     {
+        // Making the numbers appear on the squares appropriately.
         String output="";
         for (int r = 0; r < grid.length; r++)
         {

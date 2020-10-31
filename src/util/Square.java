@@ -3,7 +3,7 @@ package util;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.*;
-
+// Settingup variables for square colors.
 public class Square {
     private int xLoc,yLoc;
     private int width,height;
@@ -12,7 +12,7 @@ public class Square {
     private Color bckgrndColor = new Color(230, 230, 230);
     private Color txtColor;
     private boolean flagged;
-
+    // Dimensions for each square.
     public Square(int x, int y, int num)
     {
         xLoc = x;
@@ -23,13 +23,13 @@ public class Square {
         clicked = false;
         flagged = false;
     }
-
+    // Setting colors for squares.
     public void draw(Graphics window)
     {
         window.setColor(Color.GRAY);
         window.fillRect(this.getX(),this.getY(),width,height);
     }
-
+    // Colors change depending on state of click.
     public void disappear(Graphics window)
     {
         window.setColor(bckgrndColor);
@@ -61,7 +61,7 @@ public class Square {
             window.drawString("" + number,xLoc+10,yLoc+20);
         }
     }
-
+    // Flag interface.
     public void drawFlag(Graphics window)
     {
         window.setColor(Color.BLACK);
@@ -70,7 +70,7 @@ public class Square {
         int[] yPoints = {yLoc+5,yLoc+10,yLoc+15};
         window.fillPolygon(xPoints, yPoints, 3);
     }
-
+    // Mouse interface related to squares.
     public boolean didMouseClick(int x, int y)
     {
         if (x <= getXRightBorder() && x >=getXLeftBorder() && y <= getYDownBorder() && y >= getYUpBorder())

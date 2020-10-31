@@ -19,6 +19,7 @@ import javax.swing.JPanel;
 
 public class MGame extends Canvas implements MouseListener, Runnable
 {
+    // Declaring and initializing all variables.
     private boolean mouseClicked = false; //detect for the left mouse button
     private boolean mouseClicked2 = false; //detect for the right mouse button
     private int xPos;
@@ -33,7 +34,7 @@ public class MGame extends Canvas implements MouseListener, Runnable
     private int flagsPlaced = 0;
     private boolean LockMouse = false;
     public MGame() {
-        //setup
+        //Setup for background.
         setBackground(Color.WHITE);
         setVisible(true);
 
@@ -43,12 +44,13 @@ public class MGame extends Canvas implements MouseListener, Runnable
         wasHere = new boolean[10][10];
         for (int r = 0; r < wasHere.length; r++)
         {
+            // Marks clicked spots.
             for (int c = 0; c < wasHere[0].length; c++)
             {
                 wasHere[r][c] = false;
             }
         }
-
+        // Counts number of spots clicked by user.
         Grid g = new Grid(10, 10);
         map = g.getCountsGrid();
         allSquares = new Square[10][10];
@@ -61,7 +63,7 @@ public class MGame extends Canvas implements MouseListener, Runnable
                 allSquares[r][c] = new Square(x+31*r,y+31*c,map[r][c]);
             }
         }
-        //counting how many bombs in the map
+        //Counting how many bombs are in the map.
         for (int r = 0; r <allSquares.length; r++)
         {
             for (int c = 0; c < allSquares.length; c++)
@@ -73,6 +75,7 @@ public class MGame extends Canvas implements MouseListener, Runnable
             }
         }
     }
+    // Code that instructs actions of the mouse when pressed.
     public void mousePressed(MouseEvent e) //checks to see when and where the mouse is pressed
     {
         xPos = e.getX();
@@ -86,15 +89,17 @@ public class MGame extends Canvas implements MouseListener, Runnable
             mouseClicked2 = true;
         }
     }
+    // Code for when mouse is released.
     public void mouseReleased(MouseEvent e)
     {
         mouseClicked = false;
         mouseClicked2 = false;
     }
-
+    // No need for mouseEntered, just here for reference.
     public void mouseEntered(MouseEvent e) {}
+    // Code for mouseExited command.
     public void mouseExited(MouseEvent e) {}
-
+    // Code for when mouse is clicked.
     public void mouseClicked(MouseEvent e)
     {
         xPos = e.getX();
@@ -108,12 +113,12 @@ public class MGame extends Canvas implements MouseListener, Runnable
             mouseClicked2 = true;
         }
     }
-
+    // Changes color of square when mouse is clicked.
     public void update(Graphics window)
     {
         paint(window);
     }
-
+    // Makes sure that other squares are not uncovered when square in clicked.
     public int checkOtherSquares(int r, int c) //checks to show other squares after clicking on a blank square
     {
         if (allSquares[r][c].getNumber() >= 1 || wasHere[r][c])
@@ -159,7 +164,7 @@ public class MGame extends Canvas implements MouseListener, Runnable
         }
         return 0;
     }
-
+    // When game is over, graphics are displayed, reveals bombs.
     public void gameOver(Graphics window) //Game over screen
     {
         playAgain = true;
@@ -186,7 +191,7 @@ public class MGame extends Canvas implements MouseListener, Runnable
             }
         }
     }
-
+    // When user clicks to play again, everything resets.
     public void reset(Graphics window) //resets the game so the play can play again
     {
         playAgain = false;
@@ -231,8 +236,8 @@ public class MGame extends Canvas implements MouseListener, Runnable
             }
         }
     }
-
-    public void winningScreen(Graphics window) //shows a winning screen
+    // Display when user wins.
+    public void winningScreen(Graphics window)
     {
         LockMouse = true;
         playAgain = true;
@@ -246,10 +251,10 @@ public class MGame extends Canvas implements MouseListener, Runnable
         window.setFont(new Font("Courier New",1, 30));
         window.drawString("YOU WIN!!!",320, 415);
     }
-
-    public void paint(Graphics window) //shows all objects onto the screen
+    // Displays all objects on screen.
+    public void paint(Graphics window)
     {
-        //edge
+        //Edge
         window.setColor(Color.BLACK);
         window.drawLine(10,10,10,450);
         window.drawLine(10,450,780,450);
@@ -299,7 +304,7 @@ public class MGame extends Canvas implements MouseListener, Runnable
         flagsPlaced = 0;
         int bombsCorrectlyFlagged = 0;
 
-        for (int r = 0; r < map.length; r++) //painting all of the squares to screen
+        for (int r = 0; r < map.length; r++) //Painting all of the squares to screen
         {
             for (int c = 0; c< map[0].length;c++)
             {
@@ -327,7 +332,7 @@ public class MGame extends Canvas implements MouseListener, Runnable
             }
         }
 
-        //checking to print a win/lose screen
+        //Checking to print a win/lose screen.
         if (win == true)
         {
             winningScreen(window);
@@ -342,7 +347,7 @@ public class MGame extends Canvas implements MouseListener, Runnable
             window.fillRect(315,390,200,60);
         }
 
-        //checking to play again
+        //Checking to play again.
         if (playAgain == true)
         {
             if (mouseClicked == true || mouseClicked2 == true)
@@ -353,7 +358,7 @@ public class MGame extends Canvas implements MouseListener, Runnable
                 }
             }
         }
-
+        // Resetting colors, fonts, and words.
         window.setColor(Color.WHITE);
         window.fillRect(25,75,200,350);
         window.setColor(new Color(255, 204, 0));
