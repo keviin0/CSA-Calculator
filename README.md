@@ -2,11 +2,24 @@
 
 **Standard SDK:** adopt-openj9-15
 
-**Team Goals Week 8:**
+**Project Theme:** Games from the Decades
 
-Fix our README to be more consice; reference actual code; add TODO:
-establish an overall theme for the project; minilab; we are thinking about a game from two different bygone decades, and we need to
-make sure we have no rubber chickens. Siddhant, Sean, and Kevin are working on UNO, Jacob and Aditya on Minesweeper.
+**Team Goals Week 8:**
+* make readme more concise
+
+* reference actual code in progress check
+
+* add TODO: to help keep collaboration organized
+
+* establish overall theme for project 
+
+* try to have no rubber chickens
+
+**Pair / Trio breakdowns:**
+
+Sean / Kevin / Siddhant : UNO game
+ 
+Aditya / Jacob : MineSweeper
 
 **Individual Assignments Week 8:**
 
@@ -28,8 +41,9 @@ Kevin
 Hu          
             
 -------------------------------------------------
-Sean        
-Tran        
+Sean Tran: I was able to accomplish my goal of fixing the [read.me](https://github.com/keviin0/CSA-Portfolio-GroceryStoreSim/blob/main/README.md) to be more concise and easier to read. I added buttons on the [MainMenuUI](https://github.com/keviin0/CSA-Portfolio-GroceryStoreSim/blob/main/src/util/MainMenu.java#L87-L113) so we can run all games from it. My goal/assignment was to work on the view of the Uno game this week. I designed the [interface](https://github.com/keviin0/CSA-Portfolio-GroceryStoreSim/blob/main/src/ui/UnoUI.form). I added and am working on [drawCard](https://github.com/keviin0/CSA-Portfolio-GroceryStoreSim/blob/main/src/ui/Uno.java#L80-L88) and [placeCard](https://github.com/keviin0/CSA-Portfolio-GroceryStoreSim/blob/main/src/ui/Uno.java#L92-L97) buttons. I also added an [invalid prompt](https://github.com/keviin0/CSA-Portfolio-GroceryStoreSim/blob/main/src/ui/UnoUI.java#L110-L114) message we can use to display when a player has done an invalid move. 
+
+Self Grade: 19/20 ( -1 for not updating journal enough)       
             
 -------------------------------------------------
 Siddhant Ranka  - This week, I went beyond my planned goal of

@@ -37,18 +37,6 @@ public class UnoUI extends JFrame{
      * Launch the application.
      */
 
-    /*
-    public static void main(String[] args) {
-        EventQueue.invokeLater(() -> {
-            try {
-                UnoUI frame = new UnoUI();
-                frame.setVisible(true);
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-        });
-    }
-    */
 
     // constructor
     private void performAction(){
