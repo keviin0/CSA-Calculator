@@ -5,15 +5,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a7763e00-23d5-405e-96cd-4c33927d58a8" name="Default Changelist" comment="Removed anime for cleanup.">
+    <list default="true" id="a7763e00-23d5-405e-96cd-4c33927d58a8" name="Default Changelist" comment="Add MVC model from BlueJ">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/MVC.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/MVC.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/Anime.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/Uno.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/Uno.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/UnoUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/UnoUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CSA-Calculator/util/Deck.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSA-Calculator/util/Deck.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/Uno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/Uno.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,7 +173,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604112233035</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Add MVC model from BlueJ">
+      <created>1604113026689</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1604113026689</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -232,7 +233,8 @@
     <MESSAGE value="Integrate Uno with UnoUI" />
     <MESSAGE value="Fix up MVC with UNO. Added performAction to bridge view with model." />
     <MESSAGE value="Removed anime for cleanup." />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed anime for cleanup." />
+    <MESSAGE value="Add MVC model from BlueJ" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add MVC model from BlueJ" />
   </component>
   <component name="WindowStateProjectService">
     <state x="471" y="114" key="#Project_Structure" timestamp="1603256908851">
@@ -247,22 +249,22 @@
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="721" y="287" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/62.0.1858.1080/-1920.0.1920.1040@62.0.1858.1080" timestamp="1604112957690" />
-    <state width="1815" height="280" key="GridCell.Tab.0.bottom" timestamp="1604112552805">
+    <state width="1815" height="280" key="GridCell.Tab.0.bottom" timestamp="1604113052238">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="280" key="GridCell.Tab.0.bottom/62.0.1858.1080/-1920.0.1920.1040@62.0.1858.1080" timestamp="1604112552805" />
-    <state width="1815" height="280" key="GridCell.Tab.0.center" timestamp="1604112552805">
+    <state width="1815" height="280" key="GridCell.Tab.0.bottom/62.0.1858.1080/-1920.0.1920.1040@62.0.1858.1080" timestamp="1604113052238" />
+    <state width="1815" height="280" key="GridCell.Tab.0.center" timestamp="1604113052238">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="280" key="GridCell.Tab.0.center/62.0.1858.1080/-1920.0.1920.1040@62.0.1858.1080" timestamp="1604112552805" />
-    <state width="1815" height="280" key="GridCell.Tab.0.left" timestamp="1604112552805">
+    <state width="1815" height="280" key="GridCell.Tab.0.center/62.0.1858.1080/-1920.0.1920.1040@62.0.1858.1080" timestamp="1604113052238" />
+    <state width="1815" height="280" key="GridCell.Tab.0.left" timestamp="1604113052238">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="280" key="GridCell.Tab.0.left/62.0.1858.1080/-1920.0.1920.1040@62.0.1858.1080" timestamp="1604112552805" />
-    <state width="1815" height="280" key="GridCell.Tab.0.right" timestamp="1604112552805">
+    <state width="1815" height="280" key="GridCell.Tab.0.left/62.0.1858.1080/-1920.0.1920.1040@62.0.1858.1080" timestamp="1604113052238" />
+    <state width="1815" height="280" key="GridCell.Tab.0.right" timestamp="1604113052238">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state width="1815" height="280" key="GridCell.Tab.0.right/62.0.1858.1080/-1920.0.1920.1040@62.0.1858.1080" timestamp="1604112552805" />
+    <state width="1815" height="280" key="GridCell.Tab.0.right/62.0.1858.1080/-1920.0.1920.1040@62.0.1858.1080" timestamp="1604113052238" />
     <state width="1815" height="364" key="GridCell.Tab.1.bottom" timestamp="1603992210269">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
@@ -287,10 +289,10 @@
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="629" y="301" key="MultipleFileMergeDialog/62.0.1858.1080/-1920.0.1920.1040@62.0.1858.1080" timestamp="1604110208166" />
-    <state x="583" y="273" key="Vcs.Push.Dialog.v2" timestamp="1604112236842">
+    <state x="583" y="273" key="Vcs.Push.Dialog.v2" timestamp="1604113148393">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state x="583" y="273" key="Vcs.Push.Dialog.v2/62.0.1858.1080/-1920.0.1920.1040@62.0.1858.1080" timestamp="1604112236842" />
+    <state x="583" y="273" key="Vcs.Push.Dialog.v2/62.0.1858.1080/-1920.0.1920.1040@62.0.1858.1080" timestamp="1604113148393" />
     <state x="808" y="454" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603517248211">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
