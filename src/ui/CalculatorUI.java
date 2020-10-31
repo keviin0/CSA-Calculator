@@ -12,7 +12,8 @@ import javax.swing.JLabel;
 import javax.swing.SwingConstants;
 import javax.swing.border.MatteBorder;
 
-import util.Math.OPERATOR;
+import util.Calculations;
+import util.Calculations.OPERATOR;
 
 public class CalculatorUI extends JFrame {
 	private final JLabel calcArea = new JLabel("");
@@ -44,7 +45,7 @@ public class CalculatorUI extends JFrame {
 	
 	private void calculateAnswer()  // method to perform calculation
 	{
-	    calcAnswer = util.Math.calculateIt(arg1, mathOp, arg2);
+	    calcAnswer = Calculations.calculateIt(arg1, mathOp, arg2);
 		calcArea.setText(String.valueOf(calcAnswer));
 	    arg1 = Double.parseDouble(calcArea.getText());
 	    mathState = STATE.CALC;
@@ -397,7 +398,7 @@ public class CalculatorUI extends JFrame {
 		});
 		button_hex.addActionListener(e -> {
 			arg1 = Double.parseDouble((calcArea.getText()));
-			calcAnswer2 = util.Math.translateIt(arg1, OPERATOR.HEX);
+			calcAnswer2 = Calculations.translateIt(arg1, OPERATOR.HEX);
 			System.out.println(calcAnswer2);
 			calcArea.setText(calcAnswer2);
 	    	mathState = STATE.CALC;
