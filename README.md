@@ -34,9 +34,9 @@ Tran
 -------------------------------------------------
 Siddhant Ranka  - This week, I did meet my goal of
 fixing the README. Github shouws I have made a large
-number of significant commits to this README to make
-it more concise and organized.
-    
+number of significant commits to this README by 
+organizing our reflections, helping write the team 
+goal and assignments, and by writing out all the instructions to run the code.
           
 -------------------------------------------------
 Aditya Surapaneni
@@ -53,6 +53,10 @@ Jacob Rozenkrantz
 - We have sent the link to our [Github project](https://github.com/keviin0/CSA-Portfolio-GroceryStoreSim)
 - When pulling our code, we have a number of games. The two games from this week are UNO and Minesweeper
 - Each of these should run individually and the main code should run.
+- The Home Button and AP Test Button do not work. Only the Labs Button Works. The two games from this weeek are UNO and Minesweep.
+- Siddhant, Kevin, and Sean worked on UNO and Jacob and Aditya worked on Minesweep.
+- The place card button for the UNO game does not work and only 1 card can be drawn for the UNO game.
+Note for the instructions: We added extra instructions so we hopefully will not waste any of your time for you trying to figure out how to run our code.
 
 
 
