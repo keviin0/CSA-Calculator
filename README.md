@@ -32,7 +32,7 @@ Sean
 Tran        
             
 -------------------------------------------------
-Siddhant Ranka  - This week, I did meet my goal of
+Siddhant Ranka  - This week, I went beyond my planned goal of
 fixing the README. Github shows I have made a large
 number of significant commits to this README by 
 organizing our reflections, helping write the team 
