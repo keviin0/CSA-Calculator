@@ -144,11 +144,11 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Deck" />
       <item itemvalue="Application.MainMenu" />
+      <item itemvalue="Application.Deck" />
       <item itemvalue="Application.MineSweeperGame" />
-      <item itemvalue="Application.UnoUI" />
       <item itemvalue="Application.Uno" />
+      <item itemvalue="Application.UnoUI" />
     </list>
     <recent_temporary>
       <list>
