@@ -26,22 +26,35 @@ public class TicTacToe extends JPanel
     static String winner = null;
     static JLabel information = new JLabel("<html>Welcome to 2 Player Tic Tac Toe.<br/>X will play first.<br/> Click near the center of a slot to place X in:");
 
+
     /* In the main function, a JFrame window is being created and the lines from the paintComponent function are drawn.
     Then, populateEmptyBoard is called. */
 
     public static void main(String[] args)
     {
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        TicTacToe ticTacToe = new TicTacToe();
-        frame.add(ticTacToe);
-        frame.setContentPane(ticTacToe);
+        EventQueue.invokeLater(() -> {
+            try {
+                TicTacToe ticTacToe = new TicTacToe();
+                ticTacToe.getFrame().setVisible(true);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        });
+    }
 
+    public TicTacToe() {
+        frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        frame.add(this);
+        frame.setContentPane(this);
         frame.setVisible(true);
         board = new String[9];
         turn = "X";
 
         populateEmptyBoard();
+    }
 
+    public JFrame getFrame() {
+        return frame;
     }
 
     /* In winningText, checkWinner is called to see if a player has won.

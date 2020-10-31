@@ -105,6 +105,15 @@ public class MainMenu extends JFrame {
         });
         mnJig.add(mineSweeper);
 
+        JMenuItem ticTacToe = new JMenuItem("TIC TAC TOE");
+        ticTacToe.addActionListener(e -> {
+
+           TicTacToe panel = new TicTacToe();
+            panel.getFrame().setVisible(true);
+        });
+        mnJig.add(ticTacToe);
+
+
 
     }
 

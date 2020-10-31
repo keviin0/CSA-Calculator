@@ -1,28 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BranchesTreeState">
-    <expand />
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a7763e00-23d5-405e-96cd-4c33927d58a8" name="Default Changelist" comment="Fix up MVC with UNO. Added performAction to bridge view with model.">
+    <list default="true" id="67b2c200-6438-463d-b392-a5a7d624b668" name="Default Changelist" comment="Added more to readme">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/Uno.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/Uno.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/Anime.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/TicTacToe$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/TicTacToe$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/TicTacToe.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/TicTacToe.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/UnoUI$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/UnoUI$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/UnoUI$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/UnoUI$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/UnoUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/UnoUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CSA-Calculator/util/Deck.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSA-Calculator/util/Deck.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CSA-Calculator/util/MainMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSA-Calculator/util/MainMenu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CSA-Calculator/util/Playfield.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSA-Calculator/util/Playfield.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/Anime.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/Uno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/Uno.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/TicTacToe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/TicTacToe.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ui/UnoUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/UnoUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/util/Actions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/Actions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/util/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/Card.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/util/Deck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/Deck.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/util/MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/MainMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/util/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/util/Playfield.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/Playfield.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +51,7 @@
   <component name="ProjectId" id="1j82LwZnu2RuYkzfO4oG5diEU6h" />
   <component name="ProjectLevelVcsManager">
     <OptionsSetting value="false" id="Update" />
+    <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -82,7 +92,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainMenu" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="MainMenu" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="util.MainMenu" />
       <module name="CSA-Calculator" />
       <extension name="coverage">
@@ -121,12 +131,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.MainMenu" />
+      <item itemvalue="Application.Anime" />
+      <item itemvalue="Application.Deck" />
+      <item itemvalue="Application.Uno" />
+      <item itemvalue="Application.UnoUI" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Uno" />
         <item itemvalue="Application.UnoUI" />
         <item itemvalue="Application.Deck" />
-        <item itemvalue="Application.MainMenu" />
         <item itemvalue="Application.Anime" />
       </list>
     </recent_temporary>
@@ -241,6 +257,14 @@
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="471" y="114" key="#Project_Structure/62.0.1858.1080/-1920.0.1920.1040@62.0.1858.1080" timestamp="1603256908851" />
+    <state x="229" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604114000777">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="229" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/-1920.-169.1920.1040@0.0.1536.824" timestamp="1604114000777" />
+    <state x="504" y="202" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1604113999857">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="504" y="202" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.824/-1920.-169.1920.1040@0.0.1536.824" timestamp="1604113999857" />
     <state x="774" y="434" width="433" height="217" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1604108201792">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
@@ -249,21 +273,25 @@
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="721" y="287" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/62.0.1858.1080/-1920.0.1920.1040@62.0.1858.1080" timestamp="1604111158651" />
-    <state width="1815" height="280" key="GridCell.Tab.0.bottom" timestamp="1604111848416">
-      <screen x="62" y="0" width="1858" height="1080" />
+    <state width="1478" height="210" key="GridCell.Tab.0.bottom" timestamp="1604113986099">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1478" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.-169.1920.1040@0.0.1536.824" timestamp="1604113986099" />
     <state width="1815" height="280" key="GridCell.Tab.0.bottom/62.0.1858.1080/-1920.0.1920.1040@62.0.1858.1080" timestamp="1604111848416" />
-    <state width="1815" height="280" key="GridCell.Tab.0.center" timestamp="1604111848416">
-      <screen x="62" y="0" width="1858" height="1080" />
+    <state width="1478" height="210" key="GridCell.Tab.0.center" timestamp="1604113986098">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1478" height="210" key="GridCell.Tab.0.center/0.0.1536.824/-1920.-169.1920.1040@0.0.1536.824" timestamp="1604113986098" />
     <state width="1815" height="280" key="GridCell.Tab.0.center/62.0.1858.1080/-1920.0.1920.1040@62.0.1858.1080" timestamp="1604111848416" />
-    <state width="1815" height="280" key="GridCell.Tab.0.left" timestamp="1604111848416">
-      <screen x="62" y="0" width="1858" height="1080" />
+    <state width="1478" height="210" key="GridCell.Tab.0.left" timestamp="1604113986098">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1478" height="210" key="GridCell.Tab.0.left/0.0.1536.824/-1920.-169.1920.1040@0.0.1536.824" timestamp="1604113986098" />
     <state width="1815" height="280" key="GridCell.Tab.0.left/62.0.1858.1080/-1920.0.1920.1040@62.0.1858.1080" timestamp="1604111848416" />
-    <state width="1815" height="280" key="GridCell.Tab.0.right" timestamp="1604111848416">
-      <screen x="62" y="0" width="1858" height="1080" />
+    <state width="1478" height="210" key="GridCell.Tab.0.right" timestamp="1604113986098">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1478" height="210" key="GridCell.Tab.0.right/0.0.1536.824/-1920.-169.1920.1040@0.0.1536.824" timestamp="1604113986098" />
     <state width="1815" height="280" key="GridCell.Tab.0.right/62.0.1858.1080/-1920.0.1920.1040@62.0.1858.1080" timestamp="1604111848416" />
     <state width="1815" height="364" key="GridCell.Tab.1.bottom" timestamp="1603992210269">
       <screen x="62" y="0" width="1858" height="1080" />
@@ -301,13 +329,18 @@
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="536" y="276" width="909" height="629" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/62.0.1858.1080/-1920.0.1920.1040@62.0.1858.1080" timestamp="1603940985111" />
+    <state x="-1322" y="-169" width="1136" height="811" maximized="true" key="dock-window-1" timestamp="1604113022240">
+      <screen x="-1920" y="-169" width="1920" height="1040" />
+    </state>
+    <state x="-1322" y="-169" width="1136" height="811" maximized="true" key="dock-window-1/0.0.1536.824/-1920.-169.1920.1040@0.0.1536.824" timestamp="1604113022240" />
     <state x="786" y="287" key="refactoring.ChangeSignatureDialog" timestamp="1603514325501">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="786" y="287" key="refactoring.ChangeSignatureDialog/62.0.1858.1080/-1920.0.1920.1040@62.0.1858.1080" timestamp="1603514325501" />
-    <state x="654" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1603940854652">
-      <screen x="62" y="0" width="1858" height="1080" />
+    <state x="489" y="179" width="672" height="518" key="search.everywhere.popup" timestamp="1604113826257">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="489" y="179" width="672" height="518" key="search.everywhere.popup/0.0.1536.824/-1920.-169.1920.1040@0.0.1536.824" timestamp="1604113826257" />
     <state x="654" y="235" width="672" height="678" key="search.everywhere.popup/62.0.1858.1080/-1920.0.1920.1040@62.0.1858.1080" timestamp="1603940854652" />
   </component>
   <component name="XDebuggerManager">

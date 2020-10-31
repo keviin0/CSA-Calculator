@@ -76,7 +76,7 @@ public class UnoUI extends JFrame{
                 num = 1;
                 c = useless;
                 performAction();
-                JOptionPane.showMessageDialog(null, activePlayer.name + "has drawn card");
+                JOptionPane.showMessageDialog(null, activePlayer.name + " has drawn card");
 
             }
         });
