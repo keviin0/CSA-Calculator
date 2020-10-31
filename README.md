@@ -2,11 +2,24 @@
 
 **Standard SDK:** adopt-openj9-15
 
-**Team Goals Week 8:**
+**Project Theme:** Games from the Decades
 
-Fix our README to be more consice; reference actual code; add TODO:
-establish an overall theme for the project; minilab; we are thinking about a game from two different bygone decades, and we need to
-make sure we have no rubber chickens. Siddhant, Sean, and Kevin are working on UNO, Jacob and Aditya on Minesweeper.
+**Team Goals Week 8:**
+* make readme more concise
+
+* reference actual code in progress check
+
+* add TODO: to help keep collaboration organized
+
+* establish overall theme for project 
+
+* try to have no rubber chickens
+
+**Pair / Trio breakdowns:**
+
+Sean / Kevin / Siddhant : UNO game
+ 
+Aditya / Jacob : MineSweeper
 
 **Individual Assignments Week 8:**
 
@@ -22,29 +35,13 @@ Aditya: Fix Readme; work on view/model of MineSweeper
 
 **Week 8 Progress Check**
 
-Progress Check/Reflection for Week 8
-------------------------------------------------
-Kevin       
-Hu          
-            
--------------------------------------------------
-Sean        
-Tran        
-            
--------------------------------------------------
-Siddhant Ranka  - This week, I went beyond my planned goal of
-fixing the README. Github shows I have made a large
-number of significant commits to this README by 
-organizing our reflections, helping write the team 
-goal and assignments, getting rid of unneccessary work from last week, and by writing out all the instructions to run the code.
-          
--------------------------------------------------
-Aditya Surapaneni
-
--------------------------------------------------
-Jacob Rozenkrantz
-
--------------------------------------------------
+| *Contributor's <br> Name* | *Self <br> Grade (out <br> of 20)* | Reasoning | Scrum Master <br> Grade (out <br> of 5)
+|---|:---:|---|---|
+|Kevin Hu | 19/20 | Completed model and control segments of Uno with model found in [Actions.java](./util/Actions.java) and control in [Playfield.java](./util/Playfield.java). Created bridge between View and Model/Control with performAction() method in [UnoUI.java](./ui/UnoUI). All other work in helper files: [Card.java](./util/Card.java), [Deck.java](./util/Deck.java), [Player.java](./util/Player.java). Still need to add special card functionality in Actions.java for full game functionality.  | 5/5 Developed entirety of model/control for Uno |
+|Sean Tran   |   |   | |
+|   |   |   |   |
+|   |   |   |   |
+|   |   |   |   |
                 
        
 
@@ -73,7 +70,7 @@ A Java simulation of the 1989 video game Minesweeeper.
 
 
 
-MVC BlueJ Model (as of 10/23/2020):
+MVC BlueJ Model (as of 10/30/2020) no including Calculator:
 ![](images/MVC.png)
 
 --------MVC CALCULATOR DESIGN FOR PAIR/TRIO OF ADITYA, JACOB
