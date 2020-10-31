@@ -35,30 +35,13 @@ Aditya: Fix Readme; work on view/model of MineSweeper
 
 **Week 8 Progress Check**
 
-Progress Check/Reflection for Week 8
-------------------------------------------------
-Kevin       
-Hu          
-            
--------------------------------------------------
-Sean Tran: I was able to accomplish my goal of fixing the [read.me](https://github.com/keviin0/CSA-Portfolio-GroceryStoreSim/blob/main/README.md) to be more concise and easier to read. I added buttons on the [MainMenuUI](https://github.com/keviin0/CSA-Portfolio-GroceryStoreSim/blob/main/src/util/MainMenu.java#L87-L113) so we can run all games from it. My goal/assignment was to work on the view of the Uno game this week. I designed the [interface](https://github.com/keviin0/CSA-Portfolio-GroceryStoreSim/blob/main/src/ui/UnoUI.form). I added and am working on [drawCard](https://github.com/keviin0/CSA-Portfolio-GroceryStoreSim/blob/main/src/ui/Uno.java#L80-L88) and [placeCard](https://github.com/keviin0/CSA-Portfolio-GroceryStoreSim/blob/main/src/ui/Uno.java#L92-L97) buttons. I also added an [invalid prompt](https://github.com/keviin0/CSA-Portfolio-GroceryStoreSim/blob/main/src/ui/UnoUI.java#L110-L114) message we can use to display when a player has done an invalid move. 
-
-Self Grade: 19/20 ( -1 for not updating journal enough)       
-            
--------------------------------------------------
-Siddhant Ranka  - This week, I went beyond my planned goal of
-fixing the README. Github shows I have made a large
-number of significant commits to this README by 
-organizing our reflections, helping write the team 
-goal and assignments, getting rid of unneccessary work from last week, and by writing out all the instructions to run the code.
-          
--------------------------------------------------
-Aditya Surapaneni
-
--------------------------------------------------
-Jacob Rozenkrantz
-
--------------------------------------------------
+| *Contributor's <br> Name* | *Self <br> Grade (out <br> of 20)* | Reasoning | Scrum Master <br> Grade (out <br> of 5)
+|---|:---:|---|---|
+|Kevin Hu | 19/20 | Completed model and control segments of Uno with model found in [Actions.java](./util/Actions.java) and control in [Playfield.java](./util/Playfield.java). Created bridge between View and Model/Control with performAction() method in [UnoUI.java](./ui/UnoUI). All other work in helper files: [Card.java](./util/Card.java), [Deck.java](./util/Deck.java), [Player.java](./util/Player.java). Still need to add special card functionality in Actions.java for full game functionality.  | 5/5 Developed entirety of model/control for Uno |
+|Sean Tran   |   |   | |
+|   |   |   |   |
+|   |   |   |   |
+|   |   |   |   |
                 
        
 
@@ -87,7 +70,7 @@ A Java simulation of the 1989 video game Minesweeeper.
 
 
 
-MVC BlueJ Model (as of 10/23/2020):
+MVC BlueJ Model (as of 10/30/2020) no including Calculator:
 ![](images/MVC.png)
 
 --------MVC CALCULATOR DESIGN FOR PAIR/TRIO OF ADITYA, JACOB

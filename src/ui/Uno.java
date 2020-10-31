@@ -30,6 +30,8 @@ public class Uno extends JFrame {
     }
 
     public Uno(){
+        super("Uno");
+        setBounds(100, 100, 418, 315);
         Container c = getContentPane();
         JPanel p = new JPanel();
         JButton b = new JButton("Submit"); //Submit button
