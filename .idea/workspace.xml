@@ -21,7 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d2958585-0d52-4512-a6cb-dda4b85f8127" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/util/MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/MainMenu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,19 +63,6 @@
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RunManager" selected="Application.MainMenu">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Deck" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="util.Deck" />
       <module name="CSA-Calculator" />
@@ -169,6 +155,7 @@
       <updated>1603171346378</updated>
       <workItem from="1603987133507" duration="270000" />
       <workItem from="1604025998802" duration="313000" />
+      <workItem from="1604109938560" duration="55000" />
     </task>
     <task id="LOCAL-00001" summary="get rid of trash">
       <created>1603171904833</created>
