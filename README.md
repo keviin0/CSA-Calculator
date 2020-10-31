@@ -64,7 +64,7 @@ Calculator UI is an advanced version of the sample calculator. The Calculator in
 
 A computer simulation of the Card Game UNO
 
--Minsweeper
+* Minesweeper
 
 A Java simulation of the 1989 video game Minesweeeper.
 
