@@ -39,7 +39,7 @@ Aditya: Fix Readme; work on view/model of MineSweeper
 |---|:---:|---|---|
 |Kevin Hu | 19/20 | Completed model and control segments of Uno with model found in [Actions.java](./util/Actions.java) and control in [Playfield.java](./util/Playfield.java). Created bridge between View and Model/Control with performAction() method in [UnoUI.java](./ui/UnoUI). All other work in helper files: [Card.java](./util/Card.java), [Deck.java](./util/Deck.java), [Player.java](./util/Player.java). Still need to add special card functionality in Actions.java for full game functionality.  | 5/5 Developed entirety of model/control for Uno |
 |Sean Tran   |   |   | |
-|   |   |   |   |
+| Siddhant Ranka  | 18/20  | Added a large number of adjustments for the README, including getting rid of unnecessary components from the last project, organizing reflections, and providing instructions how to run our code and what to expect. I took many notes of the new concepts I learned in the Study Journal https://docs.google.com/document/d/1Eq7m4VV92lnr9jNV4NAeMXk2w12HXQcJsRfXPjjd0Jk/edit. For my code, my main goal was to work on model view control. I created a protype of a button to view the deck of cards https://github.com/keviin0/CSA-Portfolio-GroceryStoreSim/commit/b0948371051e5d30ab8f758969001822f3ab8179. Unfortunately, this code still has rubber chickens, so it is commented out. On Monday and Tuesday, I had also created a deck of cards, but Kevin's deck worked better, so my deck is still commented out. https://github.com/keviin0/CSA-Portfolio-GroceryStoreSim/commit/0939cbe3031c39a298ad15b24981f6041ccf5f47. After we decided to use Kevin's, I ended up figuring out how to make my deck work.  |   |
 |   |   |   |   |
 |   |   |   |   |
                 
