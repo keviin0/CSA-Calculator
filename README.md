@@ -59,7 +59,7 @@ A Java simulation of the 1989 video game Minesweeeper.
 
 
 
-MVC BlueJ Model (as of 10/23/2020):
+MVC BlueJ Model (as of 10/30/2020) no including Calculator:
 ![](images/MVC.png)
 
 --------MVC CALCULATOR DESIGN FOR PAIR/TRIO OF ADITYA, JACOB
