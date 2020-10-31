@@ -33,10 +33,10 @@ Tran
             
 -------------------------------------------------
 Siddhant Ranka  - This week, I did meet my goal of
-fixing the README. Github shouws I have made a large
+fixing the README. Github shows I have made a large
 number of significant commits to this README by 
 organizing our reflections, helping write the team 
-goal and assignments, and by writing out all the instructions to run the code.
+goal and assignments, getting rid of unneccessary work from last week, and by writing out all the instructions to run the code.
           
 -------------------------------------------------
 Aditya Surapaneni
