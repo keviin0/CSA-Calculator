@@ -19,10 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="67b2c200-6438-463d-b392-a5a7d624b668" name="Default Changelist" comment="Updated README.md">
+    <list default="true" id="67b2c200-6438-463d-b392-a5a7d624b668" name="Default Changelist" comment="Updated README.md and added TODOs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/UnoUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/UnoUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/UnoUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/UnoUI.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,11 +144,11 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.MainMenu" />
       <item itemvalue="Application.Deck" />
+      <item itemvalue="Application.MainMenu" />
       <item itemvalue="Application.MineSweeperGame" />
-      <item itemvalue="Application.Uno" />
       <item itemvalue="Application.UnoUI" />
+      <item itemvalue="Application.Uno" />
     </list>
     <recent_temporary>
       <list>
@@ -220,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604128987393</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Updated README.md and added TODOs">
+      <created>1604130734857</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1604130734857</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -277,39 +284,40 @@
     <MESSAGE value="Updated README." />
     <MESSAGE value="Updated UnoUI view and UNO view controller components." />
     <MESSAGE value="Updated README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated README.md" />
+    <MESSAGE value="Updated README.md and added TODOs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated README.md and added TODOs" />
   </component>
   <component name="WindowStateProjectService">
     <state x="471" y="114" key="#Project_Structure" timestamp="1603256908851">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="471" y="114" key="#Project_Structure/62.0.1858.1080/-1920.0.1920.1040@62.0.1858.1080" timestamp="1603256908851" />
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1604092399490">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1478" height="154" key="GridCell.Tab.0.bottom" timestamp="1604137234460">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1604092399490" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.-169.1920.1040@0.0.1536.824" timestamp="1604091620071" />
+    <state width="1478" height="154" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.-169.1920.1040@0.0.1536.824" timestamp="1604137234460" />
     <state width="1159" height="164" key="GridCell.Tab.0.bottom/0.23.1440.821@0.23.1440.821" timestamp="1603988273534" />
     <state width="1815" height="280" key="GridCell.Tab.0.bottom/62.0.1858.1080/-1920.0.1920.1040@62.0.1858.1080" timestamp="1603986622106" />
-    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1604092399489">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1478" height="154" key="GridCell.Tab.0.center" timestamp="1604137234458">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1604092399489" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824/-1920.-169.1920.1040@0.0.1536.824" timestamp="1604091620071" />
+    <state width="1478" height="154" key="GridCell.Tab.0.center/0.0.1536.824/-1920.-169.1920.1040@0.0.1536.824" timestamp="1604137234458" />
     <state width="1159" height="164" key="GridCell.Tab.0.center/0.23.1440.821@0.23.1440.821" timestamp="1603988273534" />
     <state width="1815" height="280" key="GridCell.Tab.0.center/62.0.1858.1080/-1920.0.1920.1040@62.0.1858.1080" timestamp="1603986622105" />
-    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1604092399489">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1478" height="154" key="GridCell.Tab.0.left" timestamp="1604137234457">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1604092399489" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824/-1920.-169.1920.1040@0.0.1536.824" timestamp="1604091620071" />
+    <state width="1478" height="154" key="GridCell.Tab.0.left/0.0.1536.824/-1920.-169.1920.1040@0.0.1536.824" timestamp="1604137234457" />
     <state width="1159" height="164" key="GridCell.Tab.0.left/0.23.1440.821@0.23.1440.821" timestamp="1603988273533" />
     <state width="1815" height="280" key="GridCell.Tab.0.left/62.0.1858.1080/-1920.0.1920.1040@62.0.1858.1080" timestamp="1603986622105" />
-    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1604092399489">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1478" height="154" key="GridCell.Tab.0.right" timestamp="1604137234459">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1604092399489" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824/-1920.-169.1920.1040@0.0.1536.824" timestamp="1604091620071" />
+    <state width="1478" height="154" key="GridCell.Tab.0.right/0.0.1536.824/-1920.-169.1920.1040@0.0.1536.824" timestamp="1604137234459" />
     <state width="1159" height="164" key="GridCell.Tab.0.right/0.23.1440.821@0.23.1440.821" timestamp="1603988273534" />
     <state width="1815" height="280" key="GridCell.Tab.0.right/62.0.1858.1080/-1920.0.1920.1040@62.0.1858.1080" timestamp="1603986622105" />
     <state width="1815" height="364" key="GridCell.Tab.1.bottom" timestamp="1603940833461">
@@ -339,11 +347,11 @@
     </state>
     <state x="278" y="101" key="MultipleFileMergeDialog/0.0.1280.680@0.0.1280.680" timestamp="1604115828932" />
     <state x="334" y="122" key="MultipleFileMergeDialog/0.0.1536.824/-1920.-169.1920.1040@0.0.1536.824" timestamp="1604129164616" />
-    <state x="431" y="177" key="Vcs.Push.Dialog.v2" timestamp="1604130282559">
+    <state x="431" y="177" key="Vcs.Push.Dialog.v2" timestamp="1604131796268">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="359" y="146" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1604116005351" />
-    <state x="431" y="177" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1920.-169.1920.1040@0.0.1536.824" timestamp="1604130282559" />
+    <state x="431" y="177" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1920.-169.1920.1040@0.0.1536.824" timestamp="1604131796268" />
     <state x="583" y="273" key="Vcs.Push.Dialog.v2/62.0.1858.1080/-1920.0.1920.1040@62.0.1858.1080" timestamp="1603948378855" />
     <state x="808" y="454" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603517248211">
       <screen x="62" y="0" width="1858" height="1080" />

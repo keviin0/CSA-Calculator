@@ -4,6 +4,17 @@
 
 **Project Theme:** Games from the Decades
 
+**How to run our code:**
+- Our Project Standard SDK is adopt-openj9-15
+- We have sent the link to our [Github project](https://github.com/keviin0/CSA-Portfolio-GroceryStoreSim)
+- When pulling our code, we have a number of games. The two games from this week are UNO and Minesweeper
+- Each of these should run individually and the main code should run.
+- The Home Button and AP Test Button do not work. Only the Labs Button Works. The two games from this weeek are UNO and Minesweep.
+- Siddhant, Kevin, and Sean worked on UNO and Jacob and Aditya worked on Minesweeper.
+- The place card button for the UNO game does not work and only 1 card can be drawn for the UNO game.
+- Note for the instructions: We added extra instructions so we hopefully will not waste any of your time for you trying to figure out how to run our code.
+![](images/Snip1.png)
+
 **Team Goals Week 8:**
 * make readme more concise
 
@@ -44,21 +55,6 @@ Aditya: Fix Readme; work on view/model of MineSweeper
 |Siddhant Ranka   | 18/20 | I made significant contributions to the README. I added extra notes to my [Journal](https://docs.google.com/document/d/1Eq7m4VV92lnr9jNV4NAeMXk2w12HXQcJsRfXPjjd0Jk/edit). I fell behind on my goals for adding the view code for UNO. It was far more difficult than I anticipated to learn the necessary Java concepts. I attempted to create a button showing all the cards in the Deck. On Monday and Tuesday, I created my own card deck. Kevin's version was used instead, so I commented mine out. On my own, I managed to create a functional card deck and made some progress on [shuffling it](https://github.com/keviin0/CSA-Portfolio-GroceryStoreSim/commit/0939cbe3031c39a298ad15b24981f6041ccf5f47). Next Week, I would like to work on the card game itself since I am more familiar with the code needed for that. | 1/5 updated only the README |
 |   |   |   |   |
                 
-       
-
-**How to run our code:**
-- Our Project Standard SDK is adopt-openj9-15
-- We have sent the link to our [Github project](https://github.com/keviin0/CSA-Portfolio-GroceryStoreSim)
-- When pulling our code, we have a number of games. The two games from this week are UNO and Minesweeper
-- Each of these should run individually and the main code should run.
-- The Home Button and AP Test Button do not work. Only the Labs Button Works. The two games from this weeek are UNO and Minesweep.
-- Siddhant, Kevin, and Sean worked on UNO and Jacob and Aditya worked on Minesweeper.
-- The place card button for the UNO game does not work and only 1 card can be drawn for the UNO game.
-Note for the instructions: We added extra instructions so we hopefully will not waste any of your time for you trying to figure out how to run our code.
-
-
-
-
 --------Explanation for Each Lab:
 
 - Calculator UI
