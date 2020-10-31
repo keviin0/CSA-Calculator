@@ -89,12 +89,12 @@ public class UnoUI extends JFrame{
             @Override
             public void actionPerformed(ActionEvent e) {
                 action = ACTIONS.PLACE;
-
+                // TODO: Needs to be implemented
                 JOptionPane.showMessageDialog(null, "Player has place card");
             }
         });
 
-
+        //TODO: Add card selection handling
 
     }
 
@@ -141,6 +141,7 @@ public class UnoUI extends JFrame{
     }
 
     private void drawCard(){ //method to perform action
+        // TODO: Need to be able to draw more than one card
         Card cardFromTop = Actions.pop(mActiveDeck);
         System.out.println(round + "\n" + mActivePlayer.name + " card " + cardFromTop.getDescription() );
         JOptionPane.showMessageDialog(null, mActivePlayer.name + " has drawn card");
