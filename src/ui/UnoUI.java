@@ -73,6 +73,8 @@ public class UnoUI extends JFrame{
             action = ACTIONS.REVERSE;
         } else if  (cardFromTop.getCardNum() == 12){
             action = ACTIONS.SKIP;
+        } else if  (cardFromTop.getCardNum() == 11){
+            action = ACTIONS.DRAWTWO;
         }
         if (action == ACTIONS.SKIP){
             round++;
@@ -84,10 +86,21 @@ public class UnoUI extends JFrame{
             round++;
             mActivePlayer = mPlayers.get(round % mPlayers.size());
             updateActivePlayer(mActivePlayer);
+        } else if (action == ACTIONS.DRAWTWO){
+            Actions.doAction(action, mActivePlayer, drawNum, mActiveDeck, cardFromTop, mTopCard);
+            System.out.println(round + "\n" + mActivePlayer.name + " card " + cardFromTop.getDescription() );
+            if(mActivePlayer.getHand().isEmpty()) {
+                JOptionPane.showMessageDialog(null, "Winner");
+            }
+            if(mActiveDeck.cardDeck.isEmpty()){
+                mActiveDeck = Actions.newDeck();
+            }
+            round++;
+            mActivePlayer = mPlayers.get(round % mPlayers.size());
+            updateActivePlayer(mActivePlayer);
         }
         action = ACTIONS.PLACE;
         Actions.doAction(action, mActivePlayer, drawNum, mActiveDeck, cardFromTop, mTopCard);
-        updateTopCard(cardFromTop);
         System.out.println(round + "\n" + mActivePlayer.name + " card " + cardFromTop.getDescription() );
         JOptionPane.showMessageDialog(null, mActivePlayer.name + " has drawn card");
         if(mActivePlayer.getHand().isEmpty()) {
@@ -129,6 +142,7 @@ public class UnoUI extends JFrame{
             @Override
             public void actionPerformed(ActionEvent e) {
                 action = ACTIONS.PLACE;
+                //updateTopCard();
                 //TODO: to be implemented
                 JOptionPane.showMessageDialog(null, "Player has place card");
             }
@@ -170,11 +184,8 @@ public class UnoUI extends JFrame{
             c = mUselessCard;
         }
         mTopCard = c;
-        if (c.getLabel() == "D2") {
-            specialAction(2, c);
-        } else {
-            specialAction(1, c);
-        }
+
+        specialAction(2, c);
         // Update text color
         mTopCardButton.setForeground(c.isSpecialCard() ? Color.white : Color.black);
     }

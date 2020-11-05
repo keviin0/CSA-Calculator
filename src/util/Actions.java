@@ -2,7 +2,7 @@ package util;
 
 public class Actions {
 
-    public static enum ACTIONS {DRAW, PLACE, SKIP, REVERSE}
+    public static enum ACTIONS {DRAW, PLACE, SKIP, REVERSE, DRAWTWO}
     public static Card topCard;
 
     public static Card pop(Deck d){
@@ -44,7 +44,7 @@ public class Actions {
         switch(choice){
             case DRAW:
                 for(int i = 0; i < num; i++){
-                    p.getHand().add(pop(d));
+                    p.addCard(pop(d));
                 }
                 return c;
             case PLACE:
