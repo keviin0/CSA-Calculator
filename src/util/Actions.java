@@ -4,7 +4,7 @@ import java.util.List;
 
 public class Actions {
 
-    public static enum ACTIONS {DRAW, PLACE}
+    public static enum ACTIONS {DRAW, PLACE, SKIP, REVERSE}
     public static Card topCard;
 
     public static Card pop(Deck d){
@@ -13,7 +13,7 @@ public class Actions {
         return result;
     }
 
-    public static void push(Player p, Card selected){
+    public static Card push(Player p, Card selected){
         int index = 0;
         for(int i = 0; i < p.hand.size(); i++){
             if (p.hand.get(i).getColor() == selected.getColor()){
@@ -25,6 +25,7 @@ public class Actions {
         }
         topCard = p.hand.get(index);
         p.hand.remove(selected);
+        return topCard;
     }
 
     public static Deck newDeck(){
@@ -40,26 +41,22 @@ public class Actions {
 
     }
 
-    public static boolean doAction(ACTIONS choice, Player p, int num, Deck d, Card c){
+    public static Card doAction(ACTIONS choice, Player p, int num, Deck d, Card c){
         switch(choice){
             case DRAW:
                 for(int i = 0; i < num; i++){
                     p.hand.add(pop(d));
                 }
-                return true;
+                return null;
             case PLACE:
-                if(c.getColor() == Card.SPECIAL_COLOR){
-                    //
-                }
                 if(topCard.getColor() != c.getColor()){ //Check if card is unable to be played
                     if(topCard.getCardNum() == c.getCardNum()){
-                        return false;
+                        return null;
                     }
                 }
-
                 push(p, c);
-                return true;
+                return c;
         }
-        return true;
+        return null;
     }
 }

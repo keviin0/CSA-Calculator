@@ -3,16 +3,17 @@ package ui;
 import util.*;
 
 import javax.swing.*;
+import javax.swing.text.html.HTMLDocument;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
+import java.util.Collections;
 
 import util.Actions.ACTIONS;
 
 public class UnoUI extends JFrame{
 
-    volatile boolean actionSuccess;
     private JPanel mainPanel;
     private JPanel gamePanel;
     private JPanel cardsPanel;
@@ -30,12 +31,14 @@ public class UnoUI extends JFrame{
     private JButton mPlaceCardButton;
     private JButton mTopCardButton;
     private JLabel mCurrentPlayerLabel;
+    private Player placeholder = new Player("placeholder");
 
     private ACTIONS action;
 
     private Player mActivePlayer;
     private Deck mActiveDeck;
     private Card mUselessCard = new Card(Color.BLUE, -1);
+    private Card tempCard= new Card(Color.BLUE, -1);
     public int round = 0;
     private ArrayList<Player> mPlayers = new ArrayList<Player>();
     private Card mTopCard;
@@ -62,6 +65,48 @@ public class UnoUI extends JFrame{
         createUIComponents();
     }
 
+    /*
+       public static int REVERSE_CARD = 10;
+    public static int DRAW_TWO_CARD = 11;
+    public static int SKIP_CARD = 12;
+    public static int WILD_CARD = 13;
+     */
+
+    public void specialAction(int drawNum, Card cardFromTop){
+        if (cardFromTop.getColor() == Card.SPECIAL_COLOR){
+            action = ACTIONS.PLACE;
+            //TODO: add user prompt to change color
+        } else if (cardFromTop.getCardNum() == 10){
+            action = ACTIONS.REVERSE;
+        } else if  (cardFromTop.getCardNum() == 12){
+            action = ACTIONS.SKIP;
+        }
+        if (action == ACTIONS.SKIP){
+            round++;
+            round++;
+            mActivePlayer = mPlayers.get(round % mPlayers.size());
+            updateActivePlayer(mActivePlayer);
+        } else if (action == ACTIONS.REVERSE){
+            Collections.reverse(mPlayers);
+            round++;
+            mActivePlayer = mPlayers.get(round % mPlayers.size());
+            updateActivePlayer(mActivePlayer);
+        }
+        tempCard = Actions.doAction(action, mActivePlayer, drawNum, mActiveDeck, cardFromTop);
+        updateTopCard(tempCard);
+        System.out.println(round + "\n" + mActivePlayer.name + " card " + cardFromTop.getDescription() );
+        JOptionPane.showMessageDialog(null, mActivePlayer.name + " has drawn card");
+        if(mActivePlayer.hand.isEmpty()) {
+            JOptionPane.showMessageDialog(null, "Winner");
+        }
+        if(mActiveDeck.cardDeck.isEmpty()){
+            mActiveDeck = Actions.newDeck();
+        }
+        round++;
+        mActivePlayer = mPlayers.get(round % mPlayers.size());
+        updateActivePlayer(mActivePlayer);
+    }
+
     public UnoUI(Player currentPlayer, Card topCard, Deck deck, ArrayList<Player> players){
         createUIComponents();
 
@@ -69,7 +114,7 @@ public class UnoUI extends JFrame{
         mPlayers =  players;
 
         // Update the top card
-        updateTopCard(mTopCard);
+        updateTopCard(topCard);
 
         // Display active player(p)'s hand
         updateActivePlayer(currentPlayer);
@@ -81,7 +126,7 @@ public class UnoUI extends JFrame{
             public void actionPerformed(ActionEvent e) {
                 action = ACTIONS.DRAW;
                 mTopCard = mUselessCard;
-                drawCard();
+                drawCard(1);
             }
         });
 
@@ -119,6 +164,7 @@ public class UnoUI extends JFrame{
             // Update text color
             cardButton.setForeground(card.isSpecialCard() ? Color.white : Color.black);
 
+
         }
 
         mCurrentPlayerLabel.setText(mActivePlayer.name);
@@ -129,9 +175,16 @@ public class UnoUI extends JFrame{
             c = mUselessCard;
         }
         mTopCard = c;
-        mTopCardButton.setText(c.getLabel());
-        mTopCardButton.setBackground(c.getColor());
-
+        Card finalC = c;
+        SwingUtilities.invokeLater(() -> {
+            mTopCardButton.setText(finalC.getLabel());
+            mTopCardButton.setBackground(finalC.getColor());
+        });
+        if (c.getLabel() == "D2") {
+            specialAction(2, c);
+        } else {
+            specialAction(1, c);
+        }
         // Update text color
         mTopCardButton.setForeground(c.isSpecialCard() ? Color.white : Color.black);
     }
@@ -140,12 +193,12 @@ public class UnoUI extends JFrame{
         JOptionPane.showMessageDialog(null, "Invalid move");
     }
 
-    private void drawCard(){ //method to perform action
+    private void drawCard(int drawNum){ //method to perform action
         // TODO: Need to be able to draw more than one card
         Card cardFromTop = Actions.pop(mActiveDeck);
         System.out.println(round + "\n" + mActivePlayer.name + " card " + cardFromTop.getDescription() );
         JOptionPane.showMessageDialog(null, mActivePlayer.name + " has drawn card");
-        Actions.doAction(action, mActivePlayer, 1, mActiveDeck, cardFromTop);
+        Actions.doAction(action, mActivePlayer, drawNum, mActiveDeck, cardFromTop);
         updateTopCard(cardFromTop);
         if(mActivePlayer.hand.isEmpty()) {
             JOptionPane.showMessageDialog(null, "Winner");

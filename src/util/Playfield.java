@@ -17,6 +17,7 @@ public class Playfield {
 
         Deck test = Actions.newDeck();
         topCard = Actions.pop(test);
+        System.out.println(topCard.getLabel());
         addPlayers(playerNum, names);
 
         for(int i = 0; i < playerNum; i++){ //Start each player with 7 cards
