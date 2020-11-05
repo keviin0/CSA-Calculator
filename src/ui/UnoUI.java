@@ -135,7 +135,7 @@ public class UnoUI extends JFrame{
         mTopCard = topCard;
 
         // update pile
-        updateGamePile(mUselessCard);
+        updateGamePile(mTopCard);
 
         // Display active player(p)'s hand
         updateActivePlayer(currentPlayer);
@@ -146,11 +146,11 @@ public class UnoUI extends JFrame{
             @Override
             public void actionPerformed(ActionEvent e) {
                 action = ACTIONS.DRAW;
-                mTopCard = mUselessCard;
                 updateTopCard(mTopCard);
+                specialAction(1, mTopCard);
                 Card nextCard = Actions.topCardReturn(mActiveDeck);
                 updateTopCard(nextCard);
-                specialAction(1, mTopCard);
+
 
 
             }
