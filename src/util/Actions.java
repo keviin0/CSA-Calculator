@@ -1,7 +1,5 @@
 package util;
 
-import java.util.List;
-
 public class Actions {
 
     public static enum ACTIONS {DRAW, PLACE, SKIP, REVERSE}
@@ -15,16 +13,17 @@ public class Actions {
 
     public static Card push(Player p, Card selected){
         int index = 0;
-        for(int i = 0; i < p.hand.size(); i++){
-            if (p.hand.get(i).getColor() == selected.getColor()){
-                if (p.hand.get(i).getCardNum() == selected.getCardNum()){
+        System.out.println(p.getName());
+        for(int i = 0; i < p.getSize(); i++) {
+            if (p.getHand().get(i).getColor() == selected.getColor()) {
+                if (p.getHand().get(i).getCardNum() == selected.getCardNum()) {
                     index = i;
                     break;
                 }
             }
         }
-        topCard = p.hand.get(index);
-        p.hand.remove(selected);
+        topCard = p.getHand().get(index);
+        p.removeCard(selected);
         return topCard;
     }
 
@@ -41,11 +40,11 @@ public class Actions {
 
     }
 
-    public static Card doAction(ACTIONS choice, Player p, int num, Deck d, Card c){
+    public static Card doAction(ACTIONS choice, Player p, int num, Deck d, Card c, Card topCard){
         switch(choice){
             case DRAW:
                 for(int i = 0; i < num; i++){
-                    p.hand.add(pop(d));
+                    p.getHand().add(pop(d));
                 }
                 return c;
             case PLACE:
@@ -56,7 +55,12 @@ public class Actions {
                 }
                 push(p, c);
                 return c;
+            case SKIP:
+                return c;
+            case REVERSE:
+                return c;
+            default:
+                throw new IllegalStateException("Unexpected value: " + choice);
         }
-        return c;
     }
 }

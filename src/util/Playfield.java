@@ -4,7 +4,6 @@ import ui.UnoUI;
 
 import java.util.ArrayList;
 import java.util.List;
-import util.Actions;
 
 public class Playfield {
     public Card topCard;
@@ -22,7 +21,7 @@ public class Playfield {
 
         for(int i = 0; i < playerNum; i++){ //Start each player with 7 cards
             for(int j = 0; j < 7; j++){
-                players.get(i).hand.add(Actions.pop(test));
+                players.get(i).addCard(Actions.pop(test));
             }
         }
 
