@@ -126,7 +126,7 @@ public class UnoUI extends JFrame{
             public void actionPerformed(ActionEvent e) {
                 action = ACTIONS.DRAW;
                 mTopCard = mUselessCard;
-                drawCard(1);
+                specialAction(1, mTopCard);
             }
         });
 

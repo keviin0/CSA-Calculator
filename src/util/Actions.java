@@ -47,11 +47,11 @@ public class Actions {
                 for(int i = 0; i < num; i++){
                     p.hand.add(pop(d));
                 }
-                return null;
+                return c;
             case PLACE:
                 if(topCard.getColor() != c.getColor()){ //Check if card is unable to be played
                     if(topCard.getCardNum() == c.getCardNum()){
-                        return null;
+                        return c;
                     }
                 }
                 push(p, c);
