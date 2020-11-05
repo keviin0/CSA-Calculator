@@ -5,9 +5,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2958585-0d52-4512-a6cb-dda4b85f8127" name="Default Changelist" comment="Add card differentiation in Actions and UnoUI.">
+    <list default="true" id="d2958585-0d52-4512-a6cb-dda4b85f8127" name="Default Changelist" comment="fix null">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/UnoUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/UnoUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/util/Actions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/Actions.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -130,11 +129,11 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Deck" />
       <item itemvalue="Application.MainMenu" />
+      <item itemvalue="Application.Deck" />
       <item itemvalue="Application.MineSweeperGame" />
-      <item itemvalue="Application.UnoUI" />
       <item itemvalue="Application.Uno" />
+      <item itemvalue="Application.UnoUI" />
     </list>
     <recent_temporary>
       <list>
@@ -206,7 +205,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604542932878</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="fix null">
+      <created>1604544143679</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1604544143679</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -262,7 +268,8 @@
     <MESSAGE value="Added finishing touches." />
     <MESSAGE value="Updated README." />
     <MESSAGE value="Add card differentiation in Actions and UnoUI." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add card differentiation in Actions and UnoUI." />
+    <MESSAGE value="fix null" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix null" />
   </component>
   <component name="WindowStateProjectService">
     <state x="471" y="114" key="#Project_Structure" timestamp="1603256908851">
@@ -322,11 +329,11 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="278" y="101" key="MultipleFileMergeDialog/0.0.1280.680@0.0.1280.680" timestamp="1604115828932" />
-    <state x="583" y="273" key="Vcs.Push.Dialog.v2" timestamp="1604542936024">
+    <state x="583" y="273" key="Vcs.Push.Dialog.v2" timestamp="1604544146509">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="359" y="146" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1604116005351" />
-    <state x="583" y="273" key="Vcs.Push.Dialog.v2/62.0.1858.1080/-1920.0.1920.1040@62.0.1858.1080" timestamp="1604542936024" />
+    <state x="583" y="273" key="Vcs.Push.Dialog.v2/62.0.1858.1080/-1920.0.1920.1040@62.0.1858.1080" timestamp="1604544146509" />
     <state x="808" y="454" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603517248211">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>

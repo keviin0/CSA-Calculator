@@ -57,6 +57,6 @@ public class Actions {
                 push(p, c);
                 return c;
         }
-        return null;
+        return c;
     }
 }
