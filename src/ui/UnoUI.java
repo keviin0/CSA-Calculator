@@ -30,6 +30,8 @@ public class UnoUI extends JFrame{
     private JButton mPlaceCardButton;
     private JButton mTopCardButton;
     private JLabel mCurrentPlayerLabel;
+    private JButton mPileButton;
+    private JLabel mGamePile;
     private Player placeholder = new Player("placeholder");
 
     private ACTIONS action;
@@ -97,18 +99,27 @@ public class UnoUI extends JFrame{
             }
             round++;
             mActivePlayer = mPlayers.get(round % mPlayers.size());
+            //mActivePlayer.addCard(mTopCard);
             updateActivePlayer(mActivePlayer);
         }
-        action = ACTIONS.PLACE;
-        Actions.doAction(action, mActivePlayer, drawNum, mActiveDeck, cardFromTop, mTopCard);
-        System.out.println(round + "\n" + mActivePlayer.name + " card " + cardFromTop.getDescription() );
-        JOptionPane.showMessageDialog(null, mActivePlayer.name + " has drawn card");
+        if (action == ACTIONS.DRAW) {
+            Actions.doAction(action, mActivePlayer, drawNum, mActiveDeck, cardFromTop, mTopCard);
+            System.out.println(round + "\n" + mActivePlayer.name + " card " + cardFromTop.getDescription());
+            JOptionPane.showMessageDialog(null, mActivePlayer.name + " has drawn card");
+        }
+
+        if (action == ACTIONS.PLACE){
+            Actions.doAction(action, mActivePlayer, drawNum, mActiveDeck, cardFromTop, mTopCard);
+            System.out.println(round + "\n" + mActivePlayer.name + " card " + cardFromTop.getDescription());
+            JOptionPane.showMessageDialog(null, mActivePlayer.name + " has place card");
+        }
         if(mActivePlayer.getHand().isEmpty()) {
             JOptionPane.showMessageDialog(null, "Winner");
         }
         if(mActiveDeck.cardDeck.isEmpty()){
             mActiveDeck = Actions.newDeck();
         }
+
         round++;
         mActivePlayer = mPlayers.get(round % mPlayers.size());
         updateActivePlayer(mActivePlayer);
@@ -123,6 +134,8 @@ public class UnoUI extends JFrame{
         // Update the top card
         mTopCard = topCard;
 
+        // update pile
+        updateGamePile(mUselessCard);
 
         // Display active player(p)'s hand
         updateActivePlayer(currentPlayer);
@@ -134,7 +147,12 @@ public class UnoUI extends JFrame{
             public void actionPerformed(ActionEvent e) {
                 action = ACTIONS.DRAW;
                 mTopCard = mUselessCard;
+                updateTopCard(mTopCard);
+                Card nextCard = Actions.topCardReturn(mActiveDeck);
+                updateTopCard(nextCard);
                 specialAction(1, mTopCard);
+
+
             }
         });
 
@@ -144,7 +162,8 @@ public class UnoUI extends JFrame{
                 action = ACTIONS.PLACE;
                 //updateTopCard();
                 //TODO: to be implemented
-                JOptionPane.showMessageDialog(null, "Player has place card");
+
+                specialAction(1, mTopCard);
             }
         });
 
@@ -165,6 +184,7 @@ public class UnoUI extends JFrame{
             JButton cardButton = mCardButtons.get(i);
 
             // update the card display
+
             cardButton.setEnabled(true);
             cardButton.setVisible(true);
             cardButton.setBackground(card.getColor());
@@ -177,6 +197,7 @@ public class UnoUI extends JFrame{
         }
 
         mCurrentPlayerLabel.setText(mActivePlayer.name);
+        System.out.println(mActivePlayer.getHand());
     }
 
     private void updateTopCard(Card c){
@@ -184,10 +205,24 @@ public class UnoUI extends JFrame{
             c = mUselessCard;
         }
         mTopCard = c;
+        mTopCardButton.setText(c.getLabel());
+        mTopCardButton.setBackground(c.getColor());
 
-        specialAction(2, c);
         // Update text color
         mTopCardButton.setForeground(c.isSpecialCard() ? Color.white : Color.black);
+    }
+
+    private void updateGamePile(Card c){
+        if( c == null ) {
+            c = mUselessCard;
+        }
+
+        mPileButton.setText(c.getLabel());
+        mPileButton.setBackground(c.getColor());
+
+
+        // Update text color
+        mGamePile.setForeground(c.isSpecialCard() ? Color.white : Color.black);
     }
 
     public void invalid(){
