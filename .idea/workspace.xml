@@ -5,13 +5,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2958585-0d52-4512-a6cb-dda4b85f8127" name="Default Changelist" comment="fix null">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_29_2020_7_57_AM_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_29_2020_7_57_AM__Default_Changelist_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CSA-Calculator/util/MainMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSA-Calculator/util/MainMenu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/util/MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/MainMenu.java" afterDir="false" />
-    </list>
+    <list default="true" id="d2958585-0d52-4512-a6cb-dda4b85f8127" name="Default Changelist" comment="Added the GoFish Game. It works better in my own playground for some reason." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -149,6 +143,7 @@
       <workItem from="1604715877495" duration="109000" />
       <workItem from="1604716814328" duration="99000" />
       <workItem from="1604720183015" duration="15000" />
+      <workItem from="1604720221359" duration="130000" />
     </task>
     <task id="LOCAL-00001" summary="get rid of trash">
       <created>1603171904833</created>
@@ -220,7 +215,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604546872308</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Added the GoFish Game. It works better in my own playground for some reason.">
+      <created>1604720334636</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1604720334636</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -277,7 +279,8 @@
     <MESSAGE value="Updated README." />
     <MESSAGE value="Add card differentiation in Actions and UnoUI." />
     <MESSAGE value="fix null" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix null" />
+    <MESSAGE value="Added the GoFish Game. It works better in my own playground for some reason." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added the GoFish Game. It works better in my own playground for some reason." />
   </component>
   <component name="WindowStateProjectService">
     <state x="471" y="114" key="#Project_Structure" timestamp="1603256908851">
@@ -345,10 +348,11 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="278" y="101" key="MultipleFileMergeDialog/0.0.1280.680@0.0.1280.680" timestamp="1604115828932" />
-    <state x="583" y="273" key="Vcs.Push.Dialog.v2" timestamp="1604546873125">
-      <screen x="62" y="0" width="1858" height="1080" />
+    <state x="404" y="231" key="Vcs.Push.Dialog.v2" timestamp="1604720340545">
+      <screen x="0" y="23" width="1440" height="822" />
     </state>
     <state x="359" y="146" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1604116005351" />
+    <state x="404" y="231" key="Vcs.Push.Dialog.v2/0.23.1440.822@0.23.1440.822" timestamp="1604720340545" />
     <state x="583" y="273" key="Vcs.Push.Dialog.v2/62.0.1858.1080/-1920.0.1920.1040@62.0.1858.1080" timestamp="1604546873125" />
     <state x="808" y="454" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603517248211">
       <screen x="62" y="0" width="1858" height="1080" />
