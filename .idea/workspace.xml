@@ -1,11 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BranchesTreeState">
-    <expand />
-    <select />
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2958585-0d52-4512-a6cb-dda4b85f8127" name="Default Changelist" comment="Added the GoFish Game. It works better in my own playground for some reason." />
+    <list default="true" id="d2958585-0d52-4512-a6cb-dda4b85f8127" name="Default Changelist" comment="Added the GoFish Game. It works better in my own playground for some reason.">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_23_2020_10_15_PM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_23_2020_10_15_PM__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_27_2020_8_27_AM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_27_2020_8_27_AM__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/GoFish.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/GoFish.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/Thai21$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/Thai21$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/Thai21.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/Thai21.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/Thai21.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/Thai21.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/UnoUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/UnoUI.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,7 +75,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="Application.Uno">
+  <component name="RunManager" selected="Application.MainMenu">
     <configuration name="Deck" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="util.Deck" />
       <module name="CSA-Calculator" />
@@ -121,9 +150,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MainMenu" />
         <item itemvalue="Application.Uno" />
         <item itemvalue="Application.UnoUI" />
-        <item itemvalue="Application.MainMenu" />
         <item itemvalue="Application.MineSweeperGame" />
         <item itemvalue="Application.Deck" />
       </list>

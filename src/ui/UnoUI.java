@@ -49,26 +49,12 @@ public class UnoUI extends JFrame{
     /**
      * Launch the application.
      */
-    /*
-    public static void main(String[] args)
+
+    // Model code in Uno
+    // TODO: Move Model out into own file
+    public void specialAction(int drawNum, Card cardFromTop)
     {
-        EventQueue.invokeLater(() -> {
-            try {
-                UnoUI unoUi = new UnoUI();
-                unoUi.setVisible(true);
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-        });
-    }
-
-
-    public UnoUI() {
-        createUIComponents();
-    }
-    */
-
-    public void specialAction(int drawNum, Card cardFromTop){
+        // Special Card identifier
         if (cardFromTop.getColor() == Card.SPECIAL_COLOR){
             //TODO: add user prompt to change color
         } else if (cardFromTop.getCardNum() == 10){
@@ -78,16 +64,19 @@ public class UnoUI extends JFrame{
         } else if  (cardFromTop.getCardNum() == 11){
             action = ACTIONS.DRAWTWO;
         }
+        // Skip card case
         if (action == ACTIONS.SKIP){
             round++;
             round++;
             mActivePlayer = mPlayers.get(round % mPlayers.size());
             updateActivePlayer(mActivePlayer);
+        // Reverse card case
         } else if (action == ACTIONS.REVERSE){
             Collections.reverse(mPlayers);
             round++;
             mActivePlayer = mPlayers.get(round % mPlayers.size());
             updateActivePlayer(mActivePlayer);
+        // Draw two case
         } else if (action == ACTIONS.DRAWTWO){
             Actions.doAction(action, mActivePlayer, drawNum, mActiveDeck, cardFromTop, mTopCard);
             System.out.println(round + "\n" + mActivePlayer.name + " card " + cardFromTop.getDescription() );
@@ -102,12 +91,13 @@ public class UnoUI extends JFrame{
             //mActivePlayer.addCard(mTopCard);
             updateActivePlayer(mActivePlayer);
         }
+        // draw case
         if (action == ACTIONS.DRAW) {
             Actions.doAction(action, mActivePlayer, drawNum, mActiveDeck, cardFromTop, mTopCard);
             System.out.println(round + "\n" + mActivePlayer.name + " card " + cardFromTop.getDescription());
             JOptionPane.showMessageDialog(null, mActivePlayer.name + " has drawn card");
         }
-
+        // place case
         if (action == ACTIONS.PLACE){
             Actions.doAction(action, mActivePlayer, drawNum, mActiveDeck, cardFromTop, mTopCard);
             System.out.println(round + "\n" + mActivePlayer.name + " card " + cardFromTop.getDescription());

@@ -98,6 +98,7 @@ public class Thai21 extends JFrame{
         }
 
         mRemainingFlags -= numFlags;
+        mFlagsLeftLabel.setText(Integer.toString(mRemainingFlags));
 
         if (mRemainingFlags <= 0)
         {
