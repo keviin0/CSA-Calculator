@@ -105,6 +105,13 @@ public class MainMenu extends JFrame {
         });
         mnJig.add(mineSweeper);
 
+        JMenuItem GoFish = new JMenuItem("GoFish");
+        mineSweeper.addActionListener(e -> {
+            GoFish frame = new GoFish();
+            frame.setVisible(true);
+        });
+        mnJig.add(GoFish);
+
         JMenuItem ticTacToe = new JMenuItem("TIC TAC TOE");
         ticTacToe.addActionListener(e -> {
 
