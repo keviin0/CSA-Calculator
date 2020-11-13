@@ -24,6 +24,8 @@ public class CalculatorUI extends JFrame {
 	private STATE mathState;
 	
 	// calculator values
+	//arg1, arg2, and calcAnswer are declared with the primitive datatype double
+	//The double datatype initializes these values for future use.
     private OPERATOR mathOp;
 	private double arg1;
     private double arg2;
