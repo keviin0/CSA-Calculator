@@ -23,6 +23,9 @@ public class GoFish extends JFrame{
             }
         });
 
+        //Creates a new ArrayList and uses the add function to add values.
+        //The elements of the ArrayList are randomized
+        //The ArrayList is then split into two smaller ArrayLists
         ArrayList<Integer> newDeck = new ArrayList<Integer>();
         newDeck.add(0);
         newDeck.add(1);
@@ -61,21 +64,69 @@ public class GoFish extends JFrame{
             System.out.println(gameDeck);
         }
 
+
     }
 
     public GoFish(){
+        //Create a textfield that prints out the different types of cards
+        //It prints out the card deck that the player uses
+        //Then create a way to input the guess using a JPanel textfield
 
         super("GoFish");
         setBounds(100, 100, 418, 315);
         Container c = getContentPane();
+
+        JButton b = new JButton("Deck");
+        b.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e){
+                ArrayList<Integer> newDeck = new ArrayList<Integer>();
+                newDeck.add(0);
+                newDeck.add(1);
+                newDeck.add(2);
+                newDeck.add(3);
+                newDeck.add(4);
+                newDeck.add(5);
+                newDeck.add(6);
+                newDeck.add(7);
+                newDeck.add(8);
+                newDeck.add(9);
+                newDeck.add(10);
+                newDeck.add(11);
+                newDeck.add(12);
+                newDeck.add(14);
+                newDeck.add(15);
+                Collections.shuffle(newDeck);
+                //System.out.println(newDeck);
+
+                List<Integer> gameDeck = newDeck.subList(0, 5);
+                List<Integer> pickDeck = newDeck.subList(5, 15);
+                System.out.println(gameDeck);
+            }
+
+
+        });
+
+        c.add(BorderLayout.EAST, b);
+
         JPanel panel = new JPanel();
 
         JTextField f = new JTextField("Pick a Card", 10);
-        JButton b = new JButton("Enter");
+        f.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String num = f.getText();
+                int i = Integer.parseInt(num);
+                
+
+
+
+            }
+        });
 
         panel.add(f);
-        panel.add(b);
-        c.add(panel);
+
+        c.add(BorderLayout.SOUTH, panel);
 
 
         List<String> allMatches = new ArrayList<String>();
@@ -85,11 +136,13 @@ public class GoFish extends JFrame{
 
 
         JButton button = new JButton("Draw Card");
+        c.add(BorderLayout.NORTH, button);
     }
 
+    public static void controlCode(){
 
 
-
+    }
 
 
 }
