@@ -26,8 +26,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2958585-0d52-4512-a6cb-dda4b85f8127" name="Default Changelist" comment="Added to GoFish.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/GoFish.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/GoFish.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/UnoUI$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/UnoUI$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/UnoUI$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/UnoUI$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/UnoUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/UnoUI.class" afterDir="false" />
@@ -256,7 +254,21 @@
       <option name="project" value="LOCAL" />
       <updated>1605148043747</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Added to GoFish.">
+      <created>1605309302427</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1605309302427</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Added to GoFish.">
+      <created>1605309422582</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1605309422582</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -397,11 +409,11 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="278" y="101" key="MultipleFileMergeDialog/0.0.1280.680@0.0.1280.680" timestamp="1604115828932" />
-    <state x="404" y="229" key="Vcs.Push.Dialog.v2" timestamp="1605148062545">
+    <state x="404" y="229" key="Vcs.Push.Dialog.v2" timestamp="1605309426141">
       <screen x="0" y="23" width="1440" height="816" />
     </state>
     <state x="359" y="146" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1604116005351" />
-    <state x="404" y="229" key="Vcs.Push.Dialog.v2/0.23.1440.816@0.23.1440.816" timestamp="1605148062545" />
+    <state x="404" y="229" key="Vcs.Push.Dialog.v2/0.23.1440.816@0.23.1440.816" timestamp="1605309426141" />
     <state x="404" y="231" key="Vcs.Push.Dialog.v2/0.23.1440.822@0.23.1440.822" timestamp="1604720340545" />
     <state x="583" y="273" key="Vcs.Push.Dialog.v2/62.0.1858.1080/-1920.0.1920.1040@62.0.1858.1080" timestamp="1604546873125" />
     <state x="808" y="454" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603517248211">

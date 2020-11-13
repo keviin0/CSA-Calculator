@@ -116,10 +116,11 @@ public class GoFish extends JFrame{
             @Override
             public void actionPerformed(ActionEvent e) {
                 String num = f.getText();
-                //I use the primitive datatype int to convert a string to an integer
-                //This stores the input from my textfield in GoFish
+                //A String is converted to an integer
+                //This stores the input from my textfield in GoFish as an integer
                 //This input is the guess the player makes
                 //The input must be a card number
+                //Primitive datatype int is used
                 int i = Integer.parseInt(num);
                 
 
