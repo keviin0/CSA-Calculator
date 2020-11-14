@@ -26,9 +26,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2958585-0d52-4512-a6cb-dda4b85f8127" name="Default Changelist" comment="Analysis">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_23_2020_10_15_PM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_23_2020_10_15_PM__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_27_2020_8_27_AM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_27_2020_8_27_AM__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/CalculatorUI$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/CalculatorUI$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/CalculatorUI$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/CalculatorUI$10.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/CalculatorUI$11.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/CalculatorUI$11.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/CalculatorUI$12.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/CalculatorUI$12.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/CalculatorUI$13.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/CalculatorUI$13.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/CalculatorUI$14.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/CalculatorUI$14.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/CalculatorUI$15.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/CalculatorUI$15.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/CalculatorUI$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/CalculatorUI$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/CalculatorUI$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/CalculatorUI$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/CalculatorUI$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/CalculatorUI$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/CalculatorUI$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/CalculatorUI$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/CalculatorUI$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/CalculatorUI$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/CalculatorUI$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/CalculatorUI$7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/CalculatorUI$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/CalculatorUI$8.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/CalculatorUI$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/CalculatorUI$9.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/CalculatorUI$STATE.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/CalculatorUI$STATE.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/CalculatorUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/CalculatorUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/GoFish.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/GoFish.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/UnoUI$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/UnoUI$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/UnoUI$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/UnoUI$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/UnoUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/UnoUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CSA-Calculator/util/Card.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSA-Calculator/util/Card.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/UnoUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/UnoUI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +93,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="Application.CalculatorUI">
+  <component name="RunManager" selected="Application.MainMenu">
     <configuration name="CalculatorUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ui.CalculatorUI" />
       <module name="CSA-Calculator" />
@@ -145,9 +168,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MainMenu" />
         <item itemvalue="Application.CalculatorUI" />
         <item itemvalue="Application.GoFish" />
-        <item itemvalue="Application.MainMenu" />
         <item itemvalue="Application.Uno" />
         <item itemvalue="Application.UnoUI" />
       </list>

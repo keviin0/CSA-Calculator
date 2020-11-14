@@ -141,8 +141,6 @@ public class UnoUI extends JFrame{
                 Card nextCard = Actions.topCardReturn(mActiveDeck);
                 updateTopCard(nextCard);
 
-
-
             }
         });
 
@@ -160,8 +158,8 @@ public class UnoUI extends JFrame{
         //TODO: Add card selection handling
 
     }
-
-    //method to update current active player's hand and name
+    //method is used for player objects
+    //method purpose is to update current active player's hand and name
     private void updateActivePlayer(Player p) {
         mActivePlayer = p;
 
