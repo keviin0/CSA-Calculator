@@ -27,27 +27,11 @@
   <component name="ChangeListManager">
     <list default="true" id="d2958585-0d52-4512-a6cb-dda4b85f8127" name="Default Changelist" comment="Calculator comment analysis">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/CalculatorUI$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/CalculatorUI$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/CalculatorUI$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/CalculatorUI$10.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/CalculatorUI$11.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/CalculatorUI$11.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/CalculatorUI$12.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/CalculatorUI$12.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/CalculatorUI$13.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/CalculatorUI$13.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/CalculatorUI$14.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/CalculatorUI$14.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/CalculatorUI$15.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/CalculatorUI$15.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/CalculatorUI$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/CalculatorUI$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/CalculatorUI$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/CalculatorUI$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/CalculatorUI$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/CalculatorUI$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/CalculatorUI$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/CalculatorUI$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/CalculatorUI$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/CalculatorUI$6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/CalculatorUI$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/CalculatorUI$7.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/CalculatorUI$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/CalculatorUI$8.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/CalculatorUI$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/CalculatorUI$9.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/CalculatorUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/CalculatorUI.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/GoFish.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/GoFish.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/UnoUI$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/UnoUI$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/UnoUI$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/UnoUI$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/UnoUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/UnoUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/CalculatorUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/CalculatorUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/GoFish.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/GoFish.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -300,7 +284,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605311746788</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Calculator comment analysis">
+      <created>1605313040341</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1605313040341</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -377,42 +368,42 @@
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="695" y="307" key="#com.intellij.refactoring.encapsulateFields.EncalpsulateFieldsDialog/62.0.1858.1080/-1920.0.1920.1040@62.0.1858.1080" timestamp="1604545202740" />
-    <state width="1269" height="200" key="GridCell.Tab.0.bottom" timestamp="1605312934871">
+    <state width="1269" height="200" key="GridCell.Tab.0.bottom" timestamp="1605313258639">
       <screen x="0" y="23" width="1440" height="816" />
     </state>
     <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1604092399490" />
     <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.-169.1920.1040@0.0.1536.824" timestamp="1604091620071" />
-    <state width="1269" height="200" key="GridCell.Tab.0.bottom/0.23.1440.816@0.23.1440.816" timestamp="1605312934871" />
+    <state width="1269" height="200" key="GridCell.Tab.0.bottom/0.23.1440.816@0.23.1440.816" timestamp="1605313258639" />
     <state width="1269" height="200" key="GridCell.Tab.0.bottom/0.23.1440.821@0.23.1440.821" timestamp="1605286339768" />
     <state width="1269" height="200" key="GridCell.Tab.0.bottom/0.23.1440.822@0.23.1440.822" timestamp="1605141916745" />
     <state width="1358" height="200" key="GridCell.Tab.0.bottom/0.23.1440.823@0.23.1440.823" timestamp="1604941838323" />
     <state width="1815" height="280" key="GridCell.Tab.0.bottom/62.0.1858.1080/-1920.0.1920.1040@62.0.1858.1080" timestamp="1604592933858" />
-    <state width="1269" height="200" key="GridCell.Tab.0.center" timestamp="1605312934870">
+    <state width="1269" height="200" key="GridCell.Tab.0.center" timestamp="1605313258638">
       <screen x="0" y="23" width="1440" height="816" />
     </state>
     <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1604092399489" />
     <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824/-1920.-169.1920.1040@0.0.1536.824" timestamp="1604091620071" />
-    <state width="1269" height="200" key="GridCell.Tab.0.center/0.23.1440.816@0.23.1440.816" timestamp="1605312934870" />
+    <state width="1269" height="200" key="GridCell.Tab.0.center/0.23.1440.816@0.23.1440.816" timestamp="1605313258638" />
     <state width="1269" height="200" key="GridCell.Tab.0.center/0.23.1440.821@0.23.1440.821" timestamp="1605286339768" />
     <state width="1269" height="200" key="GridCell.Tab.0.center/0.23.1440.822@0.23.1440.822" timestamp="1605141916744" />
     <state width="1358" height="200" key="GridCell.Tab.0.center/0.23.1440.823@0.23.1440.823" timestamp="1604941838322" />
     <state width="1815" height="280" key="GridCell.Tab.0.center/62.0.1858.1080/-1920.0.1920.1040@62.0.1858.1080" timestamp="1604592933858" />
-    <state width="1269" height="200" key="GridCell.Tab.0.left" timestamp="1605312934869">
+    <state width="1269" height="200" key="GridCell.Tab.0.left" timestamp="1605313258637">
       <screen x="0" y="23" width="1440" height="816" />
     </state>
     <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1604092399489" />
     <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824/-1920.-169.1920.1040@0.0.1536.824" timestamp="1604091620071" />
-    <state width="1269" height="200" key="GridCell.Tab.0.left/0.23.1440.816@0.23.1440.816" timestamp="1605312934869" />
+    <state width="1269" height="200" key="GridCell.Tab.0.left/0.23.1440.816@0.23.1440.816" timestamp="1605313258637" />
     <state width="1269" height="200" key="GridCell.Tab.0.left/0.23.1440.821@0.23.1440.821" timestamp="1605286339767" />
     <state width="1269" height="200" key="GridCell.Tab.0.left/0.23.1440.822@0.23.1440.822" timestamp="1605141916743" />
     <state width="1358" height="200" key="GridCell.Tab.0.left/0.23.1440.823@0.23.1440.823" timestamp="1604941838322" />
     <state width="1815" height="280" key="GridCell.Tab.0.left/62.0.1858.1080/-1920.0.1920.1040@62.0.1858.1080" timestamp="1604592933858" />
-    <state width="1269" height="200" key="GridCell.Tab.0.right" timestamp="1605312934871">
+    <state width="1269" height="200" key="GridCell.Tab.0.right" timestamp="1605313258638">
       <screen x="0" y="23" width="1440" height="816" />
     </state>
     <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1604092399489" />
     <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824/-1920.-169.1920.1040@0.0.1536.824" timestamp="1604091620071" />
-    <state width="1269" height="200" key="GridCell.Tab.0.right/0.23.1440.816@0.23.1440.816" timestamp="1605312934871" />
+    <state width="1269" height="200" key="GridCell.Tab.0.right/0.23.1440.816@0.23.1440.816" timestamp="1605313258638" />
     <state width="1269" height="200" key="GridCell.Tab.0.right/0.23.1440.821@0.23.1440.821" timestamp="1605286339768" />
     <state width="1269" height="200" key="GridCell.Tab.0.right/0.23.1440.822@0.23.1440.822" timestamp="1605141916745" />
     <state width="1358" height="200" key="GridCell.Tab.0.right/0.23.1440.823@0.23.1440.823" timestamp="1604941838323" />
@@ -442,11 +433,11 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="278" y="101" key="MultipleFileMergeDialog/0.0.1280.680@0.0.1280.680" timestamp="1604115828932" />
-    <state x="404" y="229" key="Vcs.Push.Dialog.v2" timestamp="1605311752217">
+    <state x="404" y="229" key="Vcs.Push.Dialog.v2" timestamp="1605313048420">
       <screen x="0" y="23" width="1440" height="816" />
     </state>
     <state x="359" y="146" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1604116005351" />
-    <state x="404" y="229" key="Vcs.Push.Dialog.v2/0.23.1440.816@0.23.1440.816" timestamp="1605311752217" />
+    <state x="404" y="229" key="Vcs.Push.Dialog.v2/0.23.1440.816@0.23.1440.816" timestamp="1605313048420" />
     <state x="404" y="231" key="Vcs.Push.Dialog.v2/0.23.1440.822@0.23.1440.822" timestamp="1604720340545" />
     <state x="583" y="273" key="Vcs.Push.Dialog.v2/62.0.1858.1080/-1920.0.1920.1040@62.0.1858.1080" timestamp="1604546873125" />
     <state x="808" y="454" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603517248211">

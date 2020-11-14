@@ -52,6 +52,9 @@ public class GoFish extends JFrame{
         System.out.println("Pick a card");
         int cardPick = scanning.nextInt();
         System.out.println(cardPick);
+        //This boolean is used to determine whether the player's card guess is correct
+        //This boolean and if statement checks the card values in the deck of cards
+        //There is an operation each if the guess is correct or if the guess fails.
         boolean isTrue = pickDeck.contains(cardPick);
         if (isTrue) {
             System.out.println("correct");
