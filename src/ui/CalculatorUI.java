@@ -15,6 +15,8 @@ import javax.swing.border.MatteBorder;
 import util.Calculations;
 import util.Calculations.OPERATOR;
 
+//Creates the class CalculatorUI
+//This class stores all the objects, methods, constructors and datatypes used in the code
 public class CalculatorUI extends JFrame {
 	private final JLabel calcArea = new JLabel("");
 
