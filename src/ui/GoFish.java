@@ -9,6 +9,7 @@ import java.util.Scanner;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+//creates class GoFish that stores all the methods, constructors, view codes, and datatypes used to execute the code.
 public class GoFish extends JFrame{
 
 
