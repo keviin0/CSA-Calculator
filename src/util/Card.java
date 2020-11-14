@@ -4,6 +4,7 @@ import java.awt.*;
 
 public class Card {
     public static final Color SPECIAL_COLOR = Color.BLACK;
+    //creates an Array of colors of the cards in Uno
     public static final Color[] Colors = { Color.RED, Color.BLUE, Color.GREEN, Color.YELLOW, SPECIAL_COLOR };
 
     public static int REVERSE_CARD = 10;
