@@ -44,86 +44,35 @@ public class UnoUI extends JFrame{
     private ArrayList<Player> mPlayers = new ArrayList<Player>();
     private Card mTopCard;
     private ArrayList<JButton> mCardButtons;
+    private SpecialActions model;
     private static final Color DEFAULT_COLOR = Color.white;
 
     /**
      * Launch the application.
      */
 
-    // Model code in Uno
-    // TODO: Move Model out into own file
-    public void specialAction(int drawNum, Card cardFromTop)
+    public void specialAction(Card cardFromTop)
     {
-        // Special Card identifier
-        if (cardFromTop.getColor() == Card.SPECIAL_COLOR){
-            //TODO: add user prompt to change color
-        } else if (cardFromTop.getCardNum() == 10){
-            action = ACTIONS.REVERSE;
-        } else if  (cardFromTop.getCardNum() == 12){
-            action = ACTIONS.SKIP;
-        } else if  (cardFromTop.getCardNum() == 11){
-            action = ACTIONS.DRAWTWO;
-        }
-        // Skip card case
-        if (action == ACTIONS.SKIP){
-            round++;
-            round++;
-            mActivePlayer = mPlayers.get(round % mPlayers.size());
-            updateActivePlayer(mActivePlayer);
-        // Reverse card case
-        } else if (action == ACTIONS.REVERSE){
-            Collections.reverse(mPlayers);
-            round++;
-            mActivePlayer = mPlayers.get(round % mPlayers.size());
-            updateActivePlayer(mActivePlayer);
-        // Draw two case
-        } else if (action == ACTIONS.DRAWTWO){
-            Actions.doAction(action, mActivePlayer, drawNum, mActiveDeck, cardFromTop, mTopCard);
-            System.out.println(round + "\n" + mActivePlayer.name + " card " + cardFromTop.getDescription() );
-            if(mActivePlayer.getHand().isEmpty()) {
-                JOptionPane.showMessageDialog(null, "Winner");
-            }
-            if(mActiveDeck.cardDeck.isEmpty()){
-                mActiveDeck = Actions.newDeck();
-            }
-            round++;
-            mActivePlayer = mPlayers.get(round % mPlayers.size());
-            //mActivePlayer.addCard(mTopCard);
-            updateActivePlayer(mActivePlayer);
-        }
-        // draw case
-        if (action == ACTIONS.DRAW) {
-            Actions.doAction(action, mActivePlayer, drawNum, mActiveDeck, cardFromTop, mTopCard);
-            System.out.println(round + "\n" + mActivePlayer.name + " card " + cardFromTop.getDescription());
-            JOptionPane.showMessageDialog(null, mActivePlayer.name + " has drawn card");
-        }
-        // place case
-        if (action == ACTIONS.PLACE){
-            Actions.doAction(action, mActivePlayer, drawNum, mActiveDeck, cardFromTop, mTopCard);
-            System.out.println(round + "\n" + mActivePlayer.name + " card " + cardFromTop.getDescription());
-            JOptionPane.showMessageDialog(null, mActivePlayer.name + " has place card");
-        }
-        if(mActivePlayer.getHand().isEmpty()) {
-            JOptionPane.showMessageDialog(null, "Winner");
-        }
-        if(mActiveDeck.cardDeck.isEmpty()){
-            mActiveDeck = Actions.newDeck();
-        }
-
-        round++;
-        mActivePlayer = mPlayers.get(round % mPlayers.size());
+        String output = model.execute(cardFromTop, action);
+        JOptionPane.showMessageDialog(null, output);
+        round = model.getRound();
+        mActivePlayer = model.getActivePlayer();
         updateActivePlayer(mActivePlayer);
     }
 
     public UnoUI(Player currentPlayer, Card topCard, Deck deck, ArrayList<Player> players){
         createUIComponents();
 
+        model = new SpecialActions(deck, players, topCard);
+        /*
         mActiveDeck = deck;
         mPlayers =  players;
 
         // Update the top card
         mTopCard = topCard;
 
+
+         */
         // update pile
         updateGamePile(mTopCard);
 
@@ -137,8 +86,8 @@ public class UnoUI extends JFrame{
             public void actionPerformed(ActionEvent e) {
                 action = ACTIONS.DRAW;
                 updateTopCard(mTopCard);
-                specialAction(1, mTopCard);
-                Card nextCard = Actions.topCardReturn(mActiveDeck);
+                specialAction(mTopCard);
+                Card nextCard = model.topCardReturn();
                 updateTopCard(nextCard);
 
             }
@@ -151,7 +100,7 @@ public class UnoUI extends JFrame{
                 //updateTopCard();
                 //TODO: to be implemented
 
-                specialAction(1, mTopCard);
+                specialAction(mTopCard);
             }
         });
 

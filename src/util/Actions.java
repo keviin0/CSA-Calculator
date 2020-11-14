@@ -11,9 +11,7 @@ public class Actions {
         return result;
     }
 
-    public static Card topCardReturn(Deck d){
-        return d.cardDeck.get(0);
-    }
+
 
     public static Card push(Player p, Card selected){
         int index = 0;
