@@ -50,9 +50,11 @@ public class CalculatorUI extends JFrame {
 	
 	private void calculateAnswer()  // method to perform calculation
 	{
-	    calcAnswer = Calculations.calculateIt(arg1, mathOp, arg2);
+	    //calcAnswer is a new object to carry out the calculations of the variables
+		calcAnswer = Calculations.calculateIt(arg1, mathOp, arg2);
 		calcArea.setText(String.valueOf(calcAnswer));
 	    arg1 = Double.parseDouble(calcArea.getText());
+	    //mathState is a new object to set the state of calculation in the code
 	    mathState = STATE.CALC;
 		initialCalcAreaInputState = true;
 	}

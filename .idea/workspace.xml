@@ -25,10 +25,12 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2958585-0d52-4512-a6cb-dda4b85f8127" name="Default Changelist" comment="Analysis">
+    <list default="true" id="d2958585-0d52-4512-a6cb-dda4b85f8127" name="Default Changelist" comment="Analysis for Go Fish">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/UnoUI$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/UnoUI$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/UnoUI$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/UnoUI$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/UnoUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CSA-Calculator/ui/UnoUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/GoFish.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/GoFish.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -309,7 +311,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605316207745</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Analysis for Go Fish">
+      <created>1605321398593</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1605321398593</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -372,7 +381,8 @@
     <MESSAGE value="GoFish boolean analysis" />
     <MESSAGE value="Uno comments" />
     <MESSAGE value="Analysis" />
-    <option name="LAST_COMMIT_MESSAGE" value="Analysis" />
+    <MESSAGE value="Analysis for Go Fish" />
+    <option name="LAST_COMMIT_MESSAGE" value="Analysis for Go Fish" />
   </component>
   <component name="WindowStateProjectService">
     <state x="471" y="114" key="#Project_Structure" timestamp="1603256908851">
@@ -454,11 +464,11 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="278" y="101" key="MultipleFileMergeDialog/0.0.1280.680@0.0.1280.680" timestamp="1604115828932" />
-    <state x="404" y="229" key="Vcs.Push.Dialog.v2" timestamp="1605316213030">
+    <state x="404" y="229" key="Vcs.Push.Dialog.v2" timestamp="1605321400862">
       <screen x="0" y="23" width="1440" height="816" />
     </state>
     <state x="359" y="146" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1604116005351" />
-    <state x="404" y="229" key="Vcs.Push.Dialog.v2/0.23.1440.816@0.23.1440.816" timestamp="1605316213030" />
+    <state x="404" y="229" key="Vcs.Push.Dialog.v2/0.23.1440.816@0.23.1440.816" timestamp="1605321400862" />
     <state x="404" y="231" key="Vcs.Push.Dialog.v2/0.23.1440.822@0.23.1440.822" timestamp="1604720340545" />
     <state x="583" y="273" key="Vcs.Push.Dialog.v2/62.0.1858.1080/-1920.0.1920.1040@62.0.1858.1080" timestamp="1604546873125" />
     <state x="808" y="454" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603517248211">
