@@ -11,13 +11,14 @@ public class Actions {
         return result;
     }
 
-    public static Card topCardReturn(Deck d){
-        return d.cardDeck.get(0);
-    }
+
 
     public static Card push(Player p, Card selected){
         int index = 0;
         System.out.println(p.getName());
+        /* iterates through the selected player hand and checks
+        if the there is a card in that matches the selected card in color and number
+        */
         for(int i = 0; i < p.getSize(); i++) {
             if (p.getHand().get(i).getColor() == selected.getColor()) {
                 if (p.getHand().get(i).getCardNum() == selected.getCardNum()) {
