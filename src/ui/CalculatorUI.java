@@ -21,6 +21,7 @@ public class CalculatorUI extends JFrame {
 	private boolean initialCalcAreaInputState;
 	private enum STATE { INITIAL, SAVE1, SAVE2, CALC }
 
+	//Creates new object mathState to describe stage of calculation
 	private STATE mathState;
 	
 	// calculator values
