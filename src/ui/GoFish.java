@@ -9,8 +9,90 @@ import java.util.Scanner;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
+
+
+
+
 //creates class GoFish that stores all the methods, constructors, view codes, and datatypes used to execute the code.
 public class GoFish extends JFrame{
+
+    public static Container frameContainer;
+    public static int numberOfCards = 10;
+    public static ArrayList<Integer> newDeck = null;
+    public static ArrayList<Integer> gameDeck = null;
+    public static ArrayList<Integer> pickDeck = null;
+
+    public static JButton deckButton = null;
+    public static JTextField playerCardNumbers = new JTextField(20);
+
+
+    public static JButton drawCardButton = null;
+    public static JTextField inputCardField = new JTextField(20);
+    public static JLabel winLooselabel = new JLabel();
+
+
+
+    void compareCard () {
+        boolean isTrue = false;
+
+        int cardValue = Integer.parseInt(inputCardField.getText());
+        System.out.printf("You picked : %s\n",cardValue);
+
+        isTrue = pickDeck.contains(cardValue);
+
+        //if player picked right card
+        if (isTrue) {
+            System.out.println("you picked correct card");
+            cardValue = gameDeck.get(0);
+            pickDeck.add(cardValue);
+            gameDeck.remove(gameDeck.indexOf(cardValue));
+
+            System.out.printf("Contents of game deck (player has): %s \n", gameDeck);
+            playerCardNumbers.setText(String.valueOf(gameDeck));
+            System.out.printf("Contents of pick deck : %s\n", pickDeck);
+
+
+            if (gameDeck.isEmpty()) {
+                System.out.println("you won the game");
+                winLooselabel.setText("you won the game");
+
+            }
+        }
+        //if player picked wrong card
+        else {
+            System.out.println("you picked wrong card, draw again");
+
+            cardValue = pickDeck.get(0);
+            gameDeck.add(cardValue);
+            pickDeck.remove(pickDeck.indexOf(cardValue));
+            System.out.printf("Contents of game deck (player has): %s\n",gameDeck);
+            playerCardNumbers.setText(String.valueOf(gameDeck));
+            System.out.printf("Contents of pick deck : %s\n",pickDeck);
+
+            if (pickDeck.isEmpty()) {
+                System.out.println("you lost the game");
+                winLooselabel.setText("you lost the game");
+
+            }
+        }
+        System.out.println("Exiting while loop");
+    }
+
+    void handleEnterKeyPressForInputCardField() {
+        inputCardField.addKeyListener(new KeyAdapter() {
+            @Override
+            public void keyPressed(KeyEvent e) {
+                if (e.getKeyCode() == KeyEvent.VK_ENTER) {
+                    compareCard();
+                    inputCardField.setText("");
+                }
+            }
+
+        });
+    }
 
     public static ArrayList<Integer> createDeck(int numberOfCards) {
         ArrayList<Integer> newDeck = new ArrayList<Integer>();
@@ -20,197 +102,72 @@ public class GoFish extends JFrame{
         return newDeck;
     }
 
+    //Button for Deck
+    void initiateDeckButton() {
+        deckButton = new JButton("Start Game");
+        deckButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
 
+                newDeck = createDeck(numberOfCards);
+                Collections.shuffle(newDeck);
 
-    public static void main(String[] args) {
-        EventQueue.invokeLater(() -> {
-            try {
-                GoFish frame = new GoFish();
-                frame.setSize(300,300);
-                frame.setVisible(true);
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-        });
+                gameDeck = new ArrayList<>();
+                for (int i = 0; i < numberOfCards / 2; i++)
+                    gameDeck.add(newDeck.get(i));
+                System.out.printf("Contents of game deck (player has): %s\n", gameDeck);
 
-        //Creates a new ArrayList and uses the add function to add values.
-        //The elements of the ArrayList are randomized
-        //The ArrayList is then split into two smaller ArrayLists
-        ArrayList<Integer> newDeck = createDeck(8);
-
-        Collections.shuffle(newDeck);
-        System.out.printf("Contents of new deck: %s\n",newDeck);
-
-        List<Integer> gameDeck = newDeck.subList(0, 4);
-        System.out.printf("Contents of game deck (player has): %s\n",gameDeck);
-
-        List<Integer> pickDeck = newDeck.subList(4, 8);
-        System.out.printf("Contents of pick deck : %s\n",pickDeck);
-
-
-
-        //This boolean is used to determine whether the player's card guess is correct
-        //This boolean and if statement checks the card values in the deck of cards
-        //There is an operation each if the guess is correct or if the guess fails.
-        boolean isTrue = false;
-
-        while(true) {
-            Scanner scanning = new Scanner(System.in);
-            System.out.println("Pick a card");
-
-            int cardPick = scanning.nextInt();
-            System.out.printf("You picked : %s\n",cardPick);
-
-            isTrue = pickDeck.contains(cardPick);
-
-            Integer g;
-
-            //if player picked right card
-            if (isTrue) {
-                System.out.println("you picked correct card");
-                g = gameDeck.get(0);
-                pickDeck.add(g);
-
-                System.out.printf("Contents of game deck : %s \n", gameDeck);
+                pickDeck = new ArrayList<>();
+                for (int i = numberOfCards / 2; i < numberOfCards; i++)
+                    pickDeck.add(newDeck.get(i));
                 System.out.printf("Contents of pick deck : %s\n", pickDeck);
 
-                if (gameDeck.isEmpty()) {
-                    System.out.println("you won the game");
-                    break;
-                }
-            }
-            //if player picked wrong card
-            else {
-                System.out.println("you picked wrong card, draw again");
-
-                g = pickDeck.get(0);
-                gameDeck.add(g);
-                System.out.printf("Contents of game deck (player has): %s\n",gameDeck);
-                System.out.printf("Contents of pick deck : %s\n",pickDeck);
-
-                if (pickDeck.isEmpty()) {
-                    System.out.println("you lost the game");
-                    break;
-                }
-            }
-        }
-        System.out.println("Exiting while loop");
+                //set the text field
+                playerCardNumbers.setText(gameDeck.toString());
+          }
+        });
     }
 
 
-    public GoFish(){
-        //Create a textfield that prints out the different types of cards
-        //It prints out the card deck that the player uses
-        //Then create a way to input the guess using a JPanel textfield
+    //text field for input
+    //Text field to show card
 
-        super("GoFish");
-        setBounds(100, 100, 418, 315);
-        Container c = getContentPane();
-
-        JButton b = new JButton("Deck");
-        b.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e){
-                ArrayList<Integer> newDeck = new ArrayList<Integer>();
-
-                Collections.shuffle(newDeck);
-                //System.out.println(newDeck);
-
-                List<Integer> gameDeck = newDeck.subList(0, 5);
-                List<Integer> pickDeck = newDeck.subList(5, 15);
-                System.out.println(gameDeck);
-            }
+    //constructor
+    public GoFish() {
+        JFrame aWindow = new JFrame("GoFish");
+        aWindow.setBounds(100, 100, 418, 315);
+        aWindow.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
 
-        });
+        FlowLayout flow = new FlowLayout(); // Create a layout manager
+        flow.setHgap(5);                   // Set the horizontal gap
+        flow.setVgap(5);
+        flow.setAlignment(FlowLayout.CENTER);
+        Container content = aWindow.getContentPane(); // Get the content pane
+        content.setLayout(new GridLayout(2,2,10,10));
 
-        c.add(BorderLayout.EAST, b);
+        content.setLayout(flow); // Set the container layout mgr
 
-        JPanel panel = new JPanel();
+        initiateDeckButton();
+        content.add(deckButton);
+        //we already initialize during declaration
+        playerCardNumbers.setEditable(false);
+        content.add(playerCardNumbers);
 
-        JTextField f = new JTextField("Pick a Card and press enter", 10);
-        f.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                ArrayList<Integer> newDeck = createDeck(15);
-                Collections.shuffle(newDeck);
-                //System.out.println(newDeck);
-                List<Integer> gameDeck = newDeck.subList(0, 5);
-                List<Integer> pickDeck = newDeck.subList(5, 15);
-                String num = f.getText();
-                //A String is converted to an integer
-                //This stores the input from my textfield in GoFish as an integer
-                //This input is the guess the player makes
-                //The input must be a card number
-                //Primitive datatype int is used
-                int cardPick = Integer.parseInt(num);
-                boolean isTrue = pickDeck.contains(cardPick);
-                if (isTrue) {
-                    System.out.println("correct");
-                } else{
-                    //System.out.println("wrong");
-                    System.out.println("Draw A Card");
-                    Integer g = pickDeck.get(0);
-                    //System.out.println(g);
-                    //gameDeck.add(g);
-                    //System.out.println(gameDeck);
-                }
-                
+        JLabel labelEnterYourCardNumber = new JLabel();
+        labelEnterYourCardNumber.setText("Enter Your Card Number");
 
+        content.add(labelEnterYourCardNumber);
 
+        content.add(inputCardField);
+        handleEnterKeyPressForInputCardField();
 
-            }
-        });
+        content.add(winLooselabel);
 
-        panel.add(f);
-
-        c.add(BorderLayout.SOUTH, panel);
-
-        JButton button = new JButton("Draw Card");
-        f.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                ArrayList<Integer> newDeck = new ArrayList<Integer>();
-                newDeck.add(0);
-                newDeck.add(1);
-                newDeck.add(2);
-                newDeck.add(3);
-                newDeck.add(4);
-                newDeck.add(5);
-                newDeck.add(6);
-                newDeck.add(7);
-                newDeck.add(8);
-                newDeck.add(9);
-                newDeck.add(10);
-                newDeck.add(11);
-                newDeck.add(12);
-                newDeck.add(14);
-                newDeck.add(15);
-                Collections.shuffle(newDeck);
-                //System.out.println(newDeck);
-                List<Integer> gameDeck = newDeck.subList(0, 5);
-                List<Integer> pickDeck = newDeck.subList(5, 15);
-                Integer g = pickDeck.get(0);
-                //System.out.println(g);
-                gameDeck.add(g);
-                System.out.println(gameDeck);
-
-            }
-        });
-        c.add(BorderLayout.NORTH, button);
-
-
-        List<String> allMatches = new ArrayList<String>();
-
-        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-
-
+        aWindow.setVisible(true); // Display the window
     }
 
-    public static void controlCode(){
-
-
+    public static void main(String[] args) {
+        GoFish frame = new GoFish();
     }
-
-
 }
