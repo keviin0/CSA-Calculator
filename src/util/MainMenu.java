@@ -106,7 +106,7 @@ public class MainMenu extends JFrame {
         mnJig.add(mineSweeper);
 
         JMenuItem GoFish = new JMenuItem("GoFish");
-        mineSweeper.addActionListener(e -> {
+        GoFish.addActionListener(e -> {
             GoFish frame = new GoFish();
             frame.setVisible(true);
         });
