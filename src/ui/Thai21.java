@@ -59,6 +59,8 @@ public class Thai21 extends JFrame{
             }
         });
 
+        // Flag buttons listeners
+
         mOneFlag.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -80,6 +82,7 @@ public class Thai21 extends JFrame{
             }
         });
 
+        // update game
         updateTurnLabel();
         updateButtons();
         updateFlagsLeft();
