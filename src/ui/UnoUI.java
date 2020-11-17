@@ -46,6 +46,8 @@ public class UnoUI extends JFrame{
     private ArrayList<JButton> mCardButtons;
     private SpecialActions model;
     private static final Color DEFAULT_COLOR = Color.white;
+    private Card selectedCard;
+    public Card gamePileTop;
 
     /**
      * Launch the application.
@@ -53,7 +55,7 @@ public class UnoUI extends JFrame{
 
     public void specialAction(Card cardFromTop)
     {
-        String output = model.execute(cardFromTop, action);
+        String output = model.execute(cardFromTop, action, gamePileTop);
         JOptionPane.showMessageDialog(null, output);
         round = model.getRound();
         mActivePlayer = model.getActivePlayer();
@@ -97,10 +99,12 @@ public class UnoUI extends JFrame{
             @Override
             public void actionPerformed(ActionEvent e) {
                 action = ACTIONS.PLACE;
+
                 //updateTopCard();
                 //TODO: to be implemented
 
-                specialAction(mTopCard);
+                specialAction(selectedCard);
+                updateGamePile(selectedCard);
             }
 
 
@@ -156,6 +160,8 @@ public class UnoUI extends JFrame{
             c = mUselessCard;
         }
 
+        gamePileTop = c;
+
         mPileButton.setText(c.getLabel());
         mPileButton.setBackground(c.getColor());
 
@@ -176,6 +182,68 @@ public class UnoUI extends JFrame{
         setContentPane(mainPanel);
 
         mCardButtons = new ArrayList<>();
+
+        button1.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                selectedCard = mActivePlayer.getHand().get(0);
+            }
+        });
+        button2.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                selectedCard = mActivePlayer.getHand().get(1);
+            }
+        });
+        button3.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                selectedCard = mActivePlayer.getHand().get(2);
+            }
+        });
+        button4.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                selectedCard = mActivePlayer.getHand().get(3);
+            }
+        });
+        button5.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                selectedCard = mActivePlayer.getHand().get(4);
+            }
+        });
+        button6.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                selectedCard = mActivePlayer.getHand().get(5);
+            }
+        });
+        button7.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                selectedCard = mActivePlayer.getHand().get(6);
+            }
+        });
+        button8.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                selectedCard = mActivePlayer.getHand().get(7);
+            }
+        });
+        button9.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                selectedCard = mActivePlayer.getHand().get(8);
+            }
+        });
+        button10.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                selectedCard = mActivePlayer.getHand().get(9);
+            }
+        });
+
 
         mCardButtons.add(button1);
         mCardButtons.add(button2);

@@ -12,6 +12,7 @@ public class SpecialActions {
     ArrayList<Player> mPlayers = new ArrayList<Player>();
     Card mTopCard;
     Actions actions;
+    Card resultCard;
 
     public SpecialActions(Deck d, ArrayList<Player> p, Card c){
         this.round = 0;
@@ -25,7 +26,7 @@ public class SpecialActions {
         return mActiveDeck.cardDeck.get(0);
     }
 
-    public String execute(Card cardFromTop, Actions.ACTIONS action){
+    public String execute(Card cardFromTop, Actions.ACTIONS action, Card mTopCard){
         if (cardFromTop.getColor() == Card.SPECIAL_COLOR){
             //TODO: add user prompt to change color
         } else if (cardFromTop.getCardNum() == 10){
@@ -103,5 +104,7 @@ public class SpecialActions {
     public ArrayList getPlayers(){
         return mPlayers;
     }
+
+    public Card getResultCard() {return resultCard;}
 
 }
