@@ -4,16 +4,11 @@ import javax.swing.*;
 import java.awt.*;
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.List;
-import java.util.Scanner;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
-import java.awt.event.KeyListener;
-
-
 
 
 //creates class GoFish that stores all the methods, constructors, view codes, and datatypes used to execute the code.
@@ -34,8 +29,8 @@ public class GoFish extends JFrame{
     public static JLabel winLooselabel = new JLabel();
 
 
-
-    void compareCard () {
+    //control code
+    void compareCard() {
         boolean isTrue = false;
 
         int cardValue = Integer.parseInt(inputCardField.getText());
@@ -132,6 +127,7 @@ public class GoFish extends JFrame{
     //text field for input
     //Text field to show card
 
+    //view code
     //constructor
     public GoFish() {
         JFrame aWindow = new JFrame("GoFish");
@@ -167,7 +163,9 @@ public class GoFish extends JFrame{
         aWindow.setVisible(true); // Display the window
     }
 
+    //model code
     public static void main(String[] args) {
         GoFish frame = new GoFish();
     }
+
 }
