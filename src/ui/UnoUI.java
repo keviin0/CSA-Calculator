@@ -66,15 +66,6 @@ public class UnoUI extends JFrame{
         createUIComponents();
 
         model = new SpecialActions(deck, players, topCard);
-        /*
-        mActiveDeck = deck;
-        mPlayers =  players;
-
-        // Update the top card
-        mTopCard = topCard;
-
-
-         */
         // update pile
         updateGamePile(mTopCard);
 
@@ -168,8 +159,6 @@ public class UnoUI extends JFrame{
         mPileButton.setForeground(c.isSpecialCard() ? Color.white : Color.black);
 
 
-        // Update text color
-        //mGamePile.setForeground(c.isSpecialCard() ? Color.white : Color.black);
     }
 
     public void invalid(){

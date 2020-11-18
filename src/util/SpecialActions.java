@@ -28,7 +28,7 @@ public class SpecialActions {
 
     public String execute(Card cardFromTop, Actions.ACTIONS action, Card mTopCard){
         if (cardFromTop.getColor() == Card.SPECIAL_COLOR){
-            //TODO: add user prompt to change color
+                JOptionPane.showMessageDialog(null, "Pick a color");
         } else if (cardFromTop.getCardNum() == 10){
             action = Actions.ACTIONS.REVERSE;
         } else if  (cardFromTop.getCardNum() == 12){
