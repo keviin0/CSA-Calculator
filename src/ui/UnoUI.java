@@ -100,9 +100,8 @@ public class UnoUI extends JFrame{
             public void actionPerformed(ActionEvent e) {
                 action = ACTIONS.PLACE;
 
-                //updateTopCard();
                 //TODO: to be implemented
-
+                mCurrentPlayerLabel.setText(mActivePlayer.name);
                 specialAction(selectedCard);
                 updateGamePile(selectedCard);
             }
@@ -139,10 +138,12 @@ public class UnoUI extends JFrame{
 
         }
 
-        mCurrentPlayerLabel.setText(mActivePlayer.name);
+        updateCurrentPlayerLabel();
         System.out.println(mActivePlayer.getHand());
     }
-
+    private void updateCurrentPlayerLabel(){
+        mCurrentPlayerLabel.setText(mActivePlayer.name);
+    }
     private void updateTopCard(Card c){
         if( c == null ) {
             c = mUselessCard;
@@ -164,10 +165,11 @@ public class UnoUI extends JFrame{
 
         mPileButton.setText(c.getLabel());
         mPileButton.setBackground(c.getColor());
+        mPileButton.setForeground(c.isSpecialCard() ? Color.white : Color.black);
 
 
         // Update text color
-        mGamePile.setForeground(c.isSpecialCard() ? Color.white : Color.black);
+        //mGamePile.setForeground(c.isSpecialCard() ? Color.white : Color.black);
     }
 
     public void invalid(){

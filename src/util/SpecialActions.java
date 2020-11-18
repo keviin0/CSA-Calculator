@@ -67,16 +67,18 @@ public class SpecialActions {
             Actions.doAction(action, mActivePlayer, 1, mActiveDeck, cardFromTop, mTopCard);
             System.out.println(round + "\n" + mActivePlayer.name + " card " + cardFromTop.getDescription());
             round++;
+            String activePlayerTemp = mActivePlayer.name;
             mActivePlayer = mPlayers.get(round % mPlayers.size());
-            return mActivePlayer.name + " has drawn card";
+            return activePlayerTemp + " has drawn card";
         }
         // place case
         if (action == Actions.ACTIONS.PLACE){
             Actions.doAction(action, mActivePlayer, 1 , mActiveDeck, cardFromTop, mTopCard);
             System.out.println(round + "\n" + mActivePlayer.name + " card " + cardFromTop.getDescription());
             round++;
+            String activePlayerTemp = mActivePlayer.name;
             mActivePlayer = mPlayers.get(round % mPlayers.size());
-            return mActivePlayer.name + " has placed card";
+            return activePlayerTemp + " has placed card";
         }
         if(mActivePlayer.getHand().isEmpty()) {
             return "Winner";
