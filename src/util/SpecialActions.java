@@ -11,7 +11,7 @@ public class SpecialActions {
     Player mActivePlayer;
     Deck mActiveDeck;
     ArrayList<Player> mPlayers = new ArrayList<Player>();
-    Card mTopCard;
+    Card mTopPileCard;
     Actions actions;
     Card resultCard;
     Card moveStatus;
@@ -22,28 +22,33 @@ public class SpecialActions {
         this.mPlayers = p;
         this.mActivePlayer = mPlayers.get(0);
         this.mActiveDeck = d;
-        this.mTopCard = c;
+        this.mTopPileCard = c;
         this.moveStatus = tempCard;
     }
 
     public Card topCardReturn(){
-        return mActiveDeck.cardDeck.get(0);
+        return Actions.peek(mActiveDeck);//mActiveDeck.cardDeck.get(0);
     }
 
-    public String execute(Card cardFromTop, Actions.ACTIONS action, Card mTopCard){
+    public String execute(Card cardFromTop, Actions.ACTIONS action, Card gamePileTopCard){
+        if( cardFromTop == null ) {
+            // no card selected
+            return "invalid move";
+        }
+
         resetStatus();
         if (cardFromTop.getColor() == Card.SPECIAL_COLOR){
                 JOptionPane.showMessageDialog(null, "Pick a color");
-        } else if (cardFromTop.getCardNum() == 10){
+        } else if (cardFromTop.getCardNum() == Card.REVERSE_CARD){
             action = Actions.ACTIONS.REVERSE;
-        } else if  (cardFromTop.getCardNum() == 12){
+        } else if  (cardFromTop.getCardNum() == Card.SKIP_CARD){
             action = Actions.ACTIONS.SKIP;
-        } else if  (cardFromTop.getCardNum() == 11){
+        } else if  (cardFromTop.getCardNum() == Card.DRAW_TWO_CARD){
             action = Actions.ACTIONS.DRAWTWO;
         }
         // Skip card case
         if (action == Actions.ACTIONS.SKIP){
-            moveStatus = Actions.doAction(action, mActivePlayer, 2, mActiveDeck, cardFromTop, mTopCard);
+            moveStatus = Actions.doAction(action, mActivePlayer, 2, mActiveDeck, cardFromTop, gamePileTopCard);
             if (moveStatus.getSuccess() == false) {
                 round = round - 1;
                 return "invalid move";
@@ -53,7 +58,7 @@ public class SpecialActions {
             mActivePlayer = mPlayers.get(round % mPlayers.size());
             // Reverse card case
         } else if (action == Actions.ACTIONS.REVERSE){
-            moveStatus = Actions.doAction(action, mActivePlayer, 2, mActiveDeck, cardFromTop, mTopCard);
+            moveStatus = Actions.doAction(action, mActivePlayer, 2, mActiveDeck, cardFromTop, gamePileTopCard);
             if (moveStatus.getSuccess() == false) {
                 round = round - 1;
                 return "invalid move";
@@ -63,7 +68,7 @@ public class SpecialActions {
             mActivePlayer = mPlayers.get(round % mPlayers.size());
             // Draw two case
         } else if (action == Actions.ACTIONS.DRAWTWO){
-            moveStatus = Actions.doAction(action, mActivePlayer, 2, mActiveDeck, cardFromTop, mTopCard);
+            moveStatus = Actions.doAction(action, mActivePlayer, 2, mActiveDeck, cardFromTop, gamePileTopCard);
             if (moveStatus.getSuccess() == false) {
                 round = round - 1;
                 return "invalid move";
@@ -83,7 +88,7 @@ public class SpecialActions {
         }
         // draw case
         if (action == Actions.ACTIONS.DRAW) {
-            moveStatus = Actions.doAction(action, mActivePlayer, 1, mActiveDeck, cardFromTop, mTopCard);
+            moveStatus = Actions.doAction(action, mActivePlayer, 1, mActiveDeck, cardFromTop, gamePileTopCard);
             System.out.println(round + "\n" + mActivePlayer.name + " card " + cardFromTop.getDescription());
             round++;
             String activePlayerTemp = mActivePlayer.name;
@@ -92,7 +97,10 @@ public class SpecialActions {
         }
         // place case
         if (action == Actions.ACTIONS.PLACE){
-            moveStatus = Actions.doAction(action, mActivePlayer, 1 , mActiveDeck, cardFromTop, mTopCard);
+
+
+            moveStatus = Actions.doAction(action, mActivePlayer, 1 , mActiveDeck, cardFromTop, gamePileTopCard);
+
             if (moveStatus.getSuccess() == false) {
                 round = round - 1;
                 return "invalid move";

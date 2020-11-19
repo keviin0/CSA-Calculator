@@ -4,6 +4,8 @@ import java.awt.*;
 
 public class Card {
     public static final Color SPECIAL_COLOR = Color.BLACK;
+    public static final Color INACTIVE_COLOR = Color.LIGHT_GRAY;
+
     //creates an Array of colors of the cards in Uno
     public static final Color[] Colors = { Color.RED, Color.BLUE, Color.GREEN, Color.YELLOW, SPECIAL_COLOR };
 

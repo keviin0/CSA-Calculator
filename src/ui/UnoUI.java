@@ -7,7 +7,6 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
-import java.util.Collections;
 
 import util.Actions.ACTIONS;
 
@@ -37,17 +36,17 @@ public class UnoUI extends JFrame{
     private ACTIONS action;
 
     private Player mActivePlayer = new Player("test");
-    private Deck mActiveDeck;
-    private Card mUselessCard = new Card(Color.BLUE, -1);
-    private Card tempCard= new Card(Color.BLUE, -1);
+   // private Deck mActiveDeck;
+    //private Card mUselessCard = new Card(Color.BLUE, -1);
+    //private Card tempCard= new Card(Color.BLUE, -1);
     public int round = 0;
     private ArrayList<Player> mPlayers = new ArrayList<Player>();
-    private Card mTopCard;
+    private Card mTopOfDeckCard;
     private ArrayList<JButton> mCardButtons;
     private SpecialActions model;
     private static final Color DEFAULT_COLOR = Color.white;
     private Card selectedCard;
-    public Card gamePileTop;
+    public Card mGamePileTopCard;
 
     /**
      * Launch the application.
@@ -56,7 +55,7 @@ public class UnoUI extends JFrame{
     public void specialAction(Card cardFromTop)
     {
         while(true) {
-            String output = model.execute(cardFromTop, action, gamePileTop);
+            String output = model.execute(cardFromTop, action, mGamePileTopCard);
 
             System.out.println(model.getStatus());
             if (output == "invalid move") {
@@ -72,6 +71,9 @@ public class UnoUI extends JFrame{
             mActivePlayer = model.getActivePlayer();
             updateActivePlayer(mActivePlayer);
             updateGamePile(selectedCard);
+
+            // Reset
+            selectedCard = null;
             break;
         }
     }
@@ -81,7 +83,9 @@ public class UnoUI extends JFrame{
 
         model = new SpecialActions(deck, players, topCard);
         // update pile
-        updateGamePile(mTopCard);
+        updateGamePile(topCard);
+
+        updateTopCard();
 
         // Display active player(p)'s hand
         updateActivePlayer(currentPlayer);
@@ -92,10 +96,10 @@ public class UnoUI extends JFrame{
             @Override
             public void actionPerformed(ActionEvent e) {
                 action = ACTIONS.DRAW;
-                updateTopCard(mTopCard);
-                specialAction(mTopCard);
-                Card nextCard = model.topCardReturn();
-                updateTopCard(nextCard);
+                updateTopCard();
+                specialAction(mTopOfDeckCard);
+
+                updateTopCard();
 
             }
         });
@@ -114,7 +118,6 @@ public class UnoUI extends JFrame{
 
         });
 
-        //TODO: Add card selection handling
 
     }
     //method is used for player objects
@@ -149,30 +152,33 @@ public class UnoUI extends JFrame{
     private void updateCurrentPlayerLabel(){
         mCurrentPlayerLabel.setText(mActivePlayer.name);
     }
-    private void updateTopCard(Card c){
-        if( c == null ) {
-            c = mUselessCard;
+
+    private void updateTopCard(){
+        mTopOfDeckCard = model.topCardReturn();
+
+        if( mTopOfDeckCard == null ) {
+            mTopCardButton.setBackground(Card.INACTIVE_COLOR);
+            mTopCardButton.setText("");
+            return;
         }
-        mTopCard = c;
-        mTopCardButton.setText(c.getLabel());
-        mTopCardButton.setBackground(c.getColor());
+
+        mTopCardButton.setText(mTopOfDeckCard.getLabel());
+        mTopCardButton.setBackground(mTopOfDeckCard.getColor());
 
         // Update text color
-        mTopCardButton.setForeground(c.isSpecialCard() ? Color.white : Color.black);
+        mTopCardButton.setForeground(mTopOfDeckCard.isSpecialCard() ? Color.white : Color.black);
     }
 
     private void updateGamePile(Card c){
         if( c == null ) {
-            c = mUselessCard;
+            return;
         }
 
-        gamePileTop = c;
+        mGamePileTopCard = c;
 
         mPileButton.setText(c.getLabel());
         mPileButton.setBackground(c.getColor());
         mPileButton.setForeground(c.isSpecialCard() ? Color.white : Color.black);
-
-
     }
 
     public void invalid(){
@@ -267,8 +273,13 @@ public class UnoUI extends JFrame{
         // It should not be clickable.
         mTopCardButton.setEnabled(false);
         mTopCardButton.setVisible(true);
-        mTopCardButton.setBackground(mUselessCard.getColor());
-        mTopCardButton.setText(mUselessCard.getLabel());
+        mTopCardButton.setBackground(Card.INACTIVE_COLOR);
+        mTopCardButton.setText("");
+
+        mPileButton.setEnabled(false);
+        mPileButton.setVisible(true);
+        mPileButton.setBackground(Card.INACTIVE_COLOR);
+        mPileButton.setText("");
 
         mCurrentPlayerLabel.setText("");
     }

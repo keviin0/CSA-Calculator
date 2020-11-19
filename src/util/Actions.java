@@ -3,7 +3,7 @@ package util;
 public class Actions {
 
     public static enum ACTIONS {DRAW, PLACE, SKIP, REVERSE, DRAWTWO}
-    public static Card topCard;
+    public static Card mTopCard;
 
     public static Card pop(Deck d){
         Card result = d.cardDeck.get(0);
@@ -11,7 +11,10 @@ public class Actions {
         return result;
     }
 
-
+    public static Card peek(Deck d){
+        Card result = d.cardDeck.get(0);
+        return result;
+    }
 
     public static Card push(Player p, Card selected){
         int index = 0;
@@ -27,9 +30,9 @@ public class Actions {
                 }
             }
         }
-        topCard = p.getHand().get(index);
+        mTopCard = p.getHand().get(index);
         p.removeCard(selected);
-        return topCard;
+        return mTopCard;
     }
 
     public static Deck newDeck(){
@@ -40,31 +43,32 @@ public class Actions {
         return test;
     }
 
-    public static Card getTopCard(){
-        return topCard;
-
-    }
-
-    public static Card doAction(ACTIONS choice, Player p, int num, Deck d, Card c, Card topCard){
+    public static Card doAction(ACTIONS choice, Player p, int num, Deck d, Card selectedCard, Card topCard){
         switch(choice){
             case DRAW:
                 for(int i = 0; i < num; i++){
-                    p.addCard(pop(d));
+                    Card drawnCard = pop(d);
+                    p.addCard(drawnCard);
                 }
-                return c;
+                return selectedCard;
             case PLACE:
-                if(topCard.getColor() != c.getColor()){ //Check if card is unable to be played
-                    if(topCard.getCardNum() != c.getCardNum()){
-                        c.setSuccess(false);
-                        return c;
+                if( selectedCard == null ) {
+                    // no card selected;
+                    return selectedCard;
+                }
+
+                if(topCard.getColor() != selectedCard.getColor()){ //Check if card is unable to be played
+                    if(topCard.getCardNum() != selectedCard.getCardNum()){
+                        selectedCard.setSuccess(false);
+                        return selectedCard;
                     }
                 }
-                push(p, c);
-                return c;
+                push(p, selectedCard);
+                return selectedCard;
             case SKIP:
-                return c;
+                return selectedCard;
             case REVERSE:
-                return c;
+                return selectedCard;
             default:
                 throw new IllegalStateException("Unexpected value: " + choice);
         }

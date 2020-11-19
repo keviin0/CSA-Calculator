@@ -15,7 +15,7 @@ public class Uno extends JFrame {
     private JComboBox<String> numPlayersCombo; // Combo box to select number of players
     private JTextArea playerNamesTextField; // Text box for player names
     private static String ENTER = "Enter"; //Submit button
-
+    private JLabel label;
 
     public static void main(String[] args) {
         EventQueue.invokeLater(() -> {
@@ -43,7 +43,10 @@ public class Uno extends JFrame {
 
         numPlayersCombo = new JComboBox<String>(numPlayersChoice); //Initial setting for # of players
         p.add(numPlayersCombo); //Add text area for year to panel
-        playerNamesTextField = new JTextArea("Names of each player (Separated by comma)",1, 10);//Initial setting for names of players separated by commas
+        label = new JLabel();
+        label.setText("Names of each player (Separated by comma)");
+        p.add(label);
+        playerNamesTextField = new JTextArea("",1, 10);//Initial setting for names of players separated by commas
         p.add(playerNamesTextField); //Add text area for season to panel
         p.add(b); //Add button to panel
         c.add(p); //add panel to container
