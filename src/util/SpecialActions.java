@@ -1,6 +1,7 @@
 package util;
 
 import javax.swing.*;
+import java.awt.*;
 import java.util.ArrayList;
 import java.util.Collections;
 
@@ -13,6 +14,8 @@ public class SpecialActions {
     Card mTopCard;
     Actions actions;
     Card resultCard;
+    Card moveStatus;
+    Card tempCard = new Card(Color.BLUE, 2);
 
     public SpecialActions(Deck d, ArrayList<Player> p, Card c){
         this.round = 0;
@@ -20,6 +23,7 @@ public class SpecialActions {
         this.mActivePlayer = mPlayers.get(0);
         this.mActiveDeck = d;
         this.mTopCard = c;
+        this.moveStatus = tempCard;
     }
 
     public Card topCardReturn(){
@@ -27,6 +31,7 @@ public class SpecialActions {
     }
 
     public String execute(Card cardFromTop, Actions.ACTIONS action, Card mTopCard){
+        resetStatus();
         if (cardFromTop.getColor() == Card.SPECIAL_COLOR){
                 JOptionPane.showMessageDialog(null, "Pick a color");
         } else if (cardFromTop.getCardNum() == 10){
@@ -38,18 +43,32 @@ public class SpecialActions {
         }
         // Skip card case
         if (action == Actions.ACTIONS.SKIP){
+            moveStatus = Actions.doAction(action, mActivePlayer, 2, mActiveDeck, cardFromTop, mTopCard);
+            if (moveStatus.getSuccess() == false) {
+                round = round - 1;
+                return "invalid move";
+            }
             round++;
             round++;
             mActivePlayer = mPlayers.get(round % mPlayers.size());
             // Reverse card case
         } else if (action == Actions.ACTIONS.REVERSE){
+            moveStatus = Actions.doAction(action, mActivePlayer, 2, mActiveDeck, cardFromTop, mTopCard);
+            if (moveStatus.getSuccess() == false) {
+                round = round - 1;
+                return "invalid move";
+            }
             Collections.reverse(mPlayers);
             round++;
             mActivePlayer = mPlayers.get(round % mPlayers.size());
             // Draw two case
         } else if (action == Actions.ACTIONS.DRAWTWO){
-            Actions.doAction(action, mActivePlayer, 2, mActiveDeck, cardFromTop, mTopCard);
-            System.out.println(round + "\n" + mActivePlayer.name + " card " + cardFromTop.getDescription() );
+            moveStatus = Actions.doAction(action, mActivePlayer, 2, mActiveDeck, cardFromTop, mTopCard);
+            if (moveStatus.getSuccess() == false) {
+                round = round - 1;
+                return "invalid move";
+            }
+            System.out.println(round + "\n" + mActivePlayer.name + " card " + cardFromTop.getDescription());
             if(mActivePlayer.getHand().isEmpty()) {
                 round++;
                 mActivePlayer = mPlayers.get(round % mPlayers.size());
@@ -64,7 +83,7 @@ public class SpecialActions {
         }
         // draw case
         if (action == Actions.ACTIONS.DRAW) {
-            Actions.doAction(action, mActivePlayer, 1, mActiveDeck, cardFromTop, mTopCard);
+            moveStatus = Actions.doAction(action, mActivePlayer, 1, mActiveDeck, cardFromTop, mTopCard);
             System.out.println(round + "\n" + mActivePlayer.name + " card " + cardFromTop.getDescription());
             round++;
             String activePlayerTemp = mActivePlayer.name;
@@ -73,7 +92,11 @@ public class SpecialActions {
         }
         // place case
         if (action == Actions.ACTIONS.PLACE){
-            Actions.doAction(action, mActivePlayer, 1 , mActiveDeck, cardFromTop, mTopCard);
+            moveStatus = Actions.doAction(action, mActivePlayer, 1 , mActiveDeck, cardFromTop, mTopCard);
+            if (moveStatus.getSuccess() == false) {
+                round = round - 1;
+                return "invalid move";
+            }
             System.out.println(round + "\n" + mActivePlayer.name + " card " + cardFromTop.getDescription());
             round++;
             String activePlayerTemp = mActivePlayer.name;
@@ -95,7 +118,7 @@ public class SpecialActions {
         mActiveDeck = d;
     }
 
-    public  int getRound(){
+    public int getRound(){
         return round;
     }
 
@@ -108,5 +131,13 @@ public class SpecialActions {
     }
 
     public Card getResultCard() {return resultCard;}
+
+    public void resetStatus() {
+        moveStatus.setSuccess(true);
+    }
+
+    public boolean getStatus() {
+        return moveStatus.getSuccess();
+    }
 
 }

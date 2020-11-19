@@ -12,6 +12,8 @@ public class Card {
     public static int SKIP_CARD = 12;
     public static int WILD_CARD = 13;
 
+    public boolean success = true;
+
     private Color cardColor;
     private int cardNum; //0-9, 10 for reverse, 11 for draw 2, 12 for skip, 13 for Wild
 
@@ -48,6 +50,10 @@ public class Card {
     public boolean isDrawTwoCard() {
         return (cardNum == DRAW_TWO_CARD);
     }
+
+    public boolean getSuccess() { return success; }
+
+    public void setSuccess(boolean b) { this.success = b; }
 
     public String getLabel() {
        if( cardNum < 0 ) {

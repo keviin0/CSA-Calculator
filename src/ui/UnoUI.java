@@ -55,11 +55,25 @@ public class UnoUI extends JFrame{
 
     public void specialAction(Card cardFromTop)
     {
-        String output = model.execute(cardFromTop, action, gamePileTop);
-        JOptionPane.showMessageDialog(null, output);
-        round = model.getRound();
-        mActivePlayer = model.getActivePlayer();
-        updateActivePlayer(mActivePlayer);
+        while(true) {
+            String output = model.execute(cardFromTop, action, gamePileTop);
+
+            System.out.println(model.getStatus());
+            if (output == "invalid move") {
+                JOptionPane.showMessageDialog(null, output);
+                round = model.getRound();
+                mActivePlayer = model.getActivePlayer();
+                updateActivePlayer(mActivePlayer);
+                break;
+            }
+
+            JOptionPane.showMessageDialog(null, output);
+            round = model.getRound();
+            mActivePlayer = model.getActivePlayer();
+            updateActivePlayer(mActivePlayer);
+            updateGamePile(selectedCard);
+            break;
+        }
     }
 
     public UnoUI(Player currentPlayer, Card topCard, Deck deck, ArrayList<Player> players){
@@ -94,7 +108,7 @@ public class UnoUI extends JFrame{
                 //TODO: to be implemented
                 mCurrentPlayerLabel.setText(mActivePlayer.name);
                 specialAction(selectedCard);
-                updateGamePile(selectedCard);
+
             }
 
 

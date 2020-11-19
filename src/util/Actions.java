@@ -54,7 +54,8 @@ public class Actions {
                 return c;
             case PLACE:
                 if(topCard.getColor() != c.getColor()){ //Check if card is unable to be played
-                    if(topCard.getCardNum() == c.getCardNum()){
+                    if(topCard.getCardNum() != c.getCardNum()){
+                        c.setSuccess(false);
                         return c;
                     }
                 }
