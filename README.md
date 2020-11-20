@@ -1,4 +1,4 @@
-# CSA-Calculator
+# CSA-Portfolio Project
 
 **Standard SDK:** Adopt-OpenJ9-15
 
