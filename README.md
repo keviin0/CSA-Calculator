@@ -64,6 +64,7 @@ Calculator UI is an advanced version of the sample calculator. The Calculator in
 A computer simulation of the Card Game UNO
 
 - GoFish
+
 A computer simulation of the Card Game Go Fish
 
 * Minesweeper
