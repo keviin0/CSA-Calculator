@@ -14,7 +14,7 @@
 ![](images/Snip1.png)
 
 **TODOs/Team Goals Week 11:**
-* Make readme more concise.
+* Finalize our README.
 
 * Finish all the mini labs.
 
@@ -42,16 +42,10 @@ Aditya: Fix ReadMe; Make finishing touches to model/view of MineSweeper; Create 
 
 ------------------------------------------------------------------------------------------------------------------------
 
-**Week 8 Progress Check**
+**Week 11 Evaluations**
 
-| *Contributor's <br> Name* | *Self <br> Grade (out <br> of 20)* | Code Contributions | Scrum Master <br> Grade (out <br> of 5)
-|---|:---:|---|---|./src/util/Acti
-|Kevin Hu | 19/20 | Completed model and control segments of Uno with model found in [Actions.java](ons.java) and control in [Playfield.java](./src/util/Playfield.java). Created bridge between View and Model/Control with performAction() method in [UnoUI.java](./src/ui/UnoUI). All other work in helper files: [Card.java](./src/util/Card.java), [Deck.java](./src/util/Deck.java), [Player.java](./src/util/Player.java). Still need to add special card functionality in Actions.java for full game functionality.  | 5/5 Developed entirety of model/control for Uno |
-|Sean Tran   | 19/20 | I was able to accomplish my goal of fixing the [read.me](https://github.com/keviin0/CSA-Portfolio-GroceryStoreSim/blob/main/README.md) to be more concise and easier to read. I added menu buttons for my team on the [MainMenuUI](https://github.com/keviin0/CSA-Portfolio-GroceryStoreSim/blob/main/src/util/MainMenu.java#L87-L113) so we can run all games from it. My goal/assignment was to work on the view of the Uno game this week. I designed the [interface](https://github.com/keviin0/CSA-Portfolio-GroceryStoreSim/blob/main/src/ui/UnoUI.form). I collaborated with Kevin on the View Controller components such as updating [Card Deck]( https://github.com/keviin0/CSA-Portfolio-GroceryStoreSim/blob/main/src/util/Deck.java#L17-L20). I implemented the [UNO UI](https://github.com/keviin0/CSA-Portfolio-GroceryStoreSim/blob/main/src/ui/UnoUI.java). Updated notes to [Journal](https://docs.google.com/document/d/1Eq7m4VV92lnr9jNV4NAeMXk2w12HXQcJsRfXPjjd0Jk/edit?usp=sharing). | 5/5 Completed entirety of view for Uno|
-|  Aditya Surapaneni | 19/20 | I achieved my goals for this week. I helped with the creation of the Minesweeper mini game by working on the View and Model of the program, which included the creation of Grid.java, Square.java, and a few portions of MGame.java. I also updated the README so that it's more concise. 1. [Grid.java:](https://github.com/keviin0/CSA-Portfolio-GroceryStoreSim/blob/main/src/util/Grid.java) 2. [Square.java:](https://github.com/keviin0/CSA-Portfolio-GroceryStoreSim/blob/main/src/util/Square.java) 3. [MGame.java:](https://github.com/keviin0/CSA-Portfolio-GroceryStoreSim/blob/main/src/util/MGame.java) | 5/5 contributed to functional minesweepeer |
-|  Jacob Rozenkrants | 19/20 | I achieved my goals for this week. I wanted to understand MVC through more involvement. Aditya and I initially worked on an earlier version of the MineSweeper game, but we came to realize there were compatibility problems. This is the most recent version. I worked a bit on Square.Java but mostly prioritized MGame.Java. [Square.java:](https://github.com/keviin0/CSA-Portfolio-GroceryStoreSim/blob/main/src/util/Square.java) and [MGame.java:](https://github.com/keviin0/CSA-Portfolio-GroceryStoreSim/blob/main/src/util/MGame.java) | 5/5 contributed to functional minesweeper  | 
-|Siddhant Ranka   | 18/20 | I made significant contributions to the README. I added extra notes to my [Journal](https://docs.google.com/document/d/1Eq7m4VV92lnr9jNV4NAeMXk2w12HXQcJsRfXPjjd0Jk/edit). I fell behind on my goals for adding the view code for UNO. It was far more difficult than I anticipated to learn the necessary Java concepts. I attempted to create a button showing all the cards in the Deck. On Monday and Tuesday, I created my own card deck. Kevin's version was used instead, so I commented mine out. On my own, I managed to create a functional card deck and made some progress on [shuffling it](https://github.com/keviin0/CSA-Portfolio-GroceryStoreSim/commit/0939cbe3031c39a298ad15b24981f6041ccf5f47). Next Week, I would like to work on the card game itself since I am more familiar with the code needed for that. https://github.com/keviin0/CSA-Portfolio-GroceryStoreSim/commit/b0948371051e5d30ab8f758969001822f3ab8179. On the screen it says load diff. Click load diff. and my code will appear. My functional card deck https://github.com/keviin0/CSA-Portfolio-GroceryStoreSim/commit/225ad769cc21872fbf7616c78c97383f8605f78d | 1/5 updated only the README |
-|   |   |   |   |
+Siddhant Ranka: Individually created a functional computer simulation in java of the card game Go Fish. 
+
                 
 --------Explanation for Each Lab:
 
