@@ -10,7 +10,7 @@
 - When pulling our code, we have a number of games. The two games from this week are UNO and Minesweeper
 - Each of these should run individually and the main code should run.
 - The Home Button and AP Test Button do not work. Only the Labs Button Works. The two games from this weeek are UNO and Minesweep.
-- Siddhant, Kevin, and Sean worked on UNO and Jacob and Aditya worked on Minesweeper.
+- Kevin and Sean worked on UNO and Jacob and Aditya worked on Minesweeper. Siddhant worked on Go Fish.
 - The place card button for the UNO game does not work and only 1 card can be drawn for the UNO game.
 - Note for the instructions: We added extra instructions so we hopefully will not waste any of your time for you trying to figure out how to run our code.
 ![](images/Snip1.png)
@@ -28,7 +28,9 @@
 
 **Pair / Trio breakdowns:**
 
-Sean / Kevin / Siddhant : UNO game
+Sean / Kevin : UNO game
+
+Siddhant: Go Fish game
  
 Aditya / Jacob : MineSweeper
 
@@ -63,6 +65,9 @@ Calculator UI is an advanced version of the sample calculator. The Calculator in
 - UNO
 
 A computer simulation of the Card Game UNO
+
+- GoFish
+A computer simulation of the Card Game Go Fish
 
 * Minesweeper
 
