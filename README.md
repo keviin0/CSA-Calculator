@@ -1,45 +1,47 @@
 # CSA-Calculator
 
-**Standard SDK:** adopt-openj9-15
+**Standard SDK:** Adopt-OpenJ9-15
 
 **Project Theme:** Games from the Decades
 
-**How to run our code:**
-- Our Project Standard SDK is adopt-openj9-15
-- We have sent the link to our [Github project](https://github.com/keviin0/CSA-Portfolio-GroceryStoreSim)
+**How to Run our Code:**
+- Our Project Standard SDK is Adopt-OpenJ9-15
+- We have sent the link to our [Github Project](https://github.com/keviin0/CSA-Portfolio-GroceryStoreSim)
 - Our three main games are Go Fish, UNO, and Minesweeper.
-- Each of these should run individually and the main code should run.
+- Each of these should run individually, and the main code should run.
 - The Home Button and AP Test Button do not work. Only the Labs Button Works. 
 - Kevin and Sean worked on UNO and Jacob and Aditya worked on Minesweeper. Siddhant worked on Go Fish.
 - Note for the instructions: We added extra instructions so we hopefully will not waste any of your time for you trying to figure out how to run our code.
 ![](images/Snip1.png)
 
-**Team Goals Week 11:**
-* make readme more concise
+**TODOs/Team Goals Week 11:**
+* Make readme more concise.
 
-* Finish all the minilabs.
+* Finish all the mini labs.
 
 * Create our videos.
 
-**Pair / Trio breakdowns:**
+**Pair/Trio Breakdowns:**
 
-Sean / Kevin : UNO game
+Sean / Kevin : UNO Game
 
-Siddhant: Go Fish game
+Siddhant: Go Fish Game
  
-Aditya / Jacob : MineSweeper
+Aditya / Jacob : MineSweeper Game
 
-**Individual Assignments Week 11:**
+**TODOs/Individual Assignments Week 11:**
 
-Sean: Fix Readme; work on the view of UNO game
+Sean: Fix ReadMe; Work on the view of UNO Game; Make final adjustments to View; Create video for final project.
 
-Kevin: Fix Readme; work on control of UNO game
+Kevin: Fix ReadMe; Work on the control of UNO Game; Make final adjustments to Control; Create video for final project.
 
-Siddhant: Make final adjustments for Go Fish, create part for the video.
+Siddhant: Fix ReadMe; Make final adjustments for GoFish; Create video for final project.
 
-Jacob: Fix Readme; work on control of MineSweeper
+Jacob: Fix ReadMe; Make finishing touches to control of MineSweeper; Create video for final project.
 
-Aditya: Fix Readme; work on view/model of MineSweeper
+Aditya: Fix ReadMe; Make finishing touches to model/view of MineSweeper; Create video for final project.
+
+------------------------------------------------------------------------------------------------------------------------
 
 **Week 8 Progress Check**
 
