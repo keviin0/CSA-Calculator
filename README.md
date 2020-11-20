@@ -7,24 +7,19 @@
 **How to run our code:**
 - Our Project Standard SDK is adopt-openj9-15
 - We have sent the link to our [Github project](https://github.com/keviin0/CSA-Portfolio-GroceryStoreSim)
-- When pulling our code, we have a number of games. The two games from this week are UNO and Minesweeper
+- Our three main games are Go Fish, UNO, and Minesweeper.
 - Each of these should run individually and the main code should run.
-- The Home Button and AP Test Button do not work. Only the Labs Button Works. The two games from this weeek are UNO and Minesweep.
+- The Home Button and AP Test Button do not work. Only the Labs Button Works. 
 - Kevin and Sean worked on UNO and Jacob and Aditya worked on Minesweeper. Siddhant worked on Go Fish.
-- The place card button for the UNO game does not work and only 1 card can be drawn for the UNO game.
 - Note for the instructions: We added extra instructions so we hopefully will not waste any of your time for you trying to figure out how to run our code.
 ![](images/Snip1.png)
 
-**Team Goals Week 8:**
+**Team Goals Week 11:**
 * make readme more concise
 
-* reference actual code in progress check
+* Finish all the minilabs.
 
-* add TODO: to help keep collaboration organized
-
-* establish overall theme for project 
-
-* try to have no rubber chickens
+* Create our videos.
 
 **Pair / Trio breakdowns:**
 
@@ -34,13 +29,13 @@ Siddhant: Go Fish game
  
 Aditya / Jacob : MineSweeper
 
-**Individual Assignments Week 8:**
+**Individual Assignments Week 11:**
 
 Sean: Fix Readme; work on the view of UNO game
 
 Kevin: Fix Readme; work on control of UNO game
 
-Siddhant: Fix Readme; work on view/model of UNO game
+Siddhant: Make final adjustments for Go Fish, create part for the video.
 
 Jacob: Fix Readme; work on control of MineSweeper
 
