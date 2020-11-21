@@ -57,6 +57,12 @@ public class Actions {
                     return selectedCard;
                 }
 
+                if(topCard.getColor() == Card.SPECIAL_COLOR){
+                    push(p, selectedCard);
+                    return selectedCard;
+
+                }
+
                 if(topCard.getColor() != selectedCard.getColor()){ //Check if card is unable to be played
                     if(selectedCard.getCardNum() == 10 ||selectedCard.getCardNum() == 11 || selectedCard.getCardNum() == 12 || selectedCard.getCardNum() == 13 ){
                         push(p, selectedCard);
@@ -70,6 +76,7 @@ public class Actions {
                 push(p, selectedCard);
                 return selectedCard;
             case SKIP:
+                push(p, selectedCard);
                 return selectedCard;
             case REVERSE:
                 return selectedCard;

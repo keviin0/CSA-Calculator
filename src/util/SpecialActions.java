@@ -51,14 +51,17 @@ public class SpecialActions {
 
         // Skip card case
         if (action == Actions.ACTIONS.SKIP){
-            moveStatus = Actions.doAction(action, mActivePlayer, 2, mActiveDeck, cardFromTop, gamePileTopCard);
-            if (moveStatus.getSuccess() == false) {
-                round = round - 1;
-                return "invalid move";
-            }
-            round++;
+            Actions.doAction(action, mActivePlayer, 2, mActiveDeck, cardFromTop, gamePileTopCard);
+            // Skips to next player
             round++;
             mActivePlayer = mPlayers.get(round % mPlayers.size());
+            String skippedPlayer = mActivePlayer.getName();
+            // skips their turn
+            round++;
+            mActivePlayer = mPlayers.get(round % mPlayers.size());
+
+            return "skipping player " + skippedPlayer;
+
         }
 
         // Reverse card case
@@ -94,7 +97,7 @@ public class SpecialActions {
             }
             System.out.println(round + "\n" + mActivePlayer.name + " card " + cardFromTop.getDescription());
 
-            return activePlayerTemp + " has drawn 2 cards";
+            return activePlayerTemp + " used draw 2 cards";
 
         }
 
