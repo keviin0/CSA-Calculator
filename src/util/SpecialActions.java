@@ -45,13 +45,20 @@ public class SpecialActions {
                 action = Actions.ACTIONS.SKIP;
             } else if (cardFromTop.getCardNum() == Card.DRAW_TWO_CARD) {
                 action = Actions.ACTIONS.DRAWTWO;
+            } else if (cardFromTop.getCardNum() == Card.WILD_CARD){
+                action = Actions.ACTIONS.WILDCARD;
             }
         }
 
 
         // Skip card case
         if (action == Actions.ACTIONS.SKIP){
-            moveStatus = Actions.doAction(action, mActivePlayer, 2, mActiveDeck, cardFromTop, gamePileTopCard);
+            Actions.doAction(action, mActivePlayer, 2, mActiveDeck, cardFromTop, gamePileTopCard);
+
+            if(mActivePlayer.getHand().isEmpty()) {
+                return "Winner";
+            }
+
             // Skips to next player
             round++;
             mActivePlayer = mPlayers.get(round % mPlayers.size());
@@ -60,7 +67,20 @@ public class SpecialActions {
             round++;
             mActivePlayer = mPlayers.get(round % mPlayers.size());
 
+
             return "skipping player " + skippedPlayer;
+
+        }
+
+        // Wild card case
+        if (action == Actions.ACTIONS.WILDCARD){
+            Actions.doAction(action, mActivePlayer, 2, mActiveDeck, cardFromTop, gamePileTopCard);
+
+            if(mActivePlayer.getHand().isEmpty()) {
+                return "Winner";
+            }
+
+            return "Place a card of choice";
 
         }
 
@@ -87,6 +107,7 @@ public class SpecialActions {
             action = Actions.ACTIONS.PLACE;
             moveStatus = Actions.doAction(action, mActivePlayer, 1 , mActiveDeck, cardFromTop, gamePileTopCard);
 
+
             // switch to other player
             String activePlayerTemp = mActivePlayer.name;
             round++;
@@ -94,12 +115,10 @@ public class SpecialActions {
 
             // draws 2 for player
             action = Actions.ACTIONS.DRAWTWO;
-            moveStatus = Actions.doAction(action, mActivePlayer, 2, mActiveDeck, cardFromTop, gamePileTopCard);
-            if (moveStatus.getSuccess() == false) {
-                round = round - 1;
-                return "invalid move";
-            }
+            Actions.doAction(action, mActivePlayer, 2, mActiveDeck, cardFromTop, gamePileTopCard);
+
             System.out.println(round + "\n" + mActivePlayer.name + " card " + cardFromTop.getDescription());
+
 
             return activePlayerTemp + " used draw 2 cards";
 
@@ -111,7 +130,7 @@ public class SpecialActions {
             System.out.println(round + "\n" + mActivePlayer.name + " card " + cardFromTop.getDescription());
 
             String activePlayerTemp = mActivePlayer.name;
-
+            
             round++;
             mActivePlayer = mPlayers.get(round % mPlayers.size());
 
@@ -127,6 +146,11 @@ public class SpecialActions {
                 return "invalid move";
             }
             System.out.println(round + "\n" + mActivePlayer.name + " card " + cardFromTop.getDescription());
+
+            if(mActivePlayer.getHand().isEmpty()) {
+                return "Winner";
+            }
+
             round++;
             String activePlayerTemp = mActivePlayer.name;
             mActivePlayer = mPlayers.get(round % mPlayers.size());

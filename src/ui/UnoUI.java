@@ -58,17 +58,23 @@ public class UnoUI extends JFrame{
             String output = model.execute(cardFromTop, action, mGamePileTopCard);
 
             System.out.println(model.getStatus());
-            if (output == "invalid move") {
+            if (output.equalsIgnoreCase("invalid move")) {
                 JOptionPane.showMessageDialog(null, output);
                 round = model.getRound();
                 mActivePlayer = model.getActivePlayer();
                 updateActivePlayer(mActivePlayer);
-
                 break;
+            }
 
+            if (output.equalsIgnoreCase("Winner")) {
+                JOptionPane.showMessageDialog(null, output);
+                this.setVisible(false);
+                this.dispose();
+                break;
             }
 
             JOptionPane.showMessageDialog(null, output);
+
             round = model.getRound();
             mActivePlayer = model.getActivePlayer();
             updateActivePlayer(mActivePlayer);

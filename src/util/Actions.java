@@ -2,7 +2,7 @@ package util;
 
 public class Actions {
 
-    public static enum ACTIONS {DRAW, PLACE, SKIP, REVERSE, DRAWTWO}
+    public static enum ACTIONS {DRAW, PLACE, SKIP, REVERSE, DRAWTWO, WILDCARD}
     public static Card mTopCard;
 
     public static Card pop(Deck d){
@@ -78,6 +78,7 @@ public class Actions {
             case SKIP:
                 push(p, selectedCard);
                 return selectedCard;
+
             case REVERSE:
                 push(p, selectedCard);
                 return selectedCard;
@@ -88,6 +89,13 @@ public class Actions {
                     p.addCard(drawnCard);
                 }
                 return selectedCard;
+
+            case WILDCARD:
+                push(p, selectedCard);
+                return selectedCard;
+
+
+
 
 
 
