@@ -43,7 +43,7 @@ Aditya: Fix ReadMe; Make finishing touches to model/view of MineSweeper; Create 
 ------------------------------------------------------------------------------------------------------------------------
 
 
-Links for creativity reflections if they are needed: Creativity reflections
+Links for creativity reflections if they are needed:[Creativity Reflections](https://docs.google.com/document/d/1JdTHHwhaIQ_EOBcK6w7C-Z1o33CtkUxzD-ZN0kmQjBU/edit)
 
 **Week 11 Contributions**
 
