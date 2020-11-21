@@ -79,6 +79,7 @@ public class Actions {
                 push(p, selectedCard);
                 return selectedCard;
             case REVERSE:
+                push(p, selectedCard);
                 return selectedCard;
 
             case DRAWTWO:

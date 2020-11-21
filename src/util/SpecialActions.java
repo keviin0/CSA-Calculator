@@ -37,7 +37,7 @@ public class SpecialActions {
         }
 
         resetStatus();
-        if (cardFromTop.getColor() == Card.SPECIAL_COLOR) {
+        if (cardFromTop.getColor() == Card.SPECIAL_COLOR && action == Actions.ACTIONS.PLACE) {
 
             if (cardFromTop.getCardNum() == Card.REVERSE_CARD) {
                 action = Actions.ACTIONS.REVERSE;
@@ -51,7 +51,7 @@ public class SpecialActions {
 
         // Skip card case
         if (action == Actions.ACTIONS.SKIP){
-            Actions.doAction(action, mActivePlayer, 2, mActiveDeck, cardFromTop, gamePileTopCard);
+            moveStatus = Actions.doAction(action, mActivePlayer, 2, mActiveDeck, cardFromTop, gamePileTopCard);
             // Skips to next player
             round++;
             mActivePlayer = mPlayers.get(round % mPlayers.size());
@@ -67,13 +67,17 @@ public class SpecialActions {
         // Reverse card case
         if (action == Actions.ACTIONS.REVERSE){
             moveStatus = Actions.doAction(action, mActivePlayer, 2, mActiveDeck, cardFromTop, gamePileTopCard);
-            if (moveStatus.getSuccess() == false) {
-                round = round - 1;
-                return "invalid move";
-            }
+
+            // reverse players
             Collections.reverse(mPlayers);
-            round++;
+
+            String tempPlayer = mActivePlayer.getName();
+
             mActivePlayer = mPlayers.get(round % mPlayers.size());
+
+            return tempPlayer + " has used reverse!";
+
+
         }
 
         // draw two case
@@ -106,9 +110,11 @@ public class SpecialActions {
             moveStatus = Actions.doAction(action, mActivePlayer, 1, mActiveDeck, cardFromTop, gamePileTopCard);
             System.out.println(round + "\n" + mActivePlayer.name + " card " + cardFromTop.getDescription());
 
-            round++;
             String activePlayerTemp = mActivePlayer.name;
+
+            round++;
             mActivePlayer = mPlayers.get(round % mPlayers.size());
+
             return activePlayerTemp + " has drawn card";
         }
         // place case
