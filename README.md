@@ -44,7 +44,7 @@ Aditya: Fix ReadMe; Make finishing touches to model/view of MineSweeper; Create 
 
 **Week 11 Contributions**
 
-Siddhant Ranka: Created a functional computer simulation in java of the card game Go Fish and created a video demonstrating the game and it's code. This game is fully functional and it works on the integrated Night at the Museum website. This is the code for the declaration of the variables, ArrayLists, and UI components https://github.com/keviin0/CSA-Portfolio-GroceryStoreSim/blob/main/src/ui/GoFish.java#L19-L34 - . The logic code for Go Fish is shown through this link https://github.com/keviin0/CSA-Portfolio-GroceryStoreSim/blob/main/src/ui/GoFish.java#L39-L129. It would be considered control code in an MVC format. The UI code for Go Fish is shown through the link https://github.com/keviin0/CSA-Portfolio-GroceryStoreSim/blob/main/src/ui/GoFish.java#L136-L168. If Go Fish was in a full MVC format, this code would be considered the view code of MVC.
+Siddhant Ranka: Created a functional computer simulation in java of the card game Go Fish and created a video demonstrating the game and it's code. This game is fully functional and it works on the integrated Night at the Museum website. This is the code for the declaration of the variables, ArrayLists, and [UI components](https://github.com/keviin0/CSA-Portfolio-GroceryStoreSim/blob/main/src/ui/GoFish.java#L19-L34) - . The logic code for Go Fish is shown through this [link](https://github.com/keviin0/CSA-Portfolio-GroceryStoreSim/blob/main/src/ui/GoFish.java#L39-L129). It would be considered control code in an MVC format. The UI code for Go Fish is shown through the [link](https://github.com/keviin0/CSA-Portfolio-GroceryStoreSim/blob/main/src/ui/GoFish.java#L136-L168). If Go Fish was in a full MVC format, this code would be considered the view code of MVC.
 
                 
 --------Explanation for Each Lab:
@@ -64,6 +64,13 @@ A computer simulation in Java of the Card Game Go Fish.
 
 A Java simulation of the 1989 video game Minesweeeper.
 
+* Tic Tac toe
+
+A computer simulation of the classic Tic Tac Toe
+
+* 21 Flags
+
+A computer simulation of the Thai 21 flag game
 
 
 MVC BlueJ Model (as of 10/30/2020) no including Calculator:
