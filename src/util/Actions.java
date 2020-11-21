@@ -58,6 +58,10 @@ public class Actions {
                 }
 
                 if(topCard.getColor() != selectedCard.getColor()){ //Check if card is unable to be played
+                    if(selectedCard.getCardNum() == 10 ||selectedCard.getCardNum() == 11 || selectedCard.getCardNum() == 12 || selectedCard.getCardNum() == 13 ){
+                        push(p, selectedCard);
+                        return selectedCard;}
+
                     if(topCard.getCardNum() != selectedCard.getCardNum()){
                         selectedCard.setSuccess(false);
                         return selectedCard;
@@ -69,6 +73,20 @@ public class Actions {
                 return selectedCard;
             case REVERSE:
                 return selectedCard;
+
+            case DRAWTWO:
+                for(int i = 0; i < num; i++){
+                    Card drawnCard = pop(d);
+                    p.addCard(drawnCard);
+                }
+                return selectedCard;
+
+
+
+
+
+
+
             default:
                 throw new IllegalStateException("Unexpected value: " + choice);
         }

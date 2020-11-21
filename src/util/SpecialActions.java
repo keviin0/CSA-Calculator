@@ -37,15 +37,18 @@ public class SpecialActions {
         }
 
         resetStatus();
-        if (cardFromTop.getColor() == Card.SPECIAL_COLOR){
-                JOptionPane.showMessageDialog(null, "Pick a color");
-        } else if (cardFromTop.getCardNum() == Card.REVERSE_CARD){
-            action = Actions.ACTIONS.REVERSE;
-        } else if  (cardFromTop.getCardNum() == Card.SKIP_CARD){
-            action = Actions.ACTIONS.SKIP;
-        } else if  (cardFromTop.getCardNum() == Card.DRAW_TWO_CARD){
-            action = Actions.ACTIONS.DRAWTWO;
+        if (cardFromTop.getColor() == Card.SPECIAL_COLOR) {
+
+            if (cardFromTop.getCardNum() == Card.REVERSE_CARD) {
+                action = Actions.ACTIONS.REVERSE;
+            } else if (cardFromTop.getCardNum() == Card.SKIP_CARD) {
+                action = Actions.ACTIONS.SKIP;
+            } else if (cardFromTop.getCardNum() == Card.DRAW_TWO_CARD) {
+                action = Actions.ACTIONS.DRAWTWO;
+            }
         }
+
+
         // Skip card case
         if (action == Actions.ACTIONS.SKIP){
             moveStatus = Actions.doAction(action, mActivePlayer, 2, mActiveDeck, cardFromTop, gamePileTopCard);
@@ -56,8 +59,10 @@ public class SpecialActions {
             round++;
             round++;
             mActivePlayer = mPlayers.get(round % mPlayers.size());
-            // Reverse card case
-        } else if (action == Actions.ACTIONS.REVERSE){
+        }
+
+        // Reverse card case
+        if (action == Actions.ACTIONS.REVERSE){
             moveStatus = Actions.doAction(action, mActivePlayer, 2, mActiveDeck, cardFromTop, gamePileTopCard);
             if (moveStatus.getSuccess() == false) {
                 round = round - 1;
@@ -66,30 +71,38 @@ public class SpecialActions {
             Collections.reverse(mPlayers);
             round++;
             mActivePlayer = mPlayers.get(round % mPlayers.size());
-            // Draw two case
-        } else if (action == Actions.ACTIONS.DRAWTWO){
+        }
+
+        // draw two case
+        if (action == Actions.ACTIONS.DRAWTWO){
+
+            // place down draw two card
+            action = Actions.ACTIONS.PLACE;
+            moveStatus = Actions.doAction(action, mActivePlayer, 1 , mActiveDeck, cardFromTop, gamePileTopCard);
+
+            // switch to other player
+            String activePlayerTemp = mActivePlayer.name;
+            round++;
+            mActivePlayer = mPlayers.get(round % mPlayers.size());
+
+            // draws 2 for player
+            action = Actions.ACTIONS.DRAWTWO;
             moveStatus = Actions.doAction(action, mActivePlayer, 2, mActiveDeck, cardFromTop, gamePileTopCard);
             if (moveStatus.getSuccess() == false) {
                 round = round - 1;
                 return "invalid move";
             }
             System.out.println(round + "\n" + mActivePlayer.name + " card " + cardFromTop.getDescription());
-            if(mActivePlayer.getHand().isEmpty()) {
-                round++;
-                mActivePlayer = mPlayers.get(round % mPlayers.size());
-                return "Winner";
-            }
-            if(mActiveDeck.cardDeck.isEmpty()){
-                mActiveDeck = Actions.newDeck();
-            }
-            round++;
-            mActivePlayer = mPlayers.get(round % mPlayers.size());
-            //mActivePlayer.addCard(mTopCard);
+
+            return activePlayerTemp + " has drawn 2 cards";
+
         }
+
         // draw case
         if (action == Actions.ACTIONS.DRAW) {
             moveStatus = Actions.doAction(action, mActivePlayer, 1, mActiveDeck, cardFromTop, gamePileTopCard);
             System.out.println(round + "\n" + mActivePlayer.name + " card " + cardFromTop.getDescription());
+
             round++;
             String activePlayerTemp = mActivePlayer.name;
             mActivePlayer = mPlayers.get(round % mPlayers.size());
@@ -97,7 +110,6 @@ public class SpecialActions {
         }
         // place case
         if (action == Actions.ACTIONS.PLACE){
-
 
             moveStatus = Actions.doAction(action, mActivePlayer, 1 , mActiveDeck, cardFromTop, gamePileTopCard);
 

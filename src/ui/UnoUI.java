@@ -63,7 +63,9 @@ public class UnoUI extends JFrame{
                 round = model.getRound();
                 mActivePlayer = model.getActivePlayer();
                 updateActivePlayer(mActivePlayer);
+
                 break;
+
             }
 
             JOptionPane.showMessageDialog(null, output);
@@ -79,9 +81,10 @@ public class UnoUI extends JFrame{
     }
 
     public UnoUI(Player currentPlayer, Card topCard, Deck deck, ArrayList<Player> players){
+        model = new SpecialActions(deck, players, topCard);
+
         createUIComponents();
 
-        model = new SpecialActions(deck, players, topCard);
         // update pile
         updateGamePile(topCard);
 
