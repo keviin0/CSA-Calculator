@@ -14,6 +14,7 @@
 - Kevin and Sean worked on UNO and Jacob and Aditya worked on Minesweeper. Siddhant worked on Go Fish.
 
 ![](images/Snip1.png)
+
 Note: Go Fish was not added to the main menu when this picture was taken, but it is there now.
 
 **TODOs/Team Goals Week 11:**
