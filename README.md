@@ -50,7 +50,7 @@ Siddhant Ranka - Go Fish: Created a functional computer simulation in java of th
 
 Sean Tran - Uno: Co-Created a functional [Uno Game](https://github.com/keviin0/CSA-Portfolio-GroceryStoreSim/blob/main/src/ui/UnoUI.java) with special cards in java. The game includes use of MVC and features a [stack](https://github.com/keviin0/CSA-Portfolio-GroceryStoreSim/blob/main/src/util/Actions.java#L8-L29). Created and designed the [view](https://github.com/keviin0/CSA-Portfolio-GroceryStoreSim/blob/main/src/ui/UnoUI.java). Help debug and fix [model](https://github.com/keviin0/CSA-Portfolio-GroceryStoreSim/blob/main/src/util/SpecialActions.java) and [control](https://github.com/keviin0/CSA-Portfolio-GroceryStoreSim/blob/main/src/util/Actions.java). Created and edited the group final video. As, a side minilab, created [Thai 21](https://github.com/keviin0/CSA-Portfolio-GroceryStoreSim/blob/main/src/ui/Thai21.java). Made good contributions to [journal](https://docs.google.com/document/d/1Eq7m4VV92lnr9jNV4NAeMXk2w12HXQcJsRfXPjjd0Jk/edit?usp=sharing) and presented journal in class.                 
 
-**Peer Evaluations**
+**Collective Group Evaluations on Each Member**
 
 Siddhant Ranka: Overall was always present in class and was active on communication applications such as Slack, and text. Went to tutorial multiple times to ask questions to help the group. Most significant contribution to project was the creation of the [GoFish](https://github.com/keviin0/CSA-Portfolio-GroceryStoreSim/blob/main/src/ui/GoFish.java) game. Something they should improve on is asking for help sooner than later so they do not lag behind the group.
 
