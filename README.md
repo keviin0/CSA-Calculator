@@ -52,7 +52,7 @@ Sean Tran - Uno: Co-Created a functional [Uno Game](https://github.com/keviin0/C
 
 **Peer Evaluations**
 
-Siddhant Ranka: Overall was always present in class and was active on communication applications such as Slack, and text. Went to tutorial multiple times to ask questions to help the group. Most significant contribution to project was the creation of the [GoFish](https://github.com/keviin0/CSA-Portfolio-GroceryStoreSim/blob/main/src/util/GoFishCard.java) game. Something they should improve on is asking for help sooner than later so they do not lag behind the group.
+Siddhant Ranka: Overall was always present in class and was active on communication applications such as Slack, and text. Went to tutorial multiple times to ask questions to help the group. Most significant contribution to project was the creation of the [GoFish](https://github.com/keviin0/CSA-Portfolio-GroceryStoreSim/blob/main/src/ui/GoFish.java) game. Something they should improve on is asking for help sooner than later so they do not lag behind the group.
 
 Sean Tran: Overall was active in communication with group via Slack and text. Took initiative to ask other groups and Mr. Mortensen questions. Most significant contribution was the work done on Uno especially [view](https://github.com/keviin0/CSA-Portfolio-GroceryStoreSim/blob/main/src/ui/UnoUI.java) and work on [Thai 21](https://github.com/keviin0/CSA-Portfolio-GroceryStoreSim/blob/main/src/ui/Thai21.java). Something they can improve on is communicating with teammates when they push code to prevent problems with version control.
 
