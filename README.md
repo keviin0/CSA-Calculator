@@ -13,7 +13,7 @@
 - The Home Button and AP Test Button do not work. Only the Labs Button Works. 
 - Kevin and Sean worked on UNO and Jacob and Aditya worked on Minesweeper. Siddhant worked on Go Fish.
 
-**Note: Go Fish was not added to the main menu when this picture was taken, but it is there now.**
+**Note: Go Fish was not added to the main menu under labs with the other buttons when this picture was taken, but it is there now.**
 
 ![](images/Snip1.png)
 
