@@ -9,7 +9,7 @@
 - We have sent the link to our [Github Project](https://github.com/keviin0/CSA-Portfolio-GroceryStoreSim)
 - Our three main games are Go Fish, UNO, and Minesweeper.
 - Each of these should run individually, and the main code should run.
-- On Configurations in IntelliJ, set the configuration to MainMenu. When running you will see a Home, AP Test, and Labs Button. The Labs Button leads to buttons for each of our code. The image below for MainMenu does not show Go Fish but when you run IntelliJ, it will show Go Fish.
+- On Configurations in IntelliJ, set the configuration to MainMenu. When running you will see a Home, AP Test, and Labs Button. The Labs Button leads to buttons for each of our code. The image below for MainMenu does not show Go Fish but when you run IntelliJ, it will show Go Fish with the rest of the game buttons in that Main Menu under Labs.
 - The Home Button and AP Test Button do not work. Only the Labs Button Works. 
 - Kevin and Sean worked on UNO and Jacob and Aditya worked on Minesweeper. Siddhant worked on Go Fish.
 
