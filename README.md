@@ -11,7 +11,7 @@
 - Each of these should run individually, and the main code should run.
 - The Home Button and AP Test Button do not work. Only the Labs Button Works. 
 - Kevin and Sean worked on UNO and Jacob and Aditya worked on Minesweeper. Siddhant worked on Go Fish.
-![](images/MainMenu.png)
+![](images/Snip1.png)
 
 **TODOs/Team Goals Week 11:**
 * Finalize our README.
