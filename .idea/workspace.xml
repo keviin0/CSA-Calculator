@@ -25,7 +25,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2958585-0d52-4512-a6cb-dda4b85f8127" name="Default Changelist" comment="finished UNO">
+    <list default="true" id="d2958585-0d52-4512-a6cb-dda4b85f8127" name="Default Changelist" comment="added to readme">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
@@ -287,7 +287,28 @@
       <option name="project" value="LOCAL" />
       <updated>1605945246688</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="added to readme">
+      <created>1606076831575</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1606076831575</updated>
+    </task>
+    <task id="LOCAL-00019" summary="added to readme">
+      <created>1606077088569</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1606077088569</updated>
+    </task>
+    <task id="LOCAL-00020" summary="added to readme">
+      <created>1606077156992</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1606077156992</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -350,7 +371,8 @@
     <MESSAGE value="added skip card" />
     <MESSAGE value="added reverse" />
     <MESSAGE value="finished UNO" />
-    <option name="LAST_COMMIT_MESSAGE" value="finished UNO" />
+    <MESSAGE value="added to readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="added to readme" />
   </component>
   <component name="WindowStateProjectService">
     <state x="471" y="114" key="#Project_Structure" timestamp="1603256908851">
@@ -462,11 +484,11 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="278" y="101" key="MultipleFileMergeDialog/0.0.1280.680@0.0.1280.680" timestamp="1604115828932" />
-    <state x="431" y="208" key="Vcs.Push.Dialog.v2" timestamp="1605945250535">
+    <state x="431" y="208" key="Vcs.Push.Dialog.v2" timestamp="1606077158497">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="359" y="146" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1604116005351" />
-    <state x="431" y="208" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1920.-169.1920.1040@0.0.1536.824" timestamp="1605945250535" />
+    <state x="431" y="208" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1920.-169.1920.1040@0.0.1536.824" timestamp="1606077158497" />
     <state x="404" y="229" key="Vcs.Push.Dialog.v2/0.23.1440.816@0.23.1440.816" timestamp="1605468966054" />
     <state x="404" y="231" key="Vcs.Push.Dialog.v2/0.23.1440.822@0.23.1440.822" timestamp="1604720340545" />
     <state x="583" y="273" key="Vcs.Push.Dialog.v2/62.0.1858.1080/-1920.0.1920.1040@62.0.1858.1080" timestamp="1604546873125" />
