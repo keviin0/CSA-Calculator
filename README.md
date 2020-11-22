@@ -15,7 +15,7 @@
 
 ![](images/Snip1.png)
 
-Note: Go Fish was not added to the main menu when this picture was taken, but it is there now.
+**Note: Go Fish was not added to the main menu when this picture was taken, but it is there now.**
 
 **TODOs/Team Goals Week 11:**
 * Finalize our README.
