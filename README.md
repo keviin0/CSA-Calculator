@@ -106,7 +106,7 @@ A computer simulation of the Thai 21 flag game
 
 
 MVC for UNO:
-![](images/11.22.1.PNG)
+![](images/11.22.2.PNG)
 
 --------MVC CALCULATOR DESIGN FOR PAIR/TRIO OF ADITYA, JACOB
 
