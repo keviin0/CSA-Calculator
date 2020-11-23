@@ -5,17 +5,20 @@ public class Actions {
     public static enum ACTIONS {DRAW, PLACE, SKIP, REVERSE, DRAWTWO, WILDCARD}
     public static Card mTopCard;
 
+    // pop function
     public static Card pop(Deck d){
         Card result = d.cardDeck.get(0);
         d.cardDeck.remove(0);
         return result;
     }
 
+    // peek function
     public static Card peek(Deck d){
         Card result = d.cardDeck.get(0);
         return result;
     }
 
+    // push function
     public static Card push(Player p, Card selected){
         int index = 0;
         System.out.println(p.getName());
@@ -37,9 +40,7 @@ public class Actions {
 
     public static Deck newDeck(){
         Deck test = new Deck(); //Create deck
-        //System.out.println(test.cardDeck);
         test.shuffle();
-        //System.out.println(test.cardDeck);
         return test;
     }
 
@@ -93,13 +94,6 @@ public class Actions {
             case WILDCARD:
                 push(p, selectedCard);
                 return selectedCard;
-
-
-
-
-
-
-
 
 
 
