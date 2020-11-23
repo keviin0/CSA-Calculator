@@ -95,7 +95,7 @@ A computer simulation of the classic Tic Tac Toe
 A computer simulation of the Thai 21 flag game
 
 
-MVC BlueJ Model (as of 10/30/2020) not including Calculator or Go Fish:
+MVC BlueJ Model not including Calculator or Go Fish:
 ![](images/MVC.png)
 
 --------MVC CALCULATOR DESIGN FOR PAIR/TRIO OF ADITYA, JACOB
