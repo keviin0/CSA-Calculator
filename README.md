@@ -13,9 +13,7 @@
 - The Home Button and AP Test Button do not work. Only the Labs Button Works. 
 - Kevin and Sean worked on UNO and Jacob and Aditya worked on Minesweeper. Siddhant worked on Go Fish.
 
-**Note: Go Fish was not added to the main menu under labs with the other buttons when this picture was taken, but it is there now.**
-
-![](images/Snip1.png)
+![](images/11.22.0.PNG)
 
 **How to run our Night At The Museum Link:**
 - Click Run
@@ -102,13 +100,13 @@ A Java simulation of the 1989 video game Minesweeeper.
 
 A computer simulation of the classic Tic Tac Toe
 
-* 21 Flags
+* Thai 21 Flags
 
 A computer simulation of the Thai 21 flag game
 
 
-MVC BlueJ Model not including Calculator or Go Fish:
-![](images/MVC.png)
+MVC for UNO:
+![](images/11.22.1.PNG)
 
 --------MVC CALCULATOR DESIGN FOR PAIR/TRIO OF ADITYA, JACOB
 

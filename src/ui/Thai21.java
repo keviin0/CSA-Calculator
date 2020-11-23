@@ -223,7 +223,9 @@ public class Thai21 extends JFrame{
 
     private void updateTurnLabel() {
 
-        mTurnLabel.setText(mUserTurn ? "User Turn" : "Computer Turn");
+        //mTurnLabel.setText(mUserTurn ? "User Turn" : "Computer Turn");
+        mTurnLabel.setText("Thai 21");
+
 
     }
 
