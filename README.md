@@ -76,7 +76,7 @@ Aditya Surapaneni: Overall was active in communication via Slack and text. Was g
 
 Jacob Rozenkrants: Overall was actively communicating during class. Did a good job keeping journal up to date and helped work on code whenever possible. Most significant contribution was work on [MineSweeper](https://github.com/keviin0/CSA-Portfolio-GroceryStoreSim/blob/main/src/ui/MineSweeperGame.java) and [Tic Tac Toe](https://github.com/keviin0/CSA-Portfolio-GroceryStoreSim/blob/main/src/ui/TicTacToe.java). Something they should improve on is being more active in Slack so others know when they contributed work.
 
-MVP Pick: Sean Tran - Has done huge amounts of extra work beyond what was assigned in order to help out the group and always is the first one to come to the aid of anyone in the group. 
+**MVP Pick: Sean Tran** - Has done huge amounts of extra work beyond what was assigned in order to help out the group and always is the first one to come to the aid of anyone in the group. 
 
 
 --------Explanation for Each Lab:
