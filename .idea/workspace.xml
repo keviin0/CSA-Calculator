@@ -16,17 +16,14 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </select>
+    <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2958585-0d52-4512-a6cb-dda4b85f8127" name="Default Changelist" comment="added to readme">
+    <list default="true" id="d2958585-0d52-4512-a6cb-dda4b85f8127" name="Default Changelist" comment="Updated README.">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_23_2020_10_15_PM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_23_2020_10_15_PM__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_27_2020_8_27_AM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_27_2020_8_27_AM__Default_Changelist_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,26 +65,26 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="Application.Uno">
-    <configuration name="CalculatorUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ui.CalculatorUI" />
-      <module name="CSA-Calculator" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ui.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+  <component name="RunManager" selected="Application.MainMenu">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GoFish" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ui.GoFish" />
+    <configuration name="Deck" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="util.Deck" />
       <module name="CSA-Calculator" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ui.*" />
+          <option name="PATTERN" value="util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -101,6 +98,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MineSweeperGame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ui.MineSweeperGame" />
+      <module name="CSA-Calculator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ui.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -135,19 +145,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.CalculatorUI" />
-      <item itemvalue="Application.GoFish" />
       <item itemvalue="Application.MainMenu" />
-      <item itemvalue="Application.UnoUI" />
+      <item itemvalue="Application.Deck" />
+      <item itemvalue="Application.MineSweeperGame" />
       <item itemvalue="Application.Uno" />
+      <item itemvalue="Application.UnoUI" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Uno" />
-        <item itemvalue="Application.CalculatorUI" />
         <item itemvalue="Application.MainMenu" />
-        <item itemvalue="Application.GoFish" />
+        <item itemvalue="Application.MineSweeperGame" />
         <item itemvalue="Application.UnoUI" />
+        <item itemvalue="Application.Uno" />
+        <item itemvalue="Application.Deck" />
       </list>
     </recent_temporary>
   </component>
@@ -161,11 +171,6 @@
       <updated>1603171346378</updated>
       <workItem from="1603987133507" duration="270000" />
       <workItem from="1604025998802" duration="313000" />
-      <workItem from="1604715771119" duration="67000" />
-      <workItem from="1604715877495" duration="109000" />
-      <workItem from="1604716814328" duration="99000" />
-      <workItem from="1604720183015" duration="15000" />
-      <workItem from="1604720221359" duration="130000" />
     </task>
     <task id="LOCAL-00001" summary="get rid of trash">
       <created>1603171904833</created>
@@ -209,147 +214,7 @@
       <option name="project" value="LOCAL" />
       <updated>1604115761978</updated>
     </task>
-    <task id="LOCAL-00007" summary="Add card differentiation in Actions and UnoUI.">
-      <created>1604542932878</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1604542932878</updated>
-    </task>
-    <task id="LOCAL-00008" summary="fix null">
-      <created>1604544143679</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1604544143679</updated>
-    </task>
-    <task id="LOCAL-00009" summary="fix null">
-      <created>1604544282981</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1604544282981</updated>
-    </task>
-    <task id="LOCAL-00010" summary="fix null">
-      <created>1604546872308</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1604546872308</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Added the GoFish Game. It works better in my own playground for some reason.">
-      <created>1604720334636</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1604720334636</updated>
-    </task>
-    <task id="LOCAL-00012" summary="GoFish">
-      <created>1605468962626</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1605468962626</updated>
-    </task>
-    <task id="LOCAL-00013" summary="GoFish">
-      <created>1605629695623</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1605629695623</updated>
-    </task>
-    <task id="LOCAL-00014" summary="added draw 2">
-      <created>1605934223777</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1605934223777</updated>
-    </task>
-    <task id="LOCAL-00015" summary="added skip card">
-      <created>1605940023280</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1605940023280</updated>
-    </task>
-    <task id="LOCAL-00016" summary="added reverse">
-      <created>1605941658866</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1605941658866</updated>
-    </task>
-    <task id="LOCAL-00017" summary="finished UNO">
-      <created>1605945246688</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1605945246688</updated>
-    </task>
-    <task id="LOCAL-00018" summary="added to readme">
-      <created>1606076831575</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1606076831575</updated>
-    </task>
-    <task id="LOCAL-00019" summary="added to readme">
-      <created>1606077088569</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1606077088569</updated>
-    </task>
-    <task id="LOCAL-00020" summary="added to readme">
-      <created>1606077156992</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1606077156992</updated>
-    </task>
-    <task id="LOCAL-00021" summary="added to readme">
-      <created>1606079515510</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1606079515510</updated>
-    </task>
-    <task id="LOCAL-00022" summary="added to readme">
-      <created>1606079535621</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1606079535621</updated>
-    </task>
-    <task id="LOCAL-00023" summary="added to readme">
-      <created>1606079653041</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1606079653041</updated>
-    </task>
-    <task id="LOCAL-00024" summary="added to readme">
-      <created>1606079684645</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1606079684645</updated>
-    </task>
-    <task id="LOCAL-00025" summary="added to readme">
-      <created>1606079739883</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1606079739883</updated>
-    </task>
-    <task id="LOCAL-00026" summary="added to readme">
-      <created>1606079970701</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1606079970701</updated>
-    </task>
-    <option name="localTasksCounter" value="27" />
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -404,117 +269,56 @@
     <MESSAGE value="Add UNO MVC framework with model and controller code excluding playCard in Playfield.java." />
     <MESSAGE value="Added finishing touches." />
     <MESSAGE value="Updated README." />
-    <MESSAGE value="Add card differentiation in Actions and UnoUI." />
-    <MESSAGE value="fix null" />
-    <MESSAGE value="Added the GoFish Game. It works better in my own playground for some reason." />
-    <MESSAGE value="GoFish" />
-    <MESSAGE value="added draw 2" />
-    <MESSAGE value="added skip card" />
-    <MESSAGE value="added reverse" />
-    <MESSAGE value="finished UNO" />
-    <MESSAGE value="added to readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="added to readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated README." />
   </component>
   <component name="WindowStateProjectService">
     <state x="471" y="114" key="#Project_Structure" timestamp="1603256908851">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="471" y="114" key="#Project_Structure/62.0.1858.1080/-1920.0.1920.1040@62.0.1858.1080" timestamp="1603256908851" />
-    <state x="548" y="115" key="#com.intellij.ide.util.MemberChooser" timestamp="1605147691857">
-      <screen x="0" y="23" width="1440" height="816" />
-    </state>
-    <state x="548" y="115" key="#com.intellij.ide.util.MemberChooser/0.23.1440.816@0.23.1440.816" timestamp="1605147691857" />
-    <state x="695" y="307" key="#com.intellij.refactoring.encapsulateFields.EncalpsulateFieldsDialog" timestamp="1604545202740">
-      <screen x="62" y="0" width="1858" height="1080" />
-    </state>
-    <state x="695" y="307" key="#com.intellij.refactoring.encapsulateFields.EncalpsulateFieldsDialog/62.0.1858.1080/-1920.0.1920.1040@62.0.1858.1080" timestamp="1604545202740" />
-    <state x="342" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1605755723701">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="342" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824/-1920.-169.1920.1040@0.0.1536.824" timestamp="1605755723701" />
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605335288083">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824/-1920.-169.1920.1040@0.0.1536.824" timestamp="1605335288083" />
-    <state x="241" y="148" key="#org.jetbrains.debugger.memory.view.InstancesWindow" timestamp="1605472001295">
-      <screen x="0" y="23" width="1440" height="821" />
-    </state>
-    <state x="241" y="148" key="#org.jetbrains.debugger.memory.view.InstancesWindow/0.23.1440.821@0.23.1440.821" timestamp="1605472001295" />
-    <state width="1493" height="261" key="GridCell.Tab.0.bottom" timestamp="1605945315916">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1604092399490">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1604092399490" />
-    <state width="1398" height="192" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1605487585150" />
-    <state width="1493" height="261" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.-169.1920.1040@0.0.1536.824" timestamp="1605945315916" />
-    <state width="1269" height="192" key="GridCell.Tab.0.bottom/0.23.1440.816@0.23.1440.816" timestamp="1605487901019" />
-    <state width="1269" height="226" key="GridCell.Tab.0.bottom/0.23.1440.821@0.23.1440.821" timestamp="1605474805340" />
-    <state width="1269" height="192" key="GridCell.Tab.0.bottom/0.23.1440.822@0.23.1440.822" timestamp="1605466240580" />
-    <state width="1358" height="200" key="GridCell.Tab.0.bottom/0.23.1440.823@0.23.1440.823" timestamp="1604941838323" />
-    <state width="1815" height="280" key="GridCell.Tab.0.bottom/62.0.1858.1080/-1920.0.1920.1040@62.0.1858.1080" timestamp="1605753265289" />
-    <state width="1493" height="261" key="GridCell.Tab.0.center" timestamp="1605945315915">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.-169.1920.1040@0.0.1536.824" timestamp="1604091620071" />
+    <state width="1159" height="164" key="GridCell.Tab.0.bottom/0.23.1440.821@0.23.1440.821" timestamp="1603988273534" />
+    <state width="1815" height="280" key="GridCell.Tab.0.bottom/62.0.1858.1080/-1920.0.1920.1040@62.0.1858.1080" timestamp="1603986622106" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1604092399489">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1604092399489" />
-    <state width="1398" height="192" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1605487585149" />
-    <state width="1493" height="261" key="GridCell.Tab.0.center/0.0.1536.824/-1920.-169.1920.1040@0.0.1536.824" timestamp="1605945315915" />
-    <state width="1269" height="192" key="GridCell.Tab.0.center/0.23.1440.816@0.23.1440.816" timestamp="1605487901018" />
-    <state width="1269" height="226" key="GridCell.Tab.0.center/0.23.1440.821@0.23.1440.821" timestamp="1605474805339" />
-    <state width="1269" height="192" key="GridCell.Tab.0.center/0.23.1440.822@0.23.1440.822" timestamp="1605466240579" />
-    <state width="1358" height="200" key="GridCell.Tab.0.center/0.23.1440.823@0.23.1440.823" timestamp="1604941838322" />
-    <state width="1815" height="280" key="GridCell.Tab.0.center/62.0.1858.1080/-1920.0.1920.1040@62.0.1858.1080" timestamp="1605753265289" />
-    <state width="1493" height="261" key="GridCell.Tab.0.left" timestamp="1605945315915">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824/-1920.-169.1920.1040@0.0.1536.824" timestamp="1604091620071" />
+    <state width="1159" height="164" key="GridCell.Tab.0.center/0.23.1440.821@0.23.1440.821" timestamp="1603988273534" />
+    <state width="1815" height="280" key="GridCell.Tab.0.center/62.0.1858.1080/-1920.0.1920.1040@62.0.1858.1080" timestamp="1603986622105" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1604092399489">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1604092399489" />
-    <state width="1398" height="192" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1605487585149" />
-    <state width="1493" height="261" key="GridCell.Tab.0.left/0.0.1536.824/-1920.-169.1920.1040@0.0.1536.824" timestamp="1605945315915" />
-    <state width="1269" height="192" key="GridCell.Tab.0.left/0.23.1440.816@0.23.1440.816" timestamp="1605487901018" />
-    <state width="1269" height="226" key="GridCell.Tab.0.left/0.23.1440.821@0.23.1440.821" timestamp="1605474805338" />
-    <state width="1269" height="192" key="GridCell.Tab.0.left/0.23.1440.822@0.23.1440.822" timestamp="1605466240579" />
-    <state width="1358" height="200" key="GridCell.Tab.0.left/0.23.1440.823@0.23.1440.823" timestamp="1604941838322" />
-    <state width="1815" height="280" key="GridCell.Tab.0.left/62.0.1858.1080/-1920.0.1920.1040@62.0.1858.1080" timestamp="1605753265288" />
-    <state width="1493" height="261" key="GridCell.Tab.0.right" timestamp="1605945315915">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824/-1920.-169.1920.1040@0.0.1536.824" timestamp="1604091620071" />
+    <state width="1159" height="164" key="GridCell.Tab.0.left/0.23.1440.821@0.23.1440.821" timestamp="1603988273533" />
+    <state width="1815" height="280" key="GridCell.Tab.0.left/62.0.1858.1080/-1920.0.1920.1040@62.0.1858.1080" timestamp="1603986622105" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1604092399489">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1604092399489" />
-    <state width="1398" height="192" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1605487585150" />
-    <state width="1493" height="261" key="GridCell.Tab.0.right/0.0.1536.824/-1920.-169.1920.1040@0.0.1536.824" timestamp="1605945315915" />
-    <state width="1269" height="192" key="GridCell.Tab.0.right/0.23.1440.816@0.23.1440.816" timestamp="1605487901019" />
-    <state width="1269" height="226" key="GridCell.Tab.0.right/0.23.1440.821@0.23.1440.821" timestamp="1605474805339" />
-    <state width="1269" height="192" key="GridCell.Tab.0.right/0.23.1440.822@0.23.1440.822" timestamp="1605466240580" />
-    <state width="1358" height="200" key="GridCell.Tab.0.right/0.23.1440.823@0.23.1440.823" timestamp="1604941838323" />
-    <state width="1815" height="280" key="GridCell.Tab.0.right/62.0.1858.1080/-1920.0.1920.1040@62.0.1858.1080" timestamp="1605753265289" />
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1605945315916">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824/-1920.-169.1920.1040@0.0.1536.824" timestamp="1604091620071" />
+    <state width="1159" height="164" key="GridCell.Tab.0.right/0.23.1440.821@0.23.1440.821" timestamp="1603988273534" />
+    <state width="1815" height="280" key="GridCell.Tab.0.right/62.0.1858.1080/-1920.0.1920.1040@62.0.1858.1080" timestamp="1603986622105" />
+    <state width="1815" height="364" key="GridCell.Tab.1.bottom" timestamp="1603940833461">
+      <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state width="1398" height="304" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1605486960700" />
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824/-1920.-169.1920.1040@0.0.1536.824" timestamp="1605945315916" />
-    <state width="1269" height="226" key="GridCell.Tab.1.bottom/0.23.1440.816@0.23.1440.816" timestamp="1605474790566" />
-    <state width="1398" height="304" key="GridCell.Tab.1.bottom/0.23.1440.821@0.23.1440.821" timestamp="1605486467910" />
     <state width="1815" height="364" key="GridCell.Tab.1.bottom/62.0.1858.1080/-1920.0.1920.1040@62.0.1858.1080" timestamp="1603940833461" />
-    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1605945315916">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1815" height="364" key="GridCell.Tab.1.center" timestamp="1603940833461">
+      <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state width="1398" height="304" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1605486960699" />
-    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824/-1920.-169.1920.1040@0.0.1536.824" timestamp="1605945315916" />
-    <state width="1269" height="226" key="GridCell.Tab.1.center/0.23.1440.816@0.23.1440.816" timestamp="1605474790566" />
-    <state width="1398" height="304" key="GridCell.Tab.1.center/0.23.1440.821@0.23.1440.821" timestamp="1605486467909" />
     <state width="1815" height="364" key="GridCell.Tab.1.center/62.0.1858.1080/-1920.0.1920.1040@62.0.1858.1080" timestamp="1603940833461" />
-    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1605945315916">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1815" height="364" key="GridCell.Tab.1.left" timestamp="1603940833461">
+      <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state width="1398" height="304" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1605486960699" />
-    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824/-1920.-169.1920.1040@0.0.1536.824" timestamp="1605945315916" />
-    <state width="1269" height="226" key="GridCell.Tab.1.left/0.23.1440.816@0.23.1440.816" timestamp="1605474790565" />
-    <state width="1398" height="304" key="GridCell.Tab.1.left/0.23.1440.821@0.23.1440.821" timestamp="1605486467908" />
     <state width="1815" height="364" key="GridCell.Tab.1.left/62.0.1858.1080/-1920.0.1920.1040@62.0.1858.1080" timestamp="1603940833461" />
-    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1605945315916">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1815" height="364" key="GridCell.Tab.1.right" timestamp="1603940833461">
+      <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state width="1398" height="304" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1605486960699" />
-    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824/-1920.-169.1920.1040@0.0.1536.824" timestamp="1605945315916" />
-    <state width="1269" height="226" key="GridCell.Tab.1.right/0.23.1440.816@0.23.1440.816" timestamp="1605474790566" />
-    <state width="1398" height="304" key="GridCell.Tab.1.right/0.23.1440.821@0.23.1440.821" timestamp="1605486467909" />
     <state width="1815" height="364" key="GridCell.Tab.1.right/62.0.1858.1080/-1920.0.1920.1040@62.0.1858.1080" timestamp="1603940833461" />
     <state x="123" y="57" key="MergeDialog" timestamp="1604115826021">
       <screen x="0" y="0" width="1280" height="680" />
@@ -525,39 +329,27 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="278" y="101" key="MultipleFileMergeDialog/0.0.1280.680@0.0.1280.680" timestamp="1604115828932" />
-    <state x="431" y="208" key="Vcs.Push.Dialog.v2" timestamp="1606079974592">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="383" y="156" key="Vcs.Push.Dialog.v2" timestamp="1605848309727">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="359" y="146" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1604116005351" />
-    <state x="431" y="208" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1920.-169.1920.1040@0.0.1536.824" timestamp="1606079974592" />
-    <state x="404" y="229" key="Vcs.Push.Dialog.v2/0.23.1440.816@0.23.1440.816" timestamp="1605468966054" />
-    <state x="404" y="231" key="Vcs.Push.Dialog.v2/0.23.1440.822@0.23.1440.822" timestamp="1604720340545" />
-    <state x="583" y="273" key="Vcs.Push.Dialog.v2/62.0.1858.1080/-1920.0.1920.1040@62.0.1858.1080" timestamp="1604546873125" />
+    <state x="383" y="156" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1605848309727" />
+    <state x="583" y="273" key="Vcs.Push.Dialog.v2/62.0.1858.1080/-1920.0.1920.1040@62.0.1858.1080" timestamp="1603948378855" />
     <state x="808" y="454" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603517248211">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="808" y="454" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/62.0.1858.1080/-1920.0.1920.1040@62.0.1858.1080" timestamp="1603517248211" />
-    <state x="367" y="230" width="705" height="617" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1605483664384">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="536" y="276" width="909" height="629" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1603940985111">
+      <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state x="367" y="230" width="705" height="617" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1440.900@0.0.1440.900" timestamp="1605483664384" />
-    <state x="536" y="276" width="909" height="629" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/62.0.1858.1080/-1920.0.1920.1040@62.0.1858.1080" timestamp="1604545644159" />
-    <state x="-1527" y="-169" width="1115" height="544" key="dock-window-1" timestamp="1606074232515">
-      <screen x="-1920" y="-169" width="1920" height="1040" />
-    </state>
-    <state x="-1527" y="-169" width="1115" height="544" key="dock-window-1/0.0.1536.824/-1920.-169.1920.1040@0.0.1536.824" timestamp="1606074232515" />
-    <state width="600" height="428" key="javadoc.popup" timestamp="1605472141252">
-      <screen x="0" y="23" width="1440" height="821" />
-    </state>
-    <state width="600" height="428" key="javadoc.popup/0.23.1440.821@0.23.1440.821" timestamp="1605472141252" />
+    <state x="536" y="276" width="909" height="629" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/62.0.1858.1080/-1920.0.1920.1040@62.0.1858.1080" timestamp="1603940985111" />
     <state x="786" y="287" key="refactoring.ChangeSignatureDialog" timestamp="1603514325501">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="786" y="287" key="refactoring.ChangeSignatureDialog/62.0.1858.1080/-1920.0.1920.1040@62.0.1858.1080" timestamp="1603514325501" />
-    <state x="489" y="179" width="672" height="518" key="search.everywhere.popup" timestamp="1605928345545">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="654" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1603940854652">
+      <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state x="489" y="179" width="672" height="518" key="search.everywhere.popup/0.0.1536.824/-1920.-169.1920.1040@0.0.1536.824" timestamp="1605928345545" />
     <state x="654" y="235" width="672" height="678" key="search.everywhere.popup/62.0.1858.1080/-1920.0.1920.1040@62.0.1858.1080" timestamp="1603940854652" />
   </component>
   <component name="XDebuggerManager">
@@ -569,9 +361,9 @@
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/ui/GoFish.java</url>
-          <line>36</line>
-          <option name="timeStamp" value="37" />
+          <url>file://$PROJECT_DIR$/src/ui/Thai21.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.NullPointerException" package="java.lang" />
