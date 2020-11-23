@@ -17,6 +17,14 @@
 
 ![](images/Snip1.png)
 
+**How to run our Night At The Museum Link:**
+- Click Run
+- Warning: It will take a little bit for the program to load
+- First, the screen will say "starting" and then it will say 5..4..3..2..1
+- The main menu page will then show up. Click labs and you will find buttons leading to each game underneath labs
+- This page is similar to the picture above but includes Go Fish.
+- Click each button underneath labs to play each of the games and see the calculator.
+
 **TODOs/Team Goals Week 11:**
 * Finalize our README.
 
